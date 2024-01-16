@@ -1,0 +1,124 @@
+{
+  "VertinMod:The_Suitcase": {
+    "NAME": "手提箱",
+    "FLAVOR": "只是一个手提箱",
+    "DESCRIPTIONS": [
+      "你无法在休息处锻造升级卡牌。你获得 #yvertinmod:合成升阶 的能力。",
+      " NL 每当你往牌组中添加 #bvertinmod:神秘学家 的卡牌时，额外添加一张相同的卡牌。",
+      " NL 每场战斗结束时，随机升级一张属于 #bvertinmod:维尔汀 的卡牌。",
+      " NL 每回合一次，右键点击该遗物，可消耗 #b1 点 [E] ，抽 #b3 张牌并弃 #b1 张牌。",
+      "没有足够的能量。",
+      "本回合已经使用过了。"
+    ]
+  },
+  "VertinMod:The_Spinning_Wheel": {
+    "NAME": "纺车",
+    "FLAVOR": "只是一个纺车",
+    "DESCRIPTIONS": [
+      "每次你往自己的牌组加入 #bvertinmod:神秘学家 的卡牌时，开始记录该 #bvertinmod:神秘学家 的 #yvertinmod:激情 ，上限为5。",
+      " NL 每打出一张卡牌，对应 #bvertinmod:神秘学家 的 #yvertinmod:激情 加一。可消耗5点 #bvertinmod:神秘学家 的 #yvertinmod:激情 将其 #yvertinmod:至终仪式 加入手牌。",
+      " NL 右键点击该遗物可打开 #yvertinmod:至终仪式 选取界面。",
+      " NL 当前 #bvertinmod:神秘学家 的 #yvertinmod:激情 ：",
+      "选择一张至终仪式加入手牌",
+      "退出",
+      " NL #b弄臣 ：",
+      " NL #b约翰提托 ：",
+      " NL #b小春雀儿 ：",
+      " NL #b狼群 ：",
+      " NL #b红斗篷 ：",
+      " NL #b吵闹鬼 ：",
+      " NL #b婴儿蓝 ：",
+      " NL #b帕米埃 ：",
+      " NL #b十四行诗 ：",
+      " NL #b气球派对 ：",
+      " NL #b讣告人 ：",
+      " NL #b坦南特 ：",
+      " NL #b挖掘艺术 ：",
+      " NL #b和平乌鲁 ：",
+      " NL #b红弩箭 ：",
+      " NL #b未锈铠 ：",
+      " NL #b苏芙比 ：",
+      " NL #b星锑 ：",
+      " NL #b百夫长 ：",
+      " NL #b远旅 ：",
+      " NL #b新巴别塔 ：",
+      " NL #b伽菈波那 ：",
+      " NL #b爱兹拉 ：",
+      " NL #b槲寄生 ："
+    ]
+  },
+  "VertinMod:Carrot": {
+    "NAME": "胡萝卜",
+    "FLAVOR": "只是一个胡萝卜。",
+    "DESCRIPTIONS": [
+      "拾起时，将你的最大生命值提升 #b7 ， #y激情 最少的 #y神秘学家 获得 #b3 点 #y激情 。"
+    ]
+  },
+  "VertinMod:Apple": {
+    "NAME": "苹果",
+    "FLAVOR": "只是一个苹果。",
+    "DESCRIPTIONS": [
+      "拾起时，将你的最大生命值提升 #b10 。在每场战斗开始时，每拥有一个 #y食物类 遗物，回复 #b1 点生命。"
+    ]
+  },
+  "VertinMod:Goggles": {
+    "NAME": "牧羊犬的护目镜",
+    "FLAVOR": "只是一个护目镜。",
+    "DESCRIPTIONS": [
+      "如果你在回合中不打出任何 #y攻击牌 ，该回合结束时所有 #y神秘学家 获得一点 #b激情 。"
+    ]
+  },
+  "VertinMod:Sparrow": {
+    "NAME": "“冬”",
+    "FLAVOR": "只是一只山雀。",
+    "DESCRIPTIONS": [
+      "当你的生命值高于 #b50% 时，额外获得 #b2 点 #y力量 。当你的生命值等于或低于 #b50% 时，额外获得 #b2 点 #y敏捷 。"
+    ]
+  },
+  "VertinMod:Sputnik": {
+    "NAME": "斯普特尼克",
+    "FLAVOR": "只是一个卫星。",
+    "DESCRIPTIONS": [
+      "每当你获得 #y荆棘 时，获得等量的 #y敏捷 。"
+    ]
+  },
+  "VertinMod:A_Pair_of_Bowknots": {
+    "NAME": "一对蝴蝶结",
+    "FLAVOR": "只是一对蝴蝶结。",
+    "DESCRIPTIONS": [
+      "每当你给予敌人其未拥有的 #y负面状态 时，额外给予 #b1 层。（ #y击晕 除外）"
+    ]
+  },
+  "VertinMod:Critters": {
+    "NAME": "獠牙伙伴",
+    "FLAVOR": "只是几只魔精。",
+    "DESCRIPTIONS": [
+      "每当你受到小于等于 荆棘 层数的未被格挡的 #y攻击 伤害时，将伤害降低为 #b1 。"
+    ]
+  },
+  "VertinMod:Phantom_Honey_Fungus": {
+    "NAME": "幽灵蜜环菌",
+    "FLAVOR": "只是一个蘑菇。",
+    "DESCRIPTIONS": [
+      "你不会再被 #y易伤 。"
+    ]
+  },
+  "VertinMod:Hoop": {
+    "NAME": "圈环",
+    "FLAVOR": "只是一个环。",
+    "DESCRIPTIONS": [
+      "拾起时，升级牌库中的所有卡牌，选择移除牌组中的任何牌，获得一张特殊的 #y诅咒 。",
+      " NL 每移除一张攻击牌，每场战斗开始时获得 #b2点 #y力量 ；",
+      " NL 每移除一张技能牌，每场战斗开始时获得 #b2点 #y敏捷 ；",
+      " NL 每移除一张能力牌，获得 #b10 点最大生命值。",
+      " NL 每移除一张诅咒牌，每回合开始时获得一点 [E] 。",
+      " NL 每场战斗开始时获得 #b",
+      " 点 #y力量。 #b",
+      " 点 #y敏捷。",
+      " NL 每回合开始时获得 #b",
+      " 点 [E] 。",
+      "选择任意数量的牌移除。",
+      "结束"
+    ]
+  }
+}

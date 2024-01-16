@@ -1,0 +1,22 @@
+{
+  "VertinMod:TransformationPotion": {
+    "NAME": "变形药水",
+    "DESCRIPTIONS": [
+      "变形成衣帽架。"
+    ]
+  },
+  "VertinMod:SRegenPotion": {
+    "NAME": "强效再生药水",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " 层 #y再生 。"
+    ]
+  },
+  "VertinMod:SPoisonPotion": {
+    "NAME": "强效毒药水",
+    "DESCRIPTIONS": [
+      "给予 #b",
+      " 层 #y中毒 。"
+    ]
+  }
+}

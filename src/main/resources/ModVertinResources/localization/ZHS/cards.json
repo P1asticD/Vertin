@@ -1,0 +1,702 @@
+{
+  "VertinMod:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:In_Suitcase": {
+    "NAME": "箱中",
+    "DESCRIPTION": " 保留 。 NL 获得1层 无实体 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:Alignment": {
+    "NAME": "律的调校",
+    "DESCRIPTION": "使指定 vertinmod:神秘学家 获得1点 vertinmod:激情 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。",
+      "当前牌库里并没有任何神秘学家的牌。"
+    ]
+  },
+  "VertinMod:Incantations_Strike": {
+    "NAME": "神秘学打击",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 本场战斗每进行过一次 vertinmod:合成升阶 ，伤害增加 !M! 点。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:Past_Future": {
+    "NAME": "逝去的未来",
+    "DESCRIPTION": "每当有一张牌被 消耗 ，获得 !M! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:Grand_Orchestra": {
+    "NAME": "伟大乐队",
+    "DESCRIPTION": "每进行一次 vertinmod:合成升阶 ，获得 !M! 点 [E] ，抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:Pigeon": {
+    "NAME": "白鸽",
+    "DESCRIPTION": "每使用一张至终仪式，获得 !M! 点 [E] 。",
+    "UPGRADE_DESCRIPTION": "每使用一张至终仪式，获得 !M! 点 [E] ，抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:Dissonance": {
+    "NAME": "不协和音",
+    "DESCRIPTION": "所有属于 vertinmod:维尔汀 的卡牌耗能变为0 。 NL 所有属于 vertinmod:维尔汀 的牌在打出时被 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:The_Fool": {
+    "NAME": "弄臣",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:JohnTitor": {
+    "NAME": "约翰提托",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Eagle": {
+    "NAME": "小春雀儿",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Pavia": {
+    "NAME": "狼群",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Mondlicht": {
+    "NAME": "红斗篷",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Poltergeist": {
+    "NAME": "吵闹鬼",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:BabyBlue": {
+    "NAME": "婴儿蓝",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Dikke": {
+    "NAME": "帕米埃",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Sonetto": {
+    "NAME": "十四行诗",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Balloon": {
+    "NAME": "气球派对",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Necrologist": {
+    "NAME": "讣告人",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Tennant": {
+    "NAME": "坦南特",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Diggers": {
+    "NAME": "挖掘艺术",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Ulu": {
+    "NAME": "和平乌鲁",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Lilya": {
+    "NAME": "红弩箭",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Knight": {
+    "NAME": "未锈铠",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Sotheby": {
+    "NAME": "苏芙比",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Regulus": {
+    "NAME": "星锑",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Centurion": {
+    "NAME": "百夫长",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Voyager": {
+    "NAME": "远旅",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:NewBabel": {
+    "NAME": "新巴别塔",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:BlackDwarf": {
+    "NAME": "伽菈波那",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Ezra": {
+    "NAME": "爱兹拉",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:DruvisIII": {
+    "NAME": "槲寄生",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
+  "VertinMod:Sage": {
+    "NAME": "智者",
+    "DESCRIPTION": "造成 !D! 点伤害。目标敌人在本回合失去 !M! 点 力量 。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b弄臣 。"
+    ]
+  },
+  "VertinMod:Fool": {
+    "NAME": "愚者",
+    "DESCRIPTION": "每当你被攻击时，对攻击者施加 !M! 点 中毒 。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b弄臣 。"
+    ]
+  },
+  "VertinMod:Improvised_Show": {
+    "NAME": "预料外的即兴演出",
+    "DESCRIPTION": "给予所有敌人 !M! 层 中毒 。如果敌人已有不低于10层 中毒 ，改为将 中毒 层数翻倍。 NL 抹除 。"
+  },
+  "VertinMod:Not_Decoration": {
+    "NAME": "不是摆设！",
+    "DESCRIPTION": "抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b约翰·提托 。"
+    ]
+  },
+  "VertinMod:True_Genius": {
+    "NAME": "可是天才！",
+    "DESCRIPTION": "获得 !B! 点 格挡 。获得 [E] 。 在下一回合获得 [E] [E] 。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b约翰·提托 。"
+    ]
+  },
+  "VertinMod:Bytes_65536": {
+    "NAME": "65536比特",
+    "DESCRIPTION": "移除你的所有负面效果。移除目标的所有正面效果。 NL 获得 !B! 点 格挡 。在下一回合获得 !B! 点格挡。 NL 抹除 。"
+  },
+  "VertinMod:Old_PocketWatch": {
+    "NAME": "往日怀表",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果敌人有负面状态，回复 !M! 点生命。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b小春雀儿 。"
+    ]
+  },
+  "VertinMod:Finger_Lens": {
+    "NAME": "指间镜片",
+    "DESCRIPTION": "去除一名敌人的所有 格挡 值。 NL 对所有敌人造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b小春雀儿 。"
+    ]
+  },
+  "VertinMod:Superficiality_And_Reality": {
+    "NAME": "表象与真实之间",
+    "DESCRIPTION": "在这个回合，你所有的攻击伤害翻倍。 NL 抹除 。"
+  },
+  "VertinMod:Dirty_Thing": {
+    "NAME": "脏东西",
+    "DESCRIPTION": "造成 !D! 点伤害。若自身生命值不低于50%，额外造成一次 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b狼群 。"
+    ]
+  },
+  "VertinMod:Poor_Sod": {
+    "NAME": "可怜虫",
+    "DESCRIPTION": "造成 !D! 点伤害。若自身生命值低于50%，额外造成一次 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b狼群 。"
+    ]
+  },
+  "VertinMod:Noisy_Wolves": {
+    "NAME": "喧闹狼群",
+    "DESCRIPTION": ""
+  },
+  "VertinMod:A_Silver_Bullet": {
+    "NAME": "银弹射击",
+    "DESCRIPTION": "造成 !D! 点伤害。对生命值不低于50%的敌人额外造成一次 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b红斗篷 。"
+    ]
+  },
+  "VertinMod:An_Axe_Dance": {
+    "NAME": "利斧起舞",
+    "DESCRIPTION": "造成 !D! 点伤害。对生命值低于50%的敌人额外造成一次 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b红斗篷 。"
+    ]
+  },
+  "VertinMod:Hunting_Wolves": {
+    "NAME": "猎杀恶狼",
+    "DESCRIPTION": ""
+  },
+  "VertinMod:Prank": {
+    "NAME": "恶作剧",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b吵闹鬼 。"
+    ]
+  },
+  "VertinMod:Whisper": {
+    "NAME": "贴耳话",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 虚无 。",
+    "EXTENDED_DESCRIPTION":[
+      "该卡牌属于 #b吵闹鬼 。"
+    ]
+  },
+  "VertinMod:Not_Gentle_Sun": {
+    "NAME": "阴暗处",
+    "DESCRIPTION": "获得2层 无实体 。 NL 获得等同于你消耗牌堆中牌数层 再生 。 NL 抹除 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （获得 !M! 层 再生 ）"
+    ]
+  },
+  "VertinMod:Play_House": {
+    "NAME": "过家家",
+    "DESCRIPTION": "当且仅当本回合没有打出过牌时才可以打出。 NL 你和所有敌人都获得1层 无实体 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b婴儿蓝 。",
+      "本回合已经打出过其他牌了。"
+    ]
+  },
+  "VertinMod:Cough_Syrup": {
+    "NAME": "咳咳剂",
+    "DESCRIPTION": "每回合开始时，给予所有敌人 !M! 层 虚弱 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b婴儿蓝 。"
+    ]
+  },
+  "VertinMod:Tea_Party": {
+    "NAME": "茶话会",
+    "DESCRIPTION": "造成 !D! 点伤害。如果敌人有 虚弱 状态， 击晕 一回合。 NL 抹除 。"
+  },
+  "VertinMod:Power_Power": {
+    "NAME": "强权",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点生命流失。 NL 力量 仍然会发挥效果。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b帕米埃 。"
+    ]
+  },
+  "VertinMod:Justice": {
+    "NAME": "正义",
+    "DESCRIPTION": "回复 !M! 生命。 NL 若自身生命值低于50%，额外回复5生命。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b帕米埃 。"
+    ]
+  },
+  "VertinMod:Maverick_Judge": {
+    "NAME": "审判",
+    "DESCRIPTION": "移除你身上的所有负面效果。 NL 造成 !D! 点生命流失。 NL 获得 !M! 层 缓冲 。 NL 抹除 。"
+  },
+  "VertinMod:Commandment_V": {
+    "NAME": "戒律·其五",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 击晕 目标敌人一回合。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b十四行诗 。"
+    ]
+  },
+  "VertinMod:Exhortations_IX": {
+    "NAME": "劝勉·其九",
+    "DESCRIPTION": "获得 !M! 点 力量 与 敏捷 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b十四行诗 。"
+    ]
+  },
+  "VertinMod:Unrestricted_Chant": {
+    "NAME": "规章之外的咏叹诗",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 若同时具有正数 力量 和 敏捷 ，造成 力量 与 敏捷 较低值次伤害。 NL 抹除 。"
+  },
+  "VertinMod:Pinata": {
+    "NAME": "皮纳塔塔",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 该数值也受 荆棘 加成。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b气球派对 。"
+    ]
+  },
+  "VertinMod:Coughing_Weirdo": {
+    "NAME": "咳咳怪人",
+    "DESCRIPTION": "获得 !M! 层 荆棘 。 NL 回复10%已损失生命值。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 荆棘 。 NL 回复25%已损失生命值。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b气球派对 。"
+    ]
+  },
+  "VertinMod:Balloon_Party": {
+    "NAME": "气球派对",
+    "DESCRIPTION": "对所有敌人造成5倍 荆棘 层数的伤害。 NL 回复 荆棘 层数的生命。 NL 抹除 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （造成 !D! 点伤害。回复 !M! 点生命。）"
+    ]
+  },
+  "VertinMod:Timely_Farewell": {
+    "NAME": "及时道别",
+    "DESCRIPTION": "获得一瓶再生药水。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b讣告人 。"
+    ]
+  },
+  "VertinMod:Timely_Farewell_1": {
+    "NAME": "及时道别",
+    "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b讣告人 。"
+    ]
+  },
+  "VertinMod:By_the_Coffin": {
+    "NAME": "与棺同行",
+    "DESCRIPTION": " 墓地 。 NL 获得一瓶瓶中精灵。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b讣告人 。"
+    ]
+  },
+  "VertinMod:By_the_Coffin_1": {
+    "NAME": "与棺同行",
+    "DESCRIPTION": " 墓地 。 将弃牌堆的 !M! 张牌加入手牌。 NL 使其本回合耗能变为0。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b讣告人 。"
+    ]
+  },
+  "VertinMod:Whispers_of_Deceased": {
+    "NAME": "逝者低语",
+    "DESCRIPTION": "丢弃你药水栏中的所有再生药水与瓶中精灵。 NL 每丢弃一瓶再生药水造成20%最大生命值的生命流失。 NL 每丢弃一瓶瓶中精灵造成30%最大生命值的生命流失。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （造成敌方 !M! %最大生命值的生命流失）"
+    ]
+  },
+  "VertinMod:Whispers_of_Deceased_1": {
+    "NAME": "逝者低语",
+    "DESCRIPTION": "消耗弃牌堆里的所有牌。 NL 在所有空药水栏位中获得瓶中精灵。 NL 抹除 。"
+  },
+  "VertinMod:Shiny_Diamond": {
+    "NAME": "一颗闪钻",
+    "DESCRIPTION": "造成你当前 格挡 值的伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b坦南特 。",
+      " NL （造成 !D! 点伤害。）"
+    ]
+  },
+  "VertinMod:Galaxy_Bouquet": {
+    "NAME": "一束星河",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b坦南特 。"
+    ]
+  },
+  "VertinMod:Beautiful_Lie": {
+    "NAME": "美好谎言",
+    "DESCRIPTION": "移除你所有 格挡 。 NL 每移除10点 格挡 ，造成 !D! 点伤害，获得1层 缓冲 。 NL 抹除 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （获得 !M! 层 缓冲 。）"
+    ]
+  },
+  "VertinMod:LongLive_Peace": {
+    "NAME": "和平至上",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 使敌人失去与所造成的未被格挡的伤害相等的 力量 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b挖掘艺术 。"
+    ]
+  },
+  "VertinMod:Bubblism": {
+    "NAME": "泡泡主义",
+    "DESCRIPTION": "给予 !M! 层 易伤 。 NL 使敌人失去 !M! 点 力量 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b挖掘艺术 。"
+    ]
+  },
+  "VertinMod:Sweet_Dreams": {
+    "NAME": "美梦将至",
+    "DESCRIPTION": "若敌人 力量 为正值，使其变为等量负值。 NL 否则使敌人失去 !M! 点 力量 。 NL 抹除 。"
+  },
+  "VertinMod:Opening_Ceremony": {
+    "NAME": "开幕仪式",
+    "DESCRIPTION": "给予 !M! 层 vertinmod:烧伤 。 NL 如果该卡是本回合打出的第一张卡，额外给予一次 !M! 层 vertinmod:烧伤 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b和平乌鲁 。"
+    ]
+  },
+  "VertinMod:Jumping_Heart": {
+    "NAME": "跃动的心",
+    "DESCRIPTION": "在你的回合开始时，给予所有敌人 !M! 层 vertinmod:烧伤 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b和平乌鲁 。"
+    ]
+  },
+  "VertinMod:Indestructible_Fire": {
+    "NAME": "不灭的火",
+    "DESCRIPTION": "将所有敌人的 vertinmod:烧伤 层数变为三倍。 NL 抹除 。"
+  },
+  "VertinMod:Crosswind_Takeoff": {
+    "NAME": "侧风起飞",
+    "DESCRIPTION": " 保留 。 NL 造成 !D! 点伤害。 NL 力量 在该卡牌上发挥 !M! 倍效果。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 造成 !D! 点伤害。 NL 力量 在该卡牌上发挥 !M! 倍效果。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b红弩箭 。"
+    ]
+  },
+  "VertinMod:Aerial_Maneuvers": {
+    "NAME": "钟型摆动",
+    "DESCRIPTION": " 保留 。 NL 获得 !B! 点 格挡 。 NL 敏捷 在该卡牌上发挥 !M! 倍效果。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 造成 !B! 点 格挡 。 NL 敏捷 在该卡牌上发挥 !M! 倍效果。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b红弩箭 。"
+    ]
+  },
+  "VertinMod:Canned_Liquor": {
+    "NAME": "壶装烈酒",
+    "DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *侧风起飞 加入手牌。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *侧风起飞+ 加入手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b红弩箭 。 #y二九年的野牛草伏特加 。"
+    ]
+  },
+  "VertinMod:Key_of_Su01Be": {
+    "NAME": "认证秘钥",
+    "DESCRIPTION": "获得 !M! 点 敏捷 。 NL 将一张 *钟型摆动 加入手牌。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 敏捷 。 NL 将一张 *钟型摆动+ 加入手牌。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b红弩箭 。"
+    ]
+  },
+  "VertinMod:Soaring_Witch": {
+    "NAME": "翱翔于天际的女巫",
+    "DESCRIPTION": "将生命值扣至只剩1点，每扣除5点生命值，获得 !M! 点 力量 与 敏捷 。 NL 获得1层 *飞行 。NL 战斗结束时，将生命值变为打出该牌时的生命值。"
+  },
+  "VertinMod:K_Justice": {
+    "NAME": "公义",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时，获得 [E] ，抽 !M! 张牌，未锈铠额外获得 !M! 点激情。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时，获得 [E] [E] ，抽 !M! 张牌，未锈铠额外获得 !M! 点激情。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b未锈铠 。"
+    ]
+  },
+  "VertinMod:Glory": {
+    "NAME": "荣耀",
+    "DESCRIPTION": "每回合开始时，获得 !M! 点 活力 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b未锈铠 。"
+    ]
+  },
+  "VertinMod:After_AD_778": {
+    "NAME": "公元七七八年后",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 活力 将发挥五倍效果。 NL 斩杀 时，获得等同于溢出伤害的 活力 ，获得 [E] ，抽 !M! 张牌。 NL 抹除 。"
+  },
+  "VertinMod:Triple_Dose": {
+    "NAME": "三倍用量",
+    "DESCRIPTION": "给予 !M! 层 中毒 。",
+    "UPGRADE_DESCRIPTION": "若目标没有 中毒 ，给予 !M! 层 中毒 。 NL 否则 消耗 ，将目标 中毒 层数变为三倍。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b苏芙比 。"
+    ]
+  },
+  "VertinMod:Triple_Dose_1": {
+    "NAME": "三倍用量",
+    "DESCRIPTION": "获得一瓶 毒药水 。 NL 偶尔会失败。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得一瓶 强效毒药水 。偶尔会失败。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b苏芙比 。"
+    ]
+  },
+  "VertinMod:Concentrated_Essence": {
+    "NAME": "浓缩精华",
+    "DESCRIPTION": "每给予敌人一次 中毒 ，获得 !M! 层 再生 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b苏芙比 。"
+    ]
+  },
+  "VertinMod:Concentrated_Essence_1": {
+    "NAME": "浓缩精华",
+    "DESCRIPTION": "获得一瓶 再生药水 。 NL 偶尔会失败。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得一瓶 强效再生药水 。偶尔会失败。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b苏芙比 。"
+    ]
+  },
+  "VertinMod:Mix_All": {
+    "NAME": "统统混合",
+    "DESCRIPTION": "立即结算你身上的 再生 。 NL 立即结算所有敌人身上的 中毒 。 NL 抹除 。"
+  },
+  "VertinMod:Treat_Ears": {
+    "NAME": "洗洗耳朵",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b星锑 。"
+    ]
+  },
+  "VertinMod:Challenge_Eyes": {
+    "NAME": "晒晒眼睛",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b星锑 。"
+    ]
+  },
+  "VertinMod:Sleepless_Rave": {
+    "NAME": "无眠狂欢",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 获得 !M! 层 vertinmod:躁动摇滚 。 NL 抹除 。"
+  },
+  "VertinMod:Victorious_General": {
+    "NAME": "全胜将军",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 百夫长每有一点 vertinmod:激情 ，该卡牌基础伤害增加 !M! 点。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b百夫长 。"
+    ]
+  },
+  "VertinMod:Outdoor_Superstar": {
+    "NAME": "户外明星",
+    "DESCRIPTION": "每有一名敌人，百夫长获得 !M! 点 vertinmod:激情 。 NL 若超出百夫长激情上限，每超出一点，获得 [E] ，抽 !M! 张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "每有一名敌人，百夫长获得 !M! 点 vertinmod:激情 。 NL 若超出百夫长激情上限，每超出一点，获得 [E] ，抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b百夫长 。"
+    ]
+  },
+  "VertinMod:RealityShow_Premiere": {
+    "NAME": "真人秀火热开场",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 给予所有敌人 !M! 层 虚弱 。 NL 回复 !M! 点生命。 NL 抹除 。"
+  },
+  "VertinMod:Refrain": {
+    "NAME": "叠奏组曲",
+    "DESCRIPTION": " 击晕 所有意图不是攻击的敌人一回合。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b远旅 。"
+    ]
+  },
+  "VertinMod:Starlight_Sonata": {
+    "NAME": "群星奏鸣",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 给予所有敌人 !M! 层 易伤 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b远旅 。"
+    ]
+  },
+  "VertinMod:Strings_Galaxy": {
+    "NAME": "弦上星系",
+    "DESCRIPTION": "造成 !D! 点伤害。如果敌人有 易伤 状态， 击晕 一回合。 NL 抹除 。"
+  },
+  "VertinMod:Old_Idea": {
+    "NAME": "旧观念",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 该数值也受 敏捷 加成。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b新巴别塔 。"
+    ]
+  },
+  "VertinMod:New_Wave": {
+    "NAME": "新浪潮",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 该数值也受 力量 加成。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b新巴别塔 。"
+    ]
+  },
+  "VertinMod:Future_Is_Near": {
+    "NAME": "未来近在咫尺",
+    "DESCRIPTION": "获得 *壁垒 。 NL 获得 !M! 层 人工制品 。 NL 获得 力量 与 敏捷 之和层 荆棘 。"
+  },
+  "VertinMod:Saturn_Divination": {
+    "NAME": "土星占卜",
+    "DESCRIPTION": "每当你获得 格挡 时，回复 !M! 点生命。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b伽菈波那 。"
+    ]
+  },
+  "VertinMod:Mars_Divination": {
+    "NAME": "火星占卜",
+    "DESCRIPTION": "每当你造成未被 格挡 的伤害时，回复 !M! 点生命。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b伽菈波那 。"
+    ]
+  },
+  "VertinMod:Lunar_Divination": {
+    "NAME": "盈月占卜",
+    "DESCRIPTION": "你每打出一张牌，回复 !M! 点生命。"
+  },
+  "VertinMod:Body_Protection": {
+    "NAME": "看护于躯壳",
+    "DESCRIPTION": "给予所有敌人 !M! 层 易伤 。 NL 获得 [E] 。 NL 抽 !M! 张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 易伤 。 NL 获得 [E] [E] 。 NL 抽 !M! 张牌。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b爱兹拉 。"
+    ]
+  },
+  "VertinMod:Spirit_Encourage": {
+    "NAME": "勉励以精神",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 当前每有一名具有 易伤 的敌人，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽1张牌。 NL 当前每有一名具有 易伤 的敌人，抽 !M! 张牌。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b爱兹拉 。"
+    ]
+  },
+  "VertinMod:Comprehensive_Care": {
+    "NAME": "全方面关怀",
+    "DESCRIPTION": "使其他 vertinmod:神秘学家 获得 !M! 点 vertinmod:激情 。 NL 抽牌直到将手牌抽满。 NL 抹除 。"
+  },
+  "VertinMod:Wind_into_Woods": {
+    "NAME": "风入林",
+    "DESCRIPTION": "给予 !M! 层 vertinmod:缠绕 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 vertinmod:缠绕 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b槲寄生 。"
+    ]
+  },
+  "VertinMod:Early_Dawn": {
+    "NAME": "露渐白",
+    "DESCRIPTION": "获得 !M! 层 vertinmod:柔韧 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b槲寄生 。"
+    ]
+  },
+  "VertinMod:Silent_Woods": {
+    "NAME": "林间，静默将至",
+    "DESCRIPTION": "将你的 vertinmod:柔韧 翻倍。 NL 将所有敌人的 vertinmod:缠绕 翻倍。 NL 击晕 vertinmod:缠绕 层数最高的敌人一回合。 NL 抹除 。"
+  },
+  "VertinMod:Paper_Slip": {
+    "NAME": "一张纸条",
+    "DESCRIPTION": "只有当敌人的数量为1时才可打出。 NL 将 *改编的校歌 加入牌库。 NL 将 *苦恼 加入牌库。 NL 虚无 。 NL 即逝 。",
+    "UPGRADE_DESCRIPTION": "只有当敌人的数量为1时才可打出。 NL 将 *改编的校歌 加入牌组。 NL 将 *苦恼 加入牌组。 NL 即逝 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:Adapted_Song": {
+    "NAME": "改编的校歌",
+    "DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 虚无 。 NL 即逝 。",
+    "UPGRADE_DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 即逝 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:Jail_Break": {
+    "NAME": "越狱行动",
+    "DESCRIPTION": "只有在首领战或精英战时才可打出。 NL 将 *新世界 加入牌组。 NL 将 *悔恨 加入牌组。 NL 虚无 。 NL 即逝 。",
+    "UPGRADE_DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 即逝 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:New_World": {
+    "NAME": "新世界",
+    "DESCRIPTION": "战斗结束时，获得遗物 *圈环 。 NL 虚无 。 NL 即逝 。",
+    "UPGRADE_DESCRIPTION": "战斗结束时，获得遗物 *圈环 。 NL 即逝 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  }
+}

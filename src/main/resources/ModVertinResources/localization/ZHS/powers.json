@@ -1,0 +1,114 @@
+{
+  "VertinMod:FoolPower": {
+    "NAME": "愚者",
+    "DESCRIPTIONS": [
+      "每当你被攻击时，给予攻击者 #b%d 点 #y中毒 。"
+    ]
+  },
+  "VertinMod:CoughPower": {
+    "NAME": "咳咳剂",
+    "DESCRIPTIONS": [
+      "每回合开始时，给予所有敌人 #b%d 层 #y虚弱 。"
+    ]
+  },
+  "VertinMod:BurnPower": {
+    "NAME": "烧伤",
+    "DESCRIPTIONS": [
+      "在你的回合结束时，减少 #b ",
+      " 点生命然后将 #y烧伤 层数减少 #b1 。",
+      "在其回合结束时，减少 #b"
+    ]
+  },
+  "VertinMod:JumpingHeartPower": {
+    "NAME": "跃动",
+    "DESCRIPTIONS": [
+      "每回合开始时，给予所有敌人 #b%d 层 #y烧伤 。"
+    ]
+  },
+  "VertinMod:LilyaPower": {
+    "NAME": "翱翔天际的女巫",
+    "DESCRIPTIONS": [
+      "战斗结束时，生命值变为 #b%d 。"
+    ]
+  },
+  "VertinMod:GloryPower": {
+    "NAME": "荣耀",
+    "DESCRIPTIONS": [
+      "每回合开始时，获得 #b%d 点 活力 。"
+    ]
+  },
+  "VertinMod:EssencePower": {
+    "NAME": "浓缩精华",
+    "DESCRIPTIONS": [
+      "每给予敌人一次 中毒 ，获得 #b%d 层 再生 。"
+    ]
+  },
+  "VertinMod:RockPower": {
+    "NAME": "躁动摇滚",
+    "DESCRIPTIONS": [
+      "免疫所有伤害，直到打出攻击牌。持续 #b%d 回合。"
+    ]
+  },
+  "VertinMod:SaturnPower": {
+    "NAME": "土星占卜",
+    "DESCRIPTIONS": [
+      "每当你获得 格挡 时，回复 #b%d 点生命。"
+    ]
+  },
+  "VertinMod:MarsPower": {
+    "NAME": "火星占卜",
+    "DESCRIPTIONS": [
+      "每当你造成未被 格挡 的伤害时，回复 #b%d 点生命。"
+    ]
+  },
+  "VertinMod:LunarPower": {
+    "NAME": "盈月占卜",
+    "DESCRIPTIONS": [
+      "你每打出一张牌，回复 #b%d 点生命。"
+    ]
+  },
+  "VertinMod:PastPower": {
+    "NAME": "逝去的未来",
+    "DESCRIPTIONS": [
+      "每当有一张牌被 #y消耗 ，获得 #b%d 点 #y格挡 。"
+    ]
+  },
+  "VertinMod:GrandPower": {
+    "NAME": "伟大乐队",
+    "DESCRIPTIONS": [
+      "每进行一次 #y合成升阶 ，获得 #b%d 点 [E] ，抽 #b%d 张牌。"
+    ]
+  },
+  "VertinMod:PigeonPower": {
+    "NAME": "白鸽",
+    "DESCRIPTIONS": [
+      "每使用一张 #y至终仪式 ，获得 #b%d 点 [E] 。"
+    ]
+  },
+  "VertinMod:PigeonPower1": {
+    "NAME": "白鸽",
+    "DESCRIPTIONS": [
+      "每使用一张 #y至终仪式 ，获得 #b%d 点 [E] ，抽 #b%d 张牌。"
+    ]
+  },
+  "VertinMod:PigeonPower_1": {
+    "NAME": "白鸽",
+    "DESCRIPTIONS": [
+      "每使用 #b2 点 #y激情，获得 #b",
+      " 点 [E] 。当前 #y激情 计数为 #b",
+      " "
+    ]
+  },
+  "VertinMod:DissonancePower": {
+    "NAME": "不协和音",
+    "DESCRIPTIONS": [
+      "所有属于 #b维尔汀 的卡牌耗能变为 #b0 。所有属于 #b维尔汀 的牌在打出时被 消耗 。"
+    ]
+  },
+  "VertinMod:NewWorldPower": {
+    "NAME": "新世界",
+    "DESCRIPTIONS": [
+      "在战斗结束时，获得一件特殊的遗物。"
+    ]
+  }
+}
