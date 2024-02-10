@@ -4,9 +4,9 @@ import basemod.abstracts.CustomRelic;
 import basemod.abstracts.CustomSavable;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -16,10 +16,13 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
+import vertinmod.cards.others.Storm;
 import vertinmod.helpers.ModHelper;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Hoop extends CustomRelic implements CustomSavable<int[]> {
     public static final String ID = ModHelper.makePath("Hoop");
@@ -28,12 +31,14 @@ public class Hoop extends CustomRelic implements CustomSavable<int[]> {
     private static final AbstractRelic.LandingSound LANDING_SOUND = AbstractRelic.LandingSound.FLAT;
     public int Count_A;
     public int Count_S;
+    public int Count_P;
     public int Count_C;
 
     public Hoop(){
         super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
         Count_A = 0;
         Count_S = 0;
+        Count_P = 0;
         Count_C = 0;
     }
 
@@ -53,16 +58,10 @@ public class Hoop extends CustomRelic implements CustomSavable<int[]> {
                 AbstractDungeon.player.bottledCardUpgradeCheck(card);
             }
         }
-        if (AbstractDungeon.isScreenUp) {
-            AbstractDungeon.dynamicBanner.hide();
-            AbstractDungeon.overlayMenu.cancelButton.hide();
-            AbstractDungeon.previousScreen = AbstractDungeon.screen;
+        AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(new Storm(), Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+        if (AbstractDungeon.player.masterDeck.getPurgeableCards().size() > 0) {
+            AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck, AbstractDungeon.player.masterDeck.size(), true, this.DESCRIPTIONS[12]);
         }
-        CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (AbstractCard card : (AbstractDungeon.player.masterDeck.getPurgeableCards()).group)
-            tmp.addToTop(card);
-        AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck, AbstractDungeon.player.masterDeck.size(), this.DESCRIPTIONS[10], false, false, true, false);
-        AbstractDungeon.overlayMenu.cancelButton.show(DESCRIPTIONS[11]);
         this.refreshDesc();
     }
 
@@ -77,7 +76,7 @@ public class Hoop extends CustomRelic implements CustomSavable<int[]> {
     }
 
     private void refreshDesc(){
-        this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1] + DESCRIPTIONS[2] + DESCRIPTIONS[3] + DESCRIPTIONS[4];
+        this.description = DESCRIPTIONS[0];
         if (Count_A != 0 || Count_S != 0)
             this.description = this.description + DESCRIPTIONS[5];
         if (Count_A != 0)
@@ -86,6 +85,8 @@ public class Hoop extends CustomRelic implements CustomSavable<int[]> {
             this.description = this.description + 2 * Count_S + DESCRIPTIONS[7];
         if (Count_C != 0)
             this.description = this.description + DESCRIPTIONS[8] + Count_C + DESCRIPTIONS[9];
+        if (Count_P != 0)
+            this.description = this.description + DESCRIPTIONS[10] + Count_P + DESCRIPTIONS[11];
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
         this.initializeTips();
@@ -94,30 +95,42 @@ public class Hoop extends CustomRelic implements CustomSavable<int[]> {
     public void deleteCards(ArrayList<AbstractCard> group) {
         float displayCount = 0.0F;
         for (AbstractCard card : group) {
-            card.untip();
-            card.unhover();
-            AbstractDungeon.topLevelEffects.add(new PurgeCardEffect(card, Settings.WIDTH / 3.0F + displayCount, Settings.HEIGHT / 2.0F));
-            displayCount += Settings.WIDTH / 6.0F;
-            if (card.type == AbstractCard.CardType.ATTACK)
-                Count_A++;
-            else if (card.type == AbstractCard.CardType.SKILL)
-                Count_S++;
-            else if (card.type == AbstractCard.CardType.POWER)
-                AbstractDungeon.player.increaseMaxHp(10, true);
-            else if (card.type == AbstractCard.CardType.CURSE) {
-                AbstractDungeon.player.energy.energyMaster++;
-                Count_C++;
+            if (card.cardID != "AscendersBane" && card.cardID != "Necronomicurse" && card.cardID != "CurseOfTheBell" && !Objects.equals(card.cardID, "VertinMod:Storm")) {
+                AbstractDungeon.topLevelEffects.add(new PurgeCardEffect(card, Settings.WIDTH / 3.0F + displayCount, Settings.HEIGHT / 2.0F));
+                displayCount += Settings.WIDTH / 6.0F;
+                if (card.type == AbstractCard.CardType.ATTACK)
+                    Count_A++;
+                else if (card.type == AbstractCard.CardType.SKILL)
+                    Count_S++;
+                else if (card.type == AbstractCard.CardType.POWER)
+                    Count_P++;
+                else if (card.type == AbstractCard.CardType.CURSE) {
+                    AbstractDungeon.player.energy.energyMaster++;
+                    Count_C++;
+                }
+                this.refreshDesc();
+                AbstractDungeon.player.masterDeck.group.remove(card);
             }
-            this.refreshDesc();
-            AbstractDungeon.player.masterDeck.group.remove(card);
         }
         AbstractDungeon.gridSelectScreen.selectedCards.clear();
     }
 
-    public void atBattleStart() {
+    public void atPreBattle() {
         flash();
-        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, 2 * Count_A), 2 * Count_A));
-        addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, 2 * Count_S), 2 * Count_S));
+        if (Count_A > 0)
+            addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, 2 * Count_A), 2 * Count_A));
+        if (Count_S > 0)
+            addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, 2 * Count_S), 2 * Count_S));
+        if (Count_P > 0) {
+            for (int i = 0; i < Count_P; i++) {
+                AbstractCard c = AbstractDungeon.returnTrulyRandomCardInCombat(AbstractCard.CardType.POWER).makeCopy();
+                if (c.cost != -1) {
+                    c.setCostForTurn(0);
+                    c.upgrade();
+                }
+                addToBot(new MakeTempCardInHandAction(c));
+            }
+        }
         addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
@@ -127,14 +140,15 @@ public class Hoop extends CustomRelic implements CustomSavable<int[]> {
 
     @Override
     public int[] onSave() {
-        return new int[]{Count_A, Count_S, Count_C};
+        return new int[] {Count_A, Count_S, Count_P, Count_C};
     }
 
     @Override
     public void onLoad(int[] cards){
         Count_A = cards[0];
         Count_S = cards[1];
-        Count_C = cards[2];
+        Count_P = cards[2];
+        Count_C = cards[3];
         this.refreshDesc();
     }
 }

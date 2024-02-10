@@ -131,7 +131,6 @@ import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
         BaseMod.addCard(new Necrologist());
         BaseMod.addCard(new Tennant());
         BaseMod.addCard(new Diggers());
-        BaseMod.addCard(new Ulu());
         BaseMod.addCard(new Lilya());
         BaseMod.addCard(new Knight());
         BaseMod.addCard(new Sotheby());
@@ -292,6 +291,6 @@ import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
     public void receivePostInitialize(){
         BaseMod.addPotion(TransformationPotion.class, null, null, null, "VertinMod:TransformationPotion", VERTIN);
         BaseMod.addPotion(SRegenPotion.class, null, null, null, "VertinMod:SRegenPotion", VERTIN);
-        BaseMod.addPotion(SPoisonPotion.class, null, null, null, "VertinMod:SRegenPotion", VERTIN);
+        BaseMod.addPotion(SPoisonPotion.class, null, null, null, "VertinMod:SPoisonPotion", VERTIN);
     }
 }

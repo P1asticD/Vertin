@@ -60,7 +60,7 @@ public class Play_House extends Ver_CustomCard {
     public void upgrade(){
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(0);
+            this.selfRetain = true;
         }
     }
 

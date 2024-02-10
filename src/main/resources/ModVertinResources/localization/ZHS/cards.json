@@ -273,7 +273,8 @@
   },
   "VertinMod:Play_House": {
     "NAME": "过家家",
-    "DESCRIPTION": "当且仅当本回合没有打出过牌时才可以打出。 NL 你和所有敌人都获得1层 无实体 。 NL 消耗 。",
+    "DESCRIPTION": "本回合没有打出过牌时才可以打出。 NL 你和所有敌人都获得1层 无实体 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 本回合没有打出过牌时才可以打出。 NL 你和所有敌人都获得1层 无实体 。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b婴儿蓝 。",
       "本回合已经打出过其他牌了。"
@@ -431,7 +432,7 @@
   },
   "VertinMod:Opening_Ceremony": {
     "NAME": "开幕仪式",
-    "DESCRIPTION": "给予 !M! 层 vertinmod:烧伤 。 NL 如果该卡是本回合打出的第一张卡，额外给予一次 !M! 层 vertinmod:烧伤 。",
+    "DESCRIPTION": "给予 !M! 层 vertinmod:烧伤 。 NL 如果该卡是本回合的第一张卡，额外给予一次 !M! 层 vertinmod:烧伤 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b和平乌鲁 。"
     ]
@@ -468,7 +469,7 @@
     "DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *侧风起飞 加入手牌。",
     "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *侧风起飞+ 加入手牌。",
     "EXTENDED_DESCRIPTION": [
-      "该卡牌属于 #b红弩箭 。 #y二九年的野牛草伏特加 。"
+      "该卡牌属于 #b红弩箭 。"
     ]
   },
   "VertinMod:Key_of_Su01Be": {
@@ -481,7 +482,7 @@
   },
   "VertinMod:Soaring_Witch": {
     "NAME": "翱翔于天际的女巫",
-    "DESCRIPTION": "将生命值扣至只剩1点，每扣除5点生命值，获得 !M! 点 力量 与 敏捷 。 NL 获得1层 *飞行 。NL 战斗结束时，将生命值变为打出该牌时的生命值。"
+    "DESCRIPTION": "将生命值扣至只剩1点，每扣除5点生命值，获得 !M! 点 力量 与 敏捷 。 NL 获得1层 *飞行 。 NL 战斗结束时，将生命值变为打出该牌时的生命值。"
   },
   "VertinMod:K_Justice": {
     "NAME": "公义",
@@ -695,6 +696,13 @@
     "NAME": "新世界",
     "DESCRIPTION": "战斗结束时，获得遗物 *圈环 。 NL 虚无 。 NL 即逝 。",
     "UPGRADE_DESCRIPTION": "战斗结束时，获得遗物 *圈环 。 NL 即逝 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b维尔汀 。"
+    ]
+  },
+  "VertinMod:Storm": {
+    "NAME": "暴雨",
+    "DESCRIPTION": " 不能被打出 。 NL 不能从牌组中移除。 NL 抽到这张牌时，消耗手牌中所有已 升级 的牌，并获得其未 升级 的 同名卡。 NL 每 消耗 一张，失去一点 力量 ，一点 敏捷 。 NL 虚无 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b维尔汀 。"
     ]

@@ -44,7 +44,7 @@ public class LongLive_Peace extends Ver_CustomCard{
         DamageInfo info = new DamageInfo(p, damage, DamageType.NORMAL);
         addToTop(new DamageAction(m, info));
         if (info.output - m_block > 0) {
-            addToTop(new ApplyPowerAction(m, p, new StrengthPower(m, m_block - info.output), m_block - info.output, true, AbstractGameAction.AttackEffect.NONE));
+            addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, m_block - info.output), m_block - info.output, true, AbstractGameAction.AttackEffect.NONE));
         }
     }
 
