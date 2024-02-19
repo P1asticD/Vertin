@@ -40,13 +40,14 @@ public class Victorious_General extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        if (Moxie.get(18) > 1) {
+        int moxie = Moxie.get(18);
+        if (moxie > 1) {
             if (!upgraded)
-                this.baseDamage = 10 + (Moxie.get(18) - 1) * magicNumber;
+                this.baseDamage = 10 + (moxie - 1) * magicNumber;
             else
-                this.baseDamage = 12 + (Moxie.get(18) - 1) * magicNumber;
+                this.baseDamage = 12 + (moxie- 1) * magicNumber;
             calculateCardDamage(m);
-            addToBot(new DamageAction(m, new DamageInfo(p, damage * magicNumber * (Moxie.get(18) - 1) / 100, DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+            addToBot(new DamageAction(m, new DamageInfo(p, damage   , DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
             this.rawDescription = CARD_STRINGS.DESCRIPTION;
             initializeDescription();
         }
@@ -80,8 +81,8 @@ public class Victorious_General extends Ver_CustomCard {
     public void upgrade(){
         if (!upgraded){
             upgradeName();
-            upgradeDamage(10);
-            upgradeMagicNumber(10);
+            upgradeDamage(2);
+            upgradeMagicNumber(4);
         }
     }
 

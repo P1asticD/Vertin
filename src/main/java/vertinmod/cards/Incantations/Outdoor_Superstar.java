@@ -50,7 +50,7 @@ public class Outdoor_Superstar extends Ver_CustomCard {
         }
         else{
             Moxie.set(18, Moxie_Max);
-            int ex = moxie + count - Moxie_Max + 1;
+            int ex = moxie + count - Moxie_Max;
             p.gainEnergy(ex);
             addToBot(new DrawCardAction(p, ex));
         }

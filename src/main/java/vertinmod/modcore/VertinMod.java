@@ -1,6 +1,8 @@
 package vertinmod.modcore;
 
 import basemod.BaseMod;
+import basemod.eventUtil.AddEventParams;
+import basemod.eventUtil.EventUtils;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -16,6 +18,7 @@ import vertinmod.cards.Incantations.*;
 import vertinmod.cards.VertinCards.*;
 import vertinmod.cards.others.*;
 import vertinmod.characters.Vertin;
+import vertinmod.events.MushroomsReplacement;
 import vertinmod.potions.SPoisonPotion;
 import vertinmod.potions.SRegenPotion;
 import vertinmod.potions.TransformationPotion;
@@ -28,7 +31,7 @@ import static vertinmod.characters.Vertin.Enums.VERTIN;
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
 
 @SpireInitializer
-    public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber, PostInitializeSubscriber {
+public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber, PostInitializeSubscriber {
     @SpireEnum
     public static AbstractCard.CardTags Fool;
     @SpireEnum
@@ -247,6 +250,7 @@ import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
         BaseMod.loadCustomStringsFile(RelicStrings.class, "ModVertinResources/localization/" + lang + "/relics.json");
         BaseMod.loadCustomStringsFile(PowerStrings.class, "ModVertinResources/localization/" + lang + "/powers.json");
         BaseMod.loadCustomStringsFile(PotionStrings.class, "ModVertinResources/localization/" + lang + "/potions.json");
+        BaseMod.loadCustomStringsFile(EventStrings.class, "ModVertinResources/localization/" + lang + "/events.json");
     }
 
     @Override
@@ -288,9 +292,15 @@ import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
         }
     }
 
+
     public void receivePostInitialize(){
         BaseMod.addPotion(TransformationPotion.class, null, null, null, "VertinMod:TransformationPotion", VERTIN);
         BaseMod.addPotion(SRegenPotion.class, null, null, null, "VertinMod:SRegenPotion", VERTIN);
         BaseMod.addPotion(SPoisonPotion.class, null, null, null, "VertinMod:SPoisonPotion", VERTIN);
+
+        BaseMod.addEvent((new AddEventParams.Builder("VertinMod:MushroomsReplacement", MushroomsReplacement.class))
+                .overrideEvent("Mushrooms")
+                .eventType(EventUtils.EventType.FULL_REPLACE)
+                .create());
     }
 }

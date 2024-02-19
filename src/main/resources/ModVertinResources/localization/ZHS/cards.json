@@ -466,16 +466,16 @@
   },
   "VertinMod:Canned_Liquor": {
     "NAME": "壶装烈酒",
-    "DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *侧风起飞 加入手牌。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *侧风起飞+ 加入手牌。",
+    "DESCRIPTION": "获得 !M! 点 临时 力量 。 NL 将一张 *侧风起飞 加入手牌。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 临时 力量 。 NL 将一张 *侧风起飞+ 加入手牌。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b红弩箭 。"
     ]
   },
   "VertinMod:Key_of_Su01Be": {
     "NAME": "认证秘钥",
-    "DESCRIPTION": "获得 !M! 点 敏捷 。 NL 将一张 *钟型摆动 加入手牌。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 敏捷 。 NL 将一张 *钟型摆动+ 加入手牌。",
+    "DESCRIPTION": "获得 !M! 点 临时 敏捷 。 NL 将一张 *钟型摆动 加入手牌。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 临时 敏捷 。 NL 将一张 *钟型摆动+ 加入手牌。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b红弩箭 。"
     ]
