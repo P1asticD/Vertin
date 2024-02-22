@@ -1,6 +1,7 @@
 vertinmod\cards\VertinCards\Alignment.class
 vertinmod\cards\Incantations\New_Wave.class
 vertinmod\actions\RemoveBuffsAction.class
+vertinmod\events\PaperMemory.class
 vertinmod\powers\CoughPower.class
 vertinmod\deprecated\PigeonPower_1.class
 vertinmod\deprecated\PigeonPower.class

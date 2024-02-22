@@ -252,14 +252,14 @@
   },
   "VertinMod:Prank": {
     "NAME": "恶作剧",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。 NL 本卡牌被 消耗 时也能获得 vertinmod:激情 。",
     "EXTENDED_DESCRIPTION":[
       "该卡牌属于 #b吵闹鬼 。"
     ]
   },
   "VertinMod:Whisper": {
     "NAME": "贴耳话",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 虚无 。",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 虚无 。 NL 本卡牌被 消耗 时也能获得 vertinmod:激情 。",
     "EXTENDED_DESCRIPTION":[
       "该卡牌属于 #b吵闹鬼 。"
     ]
@@ -407,7 +407,7 @@
   },
   "VertinMod:Beautiful_Lie": {
     "NAME": "美好谎言",
-    "DESCRIPTION": "移除你所有 格挡 。 NL 每移除10点 格挡 ，造成 !D! 点伤害，获得1层 缓冲 。 NL 抹除 。",
+    "DESCRIPTION": "移除你所有 格挡 。 NL 每移除10点 格挡 ，造成 !D! 点伤害并获得1层 缓冲 。 NL 抹除 。",
     "EXTENDED_DESCRIPTION": [
       " NL （获得 !M! 层 缓冲 。）"
     ]
@@ -466,16 +466,16 @@
   },
   "VertinMod:Canned_Liquor": {
     "NAME": "壶装烈酒",
-    "DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *侧风起飞 加入手牌。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *侧风起飞+ 加入手牌。",
+    "DESCRIPTION": "获得 !M! 点 临时 力量 。 NL 将一张 *侧风起飞 加入手牌。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 临时 力量 。 NL 将一张 *侧风起飞+ 加入手牌。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b红弩箭 。"
     ]
   },
   "VertinMod:Key_of_Su01Be": {
     "NAME": "认证秘钥",
-    "DESCRIPTION": "获得 !M! 点 敏捷 。 NL 将一张 *钟型摆动 加入手牌。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 敏捷 。 NL 将一张 *钟型摆动+ 加入手牌。",
+    "DESCRIPTION": "获得 !M! 点 临时 敏捷 。 NL 将一张 *钟型摆动 加入手牌。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 临时 敏捷 。 NL 将一张 *钟型摆动+ 加入手牌。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b红弩箭 。"
     ]
@@ -486,8 +486,8 @@
   },
   "VertinMod:K_Justice": {
     "NAME": "公义",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时，获得 [E] ，抽 !M! 张牌，未锈铠额外获得 !M! 点激情。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时，获得 [E] [E] ，抽 !M! 张牌，未锈铠额外获得 !M! 点激情。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时，获得 [E] ，抽 !M! 张牌，未锈铠额外获得 !M! 点 vertinmod:激情 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时，获得 [E] [E] ，抽 !M! 张牌，未锈铠额外获得 !M! 点 vertinmod:激情 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b未锈铠 。"
     ]
@@ -671,40 +671,25 @@
   "VertinMod:Paper_Slip": {
     "NAME": "一张纸条",
     "DESCRIPTION": "只有当敌人的数量为1时才可打出。 NL 将 *改编的校歌 加入牌库。 NL 将 *苦恼 加入牌库。 NL 虚无 。 NL 即逝 。",
-    "UPGRADE_DESCRIPTION": "只有当敌人的数量为1时才可打出。 NL 将 *改编的校歌 加入牌组。 NL 将 *苦恼 加入牌组。 NL 即逝 。",
-    "EXTENDED_DESCRIPTION": [
-      "该卡牌属于 #b维尔汀 。"
-    ]
+    "UPGRADE_DESCRIPTION": "只有当敌人的数量为1时才可打出。 NL 将 *改编的校歌 加入牌组。 NL 将 *苦恼 加入牌组。 NL 即逝 。"
   },
   "VertinMod:Adapted_Song": {
     "NAME": "改编的校歌",
     "DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 虚无 。 NL 即逝 。",
-    "UPGRADE_DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 即逝 。",
-    "EXTENDED_DESCRIPTION": [
-      "该卡牌属于 #b维尔汀 。"
-    ]
+    "UPGRADE_DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 即逝 。"
   },
   "VertinMod:Jail_Break": {
     "NAME": "越狱行动",
     "DESCRIPTION": "只有在首领战或精英战时才可打出。 NL 将 *新世界 加入牌组。 NL 将 *悔恨 加入牌组。 NL 虚无 。 NL 即逝 。",
-    "UPGRADE_DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 即逝 。",
-    "EXTENDED_DESCRIPTION": [
-      "该卡牌属于 #b维尔汀 。"
-    ]
+    "UPGRADE_DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 即逝 。"
   },
   "VertinMod:New_World": {
     "NAME": "新世界",
     "DESCRIPTION": "战斗结束时，获得遗物 *圈环 。 NL 虚无 。 NL 即逝 。",
-    "UPGRADE_DESCRIPTION": "战斗结束时，获得遗物 *圈环 。 NL 即逝 。",
-    "EXTENDED_DESCRIPTION": [
-      "该卡牌属于 #b维尔汀 。"
-    ]
+    "UPGRADE_DESCRIPTION": "战斗结束时，获得遗物 *圈环 。 NL 即逝 。"
   },
   "VertinMod:Storm": {
     "NAME": "暴雨",
-    "DESCRIPTION": " 不能被打出 。 NL 不能从牌组中移除。 NL 抽到这张牌时，消耗手牌中所有已 升级 的牌，并获得其未 升级 的 同名卡。 NL 每 消耗 一张，失去一点 力量 ，一点 敏捷 。 NL 虚无 。",
-    "EXTENDED_DESCRIPTION": [
-      "该卡牌属于 #b维尔汀 。"
-    ]
+    "DESCRIPTION": " 不能被打出 。 NL 不能从牌组中移除。 NL 抽到这张牌时，消耗手牌中所有已 升级 的牌，并获得其未 升级 的 同名卡。 NL 每 消耗 一张，失去一点 力量 和 敏捷 。 NL 虚无 。 NL （属于 vertinmod:维尔汀 的卡牌不受影响）。"
   }
 }

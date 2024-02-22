@@ -4,6 +4,7 @@ import basemod.abstracts.CustomPotion;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.GameDictionary;
 import com.megacrit.cardcrawl.helpers.PowerTip;
@@ -21,6 +22,7 @@ public class SRegenPotion extends CustomPotion {
 
     public SRegenPotion(){
         super(potionStrings.NAME, POTION_ID, PotionRarity.RARE, PotionSize.FAIRY, PotionColor.WHITE);
+        this.labOutlineColor = Settings.GREEN_RELIC_COLOR;
         isThrown = false;
     }
 

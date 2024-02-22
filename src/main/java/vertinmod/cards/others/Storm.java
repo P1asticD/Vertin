@@ -17,7 +17,7 @@ import vertinmod.helpers.ModHelper;
 
 import java.util.ArrayList;
 
-import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
+import static vertinmod.modcore.VertinMod.Vertin;
 
 public class Storm extends CustomCard {
     public static final String ID = ModHelper.makePath(Storm.class.getSimpleName());
@@ -27,7 +27,7 @@ public class Storm extends CustomCard {
     private static final int COST = -2;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.CURSE;
-    private static final CardColor COLOR = VERTIN_CARD;
+    private static final CardColor COLOR = CardColor.CURSE;
     private static final CardRarity RARITY = CardRarity.CURSE;
     private static final CardTarget TARGET = CardTarget.NONE;
 
@@ -45,7 +45,7 @@ public class Storm extends CustomCard {
         int count = 0;
         ArrayList <AbstractCard> cards = new ArrayList<>();
         for (AbstractCard card: AbstractDungeon.player.hand.group){
-            if(card.upgraded) {
+            if(card.upgraded && !card.hasTag(Vertin)) {
                 cards.add(card.makeCopy());
                 addToTop(new ExhaustSpecificCardAction(card, AbstractDungeon.player.hand));
                 count++;

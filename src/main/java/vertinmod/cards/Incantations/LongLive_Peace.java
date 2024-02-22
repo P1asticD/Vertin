@@ -51,7 +51,7 @@ public class LongLive_Peace extends Ver_CustomCard{
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(5);
+            upgradeDamage(4);
         }
     }
 

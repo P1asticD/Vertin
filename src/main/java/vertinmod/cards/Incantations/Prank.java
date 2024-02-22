@@ -14,6 +14,8 @@ import vertinmod.helpers.ModHelper;
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
 import static vertinmod.modcore.VertinMod.Arcanist;
 import static vertinmod.modcore.VertinMod.Poltergeist;
+import static vertinmod.relics.The_Spinning_Wheel.Moxie;
+import static vertinmod.relics.The_Spinning_Wheel.Moxie_Max;
 
 public class Prank extends Ver_CustomCard {
     public static final String ID = ModHelper.makePath(Prank.class.getSimpleName());
@@ -38,6 +40,11 @@ public class Prank extends Ver_CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+    }
+
+    public void triggerOnExhaust() {
+        if (Moxie.get(5) >= 1)
+            Moxie.set(5, Math.min(Moxie.get(5) + 1, Moxie_Max));
     }
 
     public void upgrade(){

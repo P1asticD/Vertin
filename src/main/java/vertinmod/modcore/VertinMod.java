@@ -19,6 +19,7 @@ import vertinmod.cards.VertinCards.*;
 import vertinmod.cards.others.*;
 import vertinmod.characters.Vertin;
 import vertinmod.events.MushroomsReplacement;
+import vertinmod.events.PaperMemory;
 import vertinmod.potions.SPoisonPotion;
 import vertinmod.potions.SRegenPotion;
 import vertinmod.potions.TransformationPotion;
@@ -302,5 +303,6 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
                 .overrideEvent("Mushrooms")
                 .eventType(EventUtils.EventType.FULL_REPLACE)
                 .create());
+        BaseMod.addEvent("VertinMod:PaperMemory", PaperMemory.class, "TheCity");
     }
 }

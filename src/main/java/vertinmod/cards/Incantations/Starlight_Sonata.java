@@ -34,7 +34,7 @@ public class Starlight_Sonata extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 7;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.isMultiDamage = true;
         this.tags.add(Arcanist);
@@ -52,7 +52,7 @@ public class Starlight_Sonata extends Ver_CustomCard {
         if (!upgraded){
             upgradeName();
             upgradeDamage(3);
-            upgradeMagicNumber(1);
+            upgradeMagicNumber(2);
         }
     }
 

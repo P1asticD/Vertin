@@ -3,6 +3,7 @@ package vertinmod.potions;
 import basemod.abstracts.CustomPotion;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
@@ -15,6 +16,7 @@ public class TransformationPotion extends CustomPotion {
 
     public TransformationPotion() {
         super(potionStrings.NAME, POTION_ID, PotionRarity.COMMON, PotionSize.M, PotionColor.WHITE);
+        this.labOutlineColor = Settings.GREEN_RELIC_COLOR;
         isThrown = false;
     }
     public void initializeData() {
