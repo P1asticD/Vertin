@@ -271,7 +271,8 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addRelicToCustomPool(new A_Pair_of_Bowknots(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Critters(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Phantom_Honey_Fungus(), VERTIN_CARD);
-        BaseMod.addRelicToCustomPool(new Hoop(), VERTIN_CARD);
+        BaseMod.addRelicToCustomPool(new Ring(), VERTIN_CARD);
+
     }
 
     @Override

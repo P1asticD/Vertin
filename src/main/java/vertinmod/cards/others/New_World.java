@@ -12,6 +12,8 @@ import vertinmod.cards.Ver_CustomCard;
 import vertinmod.helpers.ModHelper;
 import vertinmod.powers.NewWorldPower;
 
+import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
+
 
 public class New_World extends Ver_CustomCard {
     public static final String ID = ModHelper.makePath(New_World.class.getSimpleName());
@@ -20,9 +22,9 @@ public class New_World extends Ver_CustomCard {
     private static final String IMG_PATH = "ModVertinResources/img/cards/New_World.png";
     private static final int COST = 3;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final CardType TYPE = CardType.CURSE;
-    private static final CardColor COLOR = CardColor.CURSE;
-    private static final CardRarity RARITY = CardRarity.CURSE;
+    private static final CardType TYPE = CardType.SKILL;
+    private static final CardColor COLOR = VERTIN_CARD;
+    private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.NONE;
 
     public New_World(){

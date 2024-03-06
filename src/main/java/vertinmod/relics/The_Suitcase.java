@@ -102,7 +102,7 @@ public class The_Suitcase extends CustomRelic implements BetterClickableRelic<Th
     }
 
     public void onObtainCard(AbstractCard card){
-        if(card.hasTag(Arcanist))
+        if(card.hasTag(Arcanist) && !card.upgraded)
             AbstractDungeon.player.masterDeck.addToTop(card.makeStatEquivalentCopy());
     }
 

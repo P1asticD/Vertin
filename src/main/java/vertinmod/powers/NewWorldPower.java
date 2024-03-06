@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.rewards.RewardItem;
 import vertinmod.helpers.ModHelper;
-import vertinmod.relics.Hoop;
+import vertinmod.relics.Ring;
 
 public class NewWorldPower extends AbstractPower {
     public static final String POWER_ID = ModHelper.makePath("NewWorldPower");
@@ -35,6 +35,6 @@ public class NewWorldPower extends AbstractPower {
     }
 
     public void onVictory(){
-        AbstractDungeon.getCurrRoom().rewards.add(new RewardItem(new Hoop()));
+        AbstractDungeon.getCurrRoom().rewards.add(new RewardItem(new Ring()));
     }
 }
