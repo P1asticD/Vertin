@@ -1,26 +1,26 @@
 {
   "VertinMod:The_Suitcase": {
     "NAME": "手提箱",
-    "FLAVOR": "只是一个手提箱",
+    "FLAVOR": "✦Neirü mildeen tiün bonan nokton∽∽!✦",
     "DESCRIPTIONS": [
       "你无法在休息处锻造升级卡牌。你获得 #yvertinmod:合成升阶 的能力。",
       " NL 每当你往牌组中添加 #bvertinmod:神秘学家 的卡牌时，若该牌未升级，额外添加一张相同的卡牌。",
       " NL 每场战斗结束时，随机升级一张属于 #bvertinmod:维尔汀 的卡牌。",
-      " NL 每回合一次，右键点击该遗物，可消耗 #b1 点 [E] ，抽 #b3 张牌并弃 #b1 张牌。",
-      "没有足够的能量。",
+      " NL 每回合一次，右键点击该遗物，抽 #b1 张牌并随意调整手牌顺序。",
+      "调整手牌顺序",
       "本回合已经使用过了。"
     ]
   },
   "VertinMod:The_Spinning_Wheel": {
     "NAME": "纺车",
-    "FLAVOR": "只是一个纺车",
+    "FLAVOR": "转动它，一如往昔。",
     "DESCRIPTIONS": [
       "每次你往自己的牌组加入 #bvertinmod:神秘学家 的卡牌时，开始记录该 #bvertinmod:神秘学家 的 #yvertinmod:激情 ，上限为5。",
       " NL 每打出一张卡牌，对应 #bvertinmod:神秘学家 的 #yvertinmod:激情 加一。可消耗5点 #bvertinmod:神秘学家 的 #yvertinmod:激情 将其 #yvertinmod:至终仪式 加入手牌。",
       " NL 右键点击该遗物可打开 #yvertinmod:至终仪式 选取界面。",
       " NL 当前 #bvertinmod:神秘学家 的 #yvertinmod:激情 ：",
       "选择一张至终仪式加入手牌",
-      "退出",
+      "本场战斗已经打出过三张了。",
       " NL #b弄臣 ：",
       " NL #b约翰提托 ：",
       " NL #b小春雀儿 ：",
@@ -44,26 +44,28 @@
       " NL #b新巴别塔 ：",
       " NL #b伽菈波那 ：",
       " NL #b爱兹拉 ：",
-      " NL #b槲寄生 ："
+      " NL #b槲寄生 ：",
+      " NL #b洁西卡 ：",
+      "没有可以使用的至终仪式。"
     ]
   },
   "VertinMod:Carrot": {
     "NAME": "胡萝卜",
-    "FLAVOR": "只是一个胡萝卜。",
+    "FLAVOR": "哒哒最爱。",
     "DESCRIPTIONS": [
       "拾起时，将你的最大生命值提升 #b7 ， #y激情 最少的 #y神秘学家 获得 #b3 点 #y激情 。"
     ]
   },
   "VertinMod:Apple": {
     "NAME": "苹果",
-    "FLAVOR": "只是一个苹果。",
+    "FLAVOR": "博学，多汁，富含维生素C。",
     "DESCRIPTIONS": [
       "拾起时，将你的最大生命值提升 #b10 。在每场战斗开始时，每拥有一个 #y食物类 遗物，回复 #b1 点生命。"
     ]
   },
   "VertinMod:Goggles": {
     "NAME": "牧羊犬的护目镜",
-    "FLAVOR": "只是一个护目镜。",
+    "FLAVOR": "属于一只思考虚无主义的忧郁小狗。",
     "DESCRIPTIONS": [
       "如果你在回合中不打出任何 #y攻击牌 ，该回合结束时所有 #y神秘学家 获得一点 #b激情 。"
     ]
@@ -77,35 +79,35 @@
   },
   "VertinMod:Sputnik": {
     "NAME": "斯普特尼克",
-    "FLAVOR": "只是一个卫星。",
+    "FLAVOR": "1958/01/04",
     "DESCRIPTIONS": [
       "每当你获得 #y荆棘 时，获得等量的 #y敏捷 。"
     ]
   },
   "VertinMod:A_Pair_of_Bowknots": {
     "NAME": "一对蝴蝶结",
-    "FLAVOR": "只是一对蝴蝶结。",
+    "FLAVOR": "丽莎&路易斯是一个好孩子。",
     "DESCRIPTIONS": [
       "每当你给予敌人其未拥有的 #y负面状态 时，额外给予 #b1 层。（ #y击晕 除外）"
     ]
   },
   "VertinMod:Critters": {
     "NAME": "獠牙伙伴",
-    "FLAVOR": "只是几只魔精。",
+    "FLAVOR": "毛绒绒，黑乎乎，比狗儿更多神秘，比猫儿更多亲密。",
     "DESCRIPTIONS": [
       "每当你受到小于等于 荆棘 层数的未被格挡的 #y攻击 伤害时，将伤害降低为 #b1 。"
     ]
   },
   "VertinMod:Phantom_Honey_Fungus": {
     "NAME": "幽灵蜜环菌",
-    "FLAVOR": "只是一个蘑菇。",
+    "FLAVOR": "啊！就像神秘学家一样！",
     "DESCRIPTIONS": [
       "你不会再被 #y易伤 。"
     ]
   },
   "VertinMod:Ring": {
     "NAME": "圈环",
-    "FLAVOR": "只是一个环。",
+    "FLAVOR": "愿自由与我们同在。",
     "DESCRIPTIONS": [
       "拾起时，升级牌库中的所有卡牌，选择移除牌组中的任何牌，根据移除的卡牌类型获得效果，获得一张特殊的 #y诅咒 。",
       " NL 每移除一张攻击牌，每场战斗开始时获得 #b2点 #y力量 ；",
@@ -120,6 +122,34 @@
       " NL 每场战斗开始时随机增加 #b",
       " 张 已 升级 的 #y能力牌 到你的手牌，其耗能变为 #b0 。",
       "选择任意数量的牌移除。"
+    ]
+  },
+  "VertinMod:Fractal_Geometry": {
+    "NAME": "分形几何",
+    "FLAVOR": "一根由不明鸟类自然脱落的羽毛。",
+    "DESCRIPTIONS": [
+      "你每在同一回合打出 #b3 张衍生牌，对所有敌人造成 #b7 点伤害。"
+    ]
+  },
+  "VertinMod:SPDM_Rules": {
+    "NAME": "学生守则",
+    "FLAVOR": "我们生来就是要去赴死的。",
+    "DESCRIPTIONS": [
+      "拾起时，复制牌组中的所有初始“打击”和“防御”。每回合开始时，获得 [E] 。"
+    ]
+  },
+  "VertinMod:Scripture": {
+    "NAME": "经",
+    "FLAVOR": "一份记录了薯条烹饪方式的食谱（并不）。",
+    "DESCRIPTIONS": [
+      "你在每回合第一次给予敌人负面状态时，获得 [E] 。你在每回合第一次获得正面状态时，获得 [E] 。"
+    ]
+  },
+  "VertinMod:Pot": {
+    "NAME": "陶罐",
+    "FLAVOR": "不！要！再！来！许！愿！了！",
+    "DESCRIPTIONS": [
+      "在你的每个回合开始时，给予当前意图造成最高伤害的敌人 #b1 层 #y虚弱 与 #y易伤 。"
     ]
   }
 }

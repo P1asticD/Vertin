@@ -20,14 +20,12 @@ public class A_Pair_of_Bowknots extends CustomRelic implements OnApplyPowerRelic
     }
 
     public boolean onApplyPower(AbstractPower toApply, AbstractCreature target, AbstractCreature source) {
-        if ((toApply.ID.equals("Weakened") || toApply.ID.equals("Vulnerable") || toApply.ID.equals("BlockReturnPower") || toApply.ID.equals("Poison")
-        || toApply.ID.equals("Choked") || toApply.ID.equals("PathToVictoryPower") || toApply.ID.equals("Shackled"))
-                && target != AbstractDungeon.player && source == AbstractDungeon.player)
-            toApply.amount++;
-        else if (toApply.ID.equals("Strength") && target != AbstractDungeon.player && source == AbstractDungeon.player){
+        if (toApply.ID.equals("Strength") && target != AbstractDungeon.player && source == AbstractDungeon.player){
             if (toApply.amount < 0)
                 toApply.amount--;
         }
+        else if (toApply.type.equals(AbstractPower.PowerType.DEBUFF) && !toApply.ID.equals("stslib:Stunned") && target != AbstractDungeon.player && source == AbstractDungeon.player)
+            toApply.amount++;
         return true;
     }
 

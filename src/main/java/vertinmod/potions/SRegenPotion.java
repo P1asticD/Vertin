@@ -22,7 +22,6 @@ public class SRegenPotion extends CustomPotion {
 
     public SRegenPotion(){
         super(potionStrings.NAME, POTION_ID, PotionRarity.RARE, PotionSize.FAIRY, PotionColor.WHITE);
-        this.labOutlineColor = Settings.GREEN_RELIC_COLOR;
         isThrown = false;
     }
 

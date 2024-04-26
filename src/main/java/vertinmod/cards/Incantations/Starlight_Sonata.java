@@ -52,7 +52,7 @@ public class Starlight_Sonata extends Ver_CustomCard {
         if (!upgraded){
             upgradeName();
             upgradeDamage(3);
-            upgradeMagicNumber(2);
+            upgradeMagicNumber(1);
         }
     }
 

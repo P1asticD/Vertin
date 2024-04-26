@@ -49,7 +49,7 @@ public class Body_Protection extends Ver_CustomCard{
     public void upgrade(){
         if (!upgraded){
             upgradeName();
-            upgradeMagicNumber(1);
+            upgradeMagicNumber(2);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

@@ -32,9 +32,9 @@ public class Old_PocketWatch extends Ver_CustomCard {
 
     public Old_PocketWatch(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 20;
+        this.baseDamage = 16;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 5;
+        this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(Eagle);
         this.tags.add(Arcanist);
@@ -57,8 +57,8 @@ public class Old_PocketWatch extends Ver_CustomCard {
     public void upgrade(){
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(8);
-            this.upgradeMagicNumber(3);
+            this.upgradeDamage(4);
+            this.upgradeMagicNumber(5);
         }
     }
 

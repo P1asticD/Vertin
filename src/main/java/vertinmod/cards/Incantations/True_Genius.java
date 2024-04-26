@@ -38,7 +38,6 @@ public class True_Genius extends Ver_CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new GainBlockAction(p, p, this.block));
-        addToBot(new GainEnergyAction(1));
         addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
     }
 

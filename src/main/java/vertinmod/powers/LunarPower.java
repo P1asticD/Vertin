@@ -2,6 +2,7 @@ package vertinmod.powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -37,5 +38,9 @@ public class LunarPower extends AbstractPower{
     public void onUseCard(AbstractCard card, UseCardAction action){
         addToBot(new HealAction(owner, owner, this.amount));
         flash();
+    }
+
+    public void atEndOfTurn(boolean isPlayer) {
+        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "VertinMod:LunarPower"));
     }
 }

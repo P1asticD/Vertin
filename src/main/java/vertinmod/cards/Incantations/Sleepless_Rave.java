@@ -30,7 +30,7 @@ public class Sleepless_Rave extends CustomCard{
 
     public Sleepless_Rave(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 30;
+        this.baseDamage = 15;
         this.damage = this.baseDamage;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;

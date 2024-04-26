@@ -31,9 +31,11 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\actions\JusticeAction.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\VertinCards\Defend.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\NewBabel.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Lunar_Divination.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\patches\TokenCardField.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Knight.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Galaxy_Bouquet.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Maverick_Judge.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\actions\SequenceAction.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Old_Idea.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\The_Fool.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\VertinCards\Pigeon.java
@@ -56,10 +58,12 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\powers\MarsPower.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Goggles.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Sonetto.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Treat_Ears.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\relics\SPDM_Rules.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Aerial_Maneuvers.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Ver_CustomCard.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\others\Jail_Break.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Carrot.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Gaze_From_the_Forest.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\events\PaperMemory.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\characters\Vertin.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Glory.java
@@ -82,6 +86,7 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Dikke.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\LongLive_Peace.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\actions\AD778Action.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Bytes_65536.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\White_Blankie.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Ring.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\VertinCards\Dissonance.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\GrandPower.java
@@ -93,6 +98,7 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\others\New_World.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\others\Storm.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\actions\RemoveBuffsAction.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\PastPower.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Good_Friends.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Body_Protection.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Pinata.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\SaturnPower.java
@@ -101,11 +107,13 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\relics\BetterClickableRelic.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Not_Decoration.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\CoughPower.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\New_Wave.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Fractal_Geometry.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\potions\TransformationPotion.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\temporary\Poor_Sod.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\BabyBlue.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Saturn_Divination.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\temporary\Hunting_Wolves.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\patches\CardTitleRenderPatch.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Apple.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\PigeonPower1.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Strings_Galaxy.java
@@ -114,7 +122,9 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Voyager.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Timely_Farewell_1.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Crosswind_Takeoff.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\modcore\VertinMod.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\actions\MorphingAction.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\RealityShow_Premiere.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Scripture.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Finger_Lens.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Old_PocketWatch.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\potions\SRegenPotion.java
@@ -132,7 +142,9 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Lilya.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Commandment_V.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Challenge_Eyes.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\VertinCards\In_Suitcase.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\patches\TokenCardFieldPatch.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Centurion.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Jessica.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\deprecated\Triple_Dose.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\JohnTitor.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Unrestricted_Chant.java
@@ -157,6 +169,7 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Play_House.ja
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Refrain.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\LunarPower.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Mondlicht.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Pot.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\NewWorldPower.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Regulus.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\JumpingHeartPower.java

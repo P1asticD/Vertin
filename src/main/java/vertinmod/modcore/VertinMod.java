@@ -10,6 +10,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings.GameLanguage;
 import com.megacrit.cardcrawl.localization.*;
@@ -87,6 +88,8 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
     public static AbstractCard.CardTags Arcanist;
     @SpireEnum
     public static AbstractCard.CardTags Vertin;
+    @SpireEnum
+    public static AbstractCard.CardTags Jessica;
 
     public VertinMod() {
         BaseMod.subscribe(this);
@@ -145,6 +148,7 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addCard(new BlackDwarf());
         BaseMod.addCard(new Ezra());
         BaseMod.addCard(new DruvisIII());
+        BaseMod.addCard(new Jessica());
 
         BaseMod.addCard(new Strike());
         BaseMod.addCard(new Defend());
@@ -232,6 +236,9 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addCard(new Wind_into_Woods());
         BaseMod.addCard(new Early_Dawn());
         BaseMod.addCard(new Silent_Woods());
+        BaseMod.addCard(new White_Blankie());
+        BaseMod.addCard(new Good_Friends());
+        BaseMod.addCard(new Gaze_From_the_Forest());
 
         BaseMod.addCard(new Paper_Slip());
         BaseMod.addCard(new Adapted_Song());
@@ -252,6 +259,7 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.loadCustomStringsFile(PowerStrings.class, "ModVertinResources/localization/" + lang + "/powers.json");
         BaseMod.loadCustomStringsFile(PotionStrings.class, "ModVertinResources/localization/" + lang + "/potions.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, "ModVertinResources/localization/" + lang + "/events.json");
+        BaseMod.loadCustomStringsFile(UIStrings.class, "ModVertinResources/localization/" + lang +"/ui.json");
     }
 
     @Override
@@ -272,7 +280,10 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addRelicToCustomPool(new Critters(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Phantom_Honey_Fungus(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Ring(), VERTIN_CARD);
-
+        BaseMod.addRelicToCustomPool(new Fractal_Geometry(), VERTIN_CARD);
+        BaseMod.addRelicToCustomPool(new SPDM_Rules(), VERTIN_CARD);
+        BaseMod.addRelicToCustomPool(new Scripture(), VERTIN_CARD);
+        BaseMod.addRelicToCustomPool(new Pot(), VERTIN_CARD);
     }
 
     @Override
@@ -296,9 +307,9 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
 
 
     public void receivePostInitialize(){
-        BaseMod.addPotion(TransformationPotion.class, null, null, null, "VertinMod:TransformationPotion", VERTIN);
-        BaseMod.addPotion(SRegenPotion.class, null, null, null, "VertinMod:SRegenPotion", VERTIN);
-        BaseMod.addPotion(SPoisonPotion.class, null, null, null, "VertinMod:SPoisonPotion", VERTIN);
+        BaseMod.addPotion(TransformationPotion.class, null, null, null, "VertinMod:TransformationPotion", AbstractPlayer.PlayerClass.DEFECT);
+        BaseMod.addPotion(SRegenPotion.class, null, null, null, "VertinMod:SRegenPotion", AbstractPlayer.PlayerClass.DEFECT);
+        BaseMod.addPotion(SPoisonPotion.class, null, null, null, "VertinMod:SPoisonPotion", AbstractPlayer.PlayerClass.DEFECT);
 
         BaseMod.addEvent((new AddEventParams.Builder("VertinMod:MushroomsReplacement", MushroomsReplacement.class))
                 .overrideEvent("Mushrooms")

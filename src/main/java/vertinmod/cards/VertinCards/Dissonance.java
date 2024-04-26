@@ -20,7 +20,7 @@ public class Dissonance extends Ver_CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "ModVertinResources/img/cards/Dissonance.png";
-    private static final int COST = 3;
+    private static final int COST = 4;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = VERTIN_CARD;
@@ -30,6 +30,7 @@ public class Dissonance extends Ver_CustomCard {
     public Dissonance(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.tags.add(Vertin);
+        this.isEthereal = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -52,7 +53,7 @@ public class Dissonance extends Ver_CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBaseCost(2);
+            upgradeBaseCost(3);
         }
     }
 

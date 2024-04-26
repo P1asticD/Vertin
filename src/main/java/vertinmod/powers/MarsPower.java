@@ -2,6 +2,7 @@ package vertinmod.powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -38,5 +39,9 @@ public class MarsPower extends AbstractPower{
             addToTop(new HealAction(owner, owner, amount));
             flash();
         }
+    }
+
+    public void atEndOfTurn(boolean isPlayer) {
+        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "VertinMod:MarsPower"));
     }
 }

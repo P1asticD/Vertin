@@ -36,11 +36,24 @@ public class Unrestricted_Chant extends CustomCard{
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        int st = p.getPower("Strength").amount;
-        int de = p.getPower("Dexterity").amount;
-        if (st > 0 && de > 0) {
-            for(int i = 0; i < Math.min(st, de); i++)
-                addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        if(p.hasPower("Strength") && p.hasPower("Dexterity")){
+            int st = p.getPower("Strength").amount;
+            int de = p.getPower("Dexterity").amount;
+            if (st > 0 && de > 0)
+                for(int i = 0; i < Math.min(st, de); i++)
+                    addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        }
+        else if(p.hasPower("Strength") && !p.hasPower("Dexterity")){
+            int st = p.getPower("Strength").amount;
+            if (st > 0)
+                for(int i = 0; i < st; i++)
+                    addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        }
+        else if(!p.hasPower("Strength") && p.hasPower("Dexterity")){
+            int de = p.getPower("Dexterity").amount;
+            if (de > 0)
+                for(int i = 0; i < de; i++)
+                    addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
         else
             addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));

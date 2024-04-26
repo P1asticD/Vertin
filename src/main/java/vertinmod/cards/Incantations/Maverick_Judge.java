@@ -35,7 +35,7 @@ public class Maverick_Judge extends CustomCard{
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 22;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.purgeOnUse = true;
         this.tags.add(Ultimate);

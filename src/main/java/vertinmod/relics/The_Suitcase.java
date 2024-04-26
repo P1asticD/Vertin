@@ -1,10 +1,8 @@
 package vertinmod.relics;
 
 import basemod.abstracts.CustomRelic;
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
-import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -12,10 +10,10 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.ui.campfire.AbstractCampfireOption;
 import com.megacrit.cardcrawl.ui.campfire.SmithOption;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
+import vertinmod.actions.SequenceAction;
 import vertinmod.helpers.ModHelper;
 
 import java.util.ArrayList;
@@ -53,15 +51,9 @@ public class The_Suitcase extends CustomRelic implements BetterClickableRelic<Th
 
     public void Prepared1(){
         if (this.counter == 0) {
-            if (EnergyPanel.getCurrentEnergy() > 0) {
-                this.counter = 1;
-                addToBot(new LoseEnergyAction(1));
-                addToBot(new DrawCardAction(AbstractDungeon.player, 3));
-                addToBot(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, 1, false));
-            }
-            else{
-                AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, this.DESCRIPTIONS[4], true));
-            }
+            this.counter = 1;
+            addToBot(new DrawCardAction(1));
+            addToBot(new SequenceAction(AbstractDungeon.player, 1));
         }
         else
             AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, this.DESCRIPTIONS[5], true));

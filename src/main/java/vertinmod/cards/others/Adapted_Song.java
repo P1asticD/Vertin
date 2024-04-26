@@ -31,6 +31,7 @@ public class Adapted_Song extends Ver_CustomCard {
         FleetingField.fleeting.set(this, Boolean.valueOf(true));
         this.cardsToPreview = new Jail_Break();
         this.isEthereal = true;
+        this.cantUseMessage = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
@@ -57,7 +58,13 @@ public class Adapted_Song extends Ver_CustomCard {
     }
 
     public boolean canUse(AbstractPlayer p, AbstractMonster m){
-        return AbstractDungeon.getMonsters().monsters.size() >= 3;
+        int count = 0;
+        for(AbstractMonster m2: AbstractDungeon.getCurrRoom().monsters.monsters){
+            if(!m2.isDeadOrEscaped()){
+                count++;
+            }
+        }
+        return count >= 3;
     }
 
     public AbstractCard makeCopy(){

@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
+import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 import vertinmod.cards.Incantations.*;
@@ -33,19 +34,24 @@ public class The_Spinning_Wheel extends CustomRelic implements BetterClickableRe
     public static RoomPhase phase;
     private static CurrentScreen pre;
     public static int Moxie_Max = 6;
-    public static ArrayList<Integer> Moxie = new ArrayList<>(Arrays.asList(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));
-    public static final ArrayList<AbstractCard.CardTags> Characters = new ArrayList<>(Arrays.asList(Fool, JohnTitor, Eagle, Pavia, Mondlicht, Poltergeist, BabyBlue, Dikke, Sonetto, Balloon, Necrologist, Tennant, Diggers, Ulu, Lilya, Knight, Sotheby, Regulus, Centurion, Voyager, NewBabel, BlackDwarf, Ezra, DruvisIII));
-    public static final ArrayList<AbstractCard> Ult = new ArrayList<>(Arrays.asList(new Improvised_Show(), new Bytes_65536(), new Superficiality_And_Reality(), new Noisy_Wolves(), new Hunting_Wolves(), new Not_Gentle_Sun(), new Tea_Party(), new Maverick_Judge(), new Unrestricted_Chant(), new Balloon_Party(), new Whispers_of_Deceased_1(), new Beautiful_Lie(), new Sweet_Dreams(), new Indestructible_Fire(), new Soaring_Witch(), new After_AD_778(), new Mix_All(), new Sleepless_Rave(), new RealityShow_Premiere(), new Strings_Galaxy(), new Future_Is_Near(), new Lunar_Divination(), new Comprehensive_Care(), new Silent_Woods()));
-
+    public static ArrayList<Integer> Moxie = new ArrayList<>(Arrays.asList(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));
+    public static final ArrayList<AbstractCard.CardTags> Characters = new ArrayList<>(Arrays.asList(Fool, JohnTitor, Eagle, Pavia, Mondlicht, Poltergeist, BabyBlue, Dikke, Sonetto, Balloon, Necrologist, Tennant, Diggers, Ulu, Lilya, Knight, Sotheby, Regulus, Centurion, Voyager, NewBabel, BlackDwarf, Ezra, DruvisIII, Jessica));
+    public static final ArrayList<AbstractCard> Ult = new ArrayList<>(Arrays.asList(new Improvised_Show(), new Bytes_65536(), new Superficiality_And_Reality(), new Noisy_Wolves(), new Hunting_Wolves(), new Not_Gentle_Sun(), new Tea_Party(), new Maverick_Judge(), new Unrestricted_Chant(), new Balloon_Party(), new Whispers_of_Deceased_1(), new Beautiful_Lie(), new Sweet_Dreams(), new Indestructible_Fire(), new Soaring_Witch(), new After_AD_778(), new Mix_All(), new Sleepless_Rave(), new RealityShow_Premiere(), new Strings_Galaxy(), new Future_Is_Near(), new Lunar_Divination(), new Comprehensive_Care(), new Silent_Woods(), new Gaze_From_the_Forest()));
 
     public The_Spinning_Wheel(){
         super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
+        this.counter = 0;
         this.setDuration(2000).addRightClickActions(
                 () -> this.card()
         );
         for(int i = 0; i < Moxie.size(); i++){
             Moxie.set(i, 0);
         }
+        Moxie.set(17, 1);
+    }
+
+    public void atBattleStart(){
+        this.counter = 0;
     }
 
     public String getUpdatedDescription() {
@@ -99,27 +105,36 @@ public class The_Spinning_Wheel extends CustomRelic implements BetterClickableRe
     }
 
     private void card() {
-        if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
-            pre = AbstractDungeon.screen;
-            if (AbstractDungeon.isScreenUp) {
-                AbstractDungeon.dynamicBanner.hide();
-                AbstractDungeon.previousScreen = AbstractDungeon.screen;
-            }
-            phase = AbstractDungeon.getCurrRoom().phase;
-            AbstractDungeon.getCurrRoom().phase = RoomPhase.INCOMPLETE;
-            this.cardSelected = false;
-            CardGroup g = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-            ArrayList<AbstractCard> list = new ArrayList<>();
-            for (int i = 0; i < Moxie.size(); i++) {
-                if (Moxie.get(i) == Moxie_Max) {
-                    list.add(Ult.get(i));
+        if (this.counter != 3) {
+            this.counter++;
+            if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
+                pre = AbstractDungeon.screen;
+                if (AbstractDungeon.isScreenUp) {
+                    AbstractDungeon.dynamicBanner.hide();
+                    AbstractDungeon.previousScreen = AbstractDungeon.screen;
+                }
+                phase = AbstractDungeon.getCurrRoom().phase;
+                AbstractDungeon.getCurrRoom().phase = RoomPhase.INCOMPLETE;
+                this.cardSelected = false;
+                CardGroup g = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+                ArrayList<AbstractCard> list = new ArrayList<>();
+                for (int i = 0; i < Moxie.size(); i++) {
+                    if (Moxie.get(i) == Moxie_Max) {
+                        list.add(Ult.get(i));
+                    }
+                }
+                g.group = list.stream().collect(Collectors.toCollection(ArrayList::new));
+                g.shuffle();
+                if(g.group.size() > 0)
+                    AbstractDungeon.gridSelectScreen.open(g, 1, DESCRIPTIONS[4], false, false, false, false);
+                else {
+                    counter--;
+                    AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, this.DESCRIPTIONS[31], true));
                 }
             }
-            g.group = list.stream().collect(Collectors.toCollection(ArrayList::new));
-            g.shuffle();
-            AbstractDungeon.gridSelectScreen.open(g, 1, DESCRIPTIONS[4], false, false, true, false);
-            AbstractDungeon.overlayMenu.cancelButton.show(DESCRIPTIONS[5]);
         }
+        else
+            AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, this.DESCRIPTIONS[5], true));
     }
 
     public void update() {

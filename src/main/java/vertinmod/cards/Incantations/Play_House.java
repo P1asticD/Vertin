@@ -61,6 +61,8 @@ public class Play_House extends Ver_CustomCard {
         if (!this.upgraded) {
             upgradeName();
             this.selfRetain = true;
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 

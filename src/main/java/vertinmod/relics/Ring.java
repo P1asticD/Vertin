@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
@@ -33,6 +34,7 @@ public class Ring extends CustomRelic implements CustomSavable<int[]> {
     public int Count_S;
     public int Count_P;
     public int Count_C;
+    public int Check;
 
     public Ring(){
         super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
@@ -40,6 +42,7 @@ public class Ring extends CustomRelic implements CustomSavable<int[]> {
         Count_S = 0;
         Count_P = 0;
         Count_C = 0;
+        Check = 0;
     }
 
     public String getUpdatedDescription() {
@@ -72,7 +75,10 @@ public class Ring extends CustomRelic implements CustomSavable<int[]> {
 
     public void update() {
         super.update();
-        deleteCards(AbstractDungeon.gridSelectScreen.selectedCards);
+        if (Check == 0){
+            deleteCards(AbstractDungeon.gridSelectScreen.selectedCards);
+            AbstractDungeon.gridSelectScreen.selectedCards.clear();
+        }
     }
 
     private void refreshDesc(){
@@ -115,6 +121,10 @@ public class Ring extends CustomRelic implements CustomSavable<int[]> {
         AbstractDungeon.gridSelectScreen.selectedCards.clear();
     }
 
+    public void onEnterRoom(AbstractRoom room) {
+        Check = 1;
+    }
+
     public void atPreBattle() {
         flash();
         if (Count_A > 0)
@@ -140,7 +150,7 @@ public class Ring extends CustomRelic implements CustomSavable<int[]> {
 
     @Override
     public int[] onSave() {
-        return new int[] {Count_A, Count_S, Count_P, Count_C};
+        return new int[] {Count_A, Count_S, Count_P, Count_C, Check};
     }
 
     @Override
@@ -149,6 +159,7 @@ public class Ring extends CustomRelic implements CustomSavable<int[]> {
         Count_S = cards[1];
         Count_P = cards[2];
         Count_C = cards[3];
+        Check = cards[4];
         this.refreshDesc();
     }
 }

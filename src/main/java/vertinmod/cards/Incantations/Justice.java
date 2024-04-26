@@ -1,5 +1,6 @@
 package vertinmod.cards.Incantations;
 
+import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -28,7 +29,7 @@ public class Justice extends Ver_CustomCard {
 
     public Justice(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 7;
+        this.baseMagicNumber = 8;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
         this.tags.add(HEALING);
@@ -37,16 +38,14 @@ public class Justice extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        if (p.currentHealth < p.maxHealth / 2.0F){
-            addToBot(new HealAction(p, p, this.magicNumber));
+        addToBot(new AddTemporaryHPAction(p, p, this.magicNumber));
+        if (p.currentHealth < p.maxHealth / 2.0F)
             addToBot(new HealAction(p, p, 5));
-        }
-        else
-            addToBot(new HealAction(p, p, this.magicNumber));
     }
 
     public void upgrade(){
         if (!this.upgraded) {
+            upgradeBaseCost(0);
             upgradeName();
             upgradeMagicNumber(5);
         }

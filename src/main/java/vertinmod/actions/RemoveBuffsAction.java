@@ -16,8 +16,11 @@ public class RemoveBuffsAction extends AbstractGameAction {
     @Override
     public void update(){
         for (AbstractPower p: this.c.powers){
-            if (p.type == AbstractPower.PowerType.BUFF)
+            if (p.ID == "Artifact" || p.ID == "Barricade" || p.ID == "Intangible" || p.ID == "Metallicize" || p.ID == "Plated Armor" || p.ID == "Ritual" || p.ID == "Thorns")
                 addToTop(new RemoveSpecificPowerAction(this.c, this.c, p.ID));
+            if (p.ID == "Strength")
+                if (p.amount > 0)
+                    addToTop(new RemoveSpecificPowerAction(this.c, this.c, p.ID));
         }
         this.isDone = true;
     }

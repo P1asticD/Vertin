@@ -29,7 +29,7 @@ public class Spirit_Encourage extends Ver_CustomCard {
 
     public Spirit_Encourage(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 11;
+        this.baseBlock = 9;
         this.block = this.baseBlock;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
@@ -50,7 +50,7 @@ public class Spirit_Encourage extends Ver_CustomCard {
     public void upgrade(){
         if (!upgraded){
             upgradeName();
-            upgradeBlock(4);
+            upgradeBlock(3);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

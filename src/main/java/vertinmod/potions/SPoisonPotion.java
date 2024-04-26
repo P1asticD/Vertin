@@ -21,8 +21,8 @@ public class SPoisonPotion extends CustomPotion {
 
     public SPoisonPotion(){
         super(potionStrings.NAME, POTION_ID, PotionRarity.UNCOMMON, AbstractPotion.PotionSize.FAIRY, PotionColor.POISON);
-        this.labOutlineColor = Settings.GREEN_RELIC_COLOR;
-        isThrown = true;
+        this.isThrown = true;
+        this.targetRequired = true;
     }
 
     public void initializeData() {

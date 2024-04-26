@@ -28,7 +28,7 @@ public class Fool extends Ver_CustomCard {
 
     public Fool(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(Fool);
         this.tags.add(Arcanist);

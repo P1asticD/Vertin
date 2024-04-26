@@ -1,9 +1,9 @@
 {
   "modid": "VertinMod",
-  "name": "维尔汀Mod",
-  "author_list": ["PD"],
-  "description": "先不写吧",
-  "version": "0.0.1",
+  "name": "VertinMod",
+  "author_list": ["D++"],
+  "description": "重返未来1999维尔汀mod。",
+  "version": "0.0.2",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.3",
   "dependencies": ["basemod", "stslib"]

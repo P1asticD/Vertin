@@ -42,7 +42,6 @@ public class DissonancePower extends AbstractPower {
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.hasTag(Vertin)) {
-            flash();
             action.exhaustCard = true;
         }
     }

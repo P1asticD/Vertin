@@ -37,7 +37,7 @@ public class Triple_Dose_1 extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        int chance = this.upgraded ? 90 : 80;
+        int chance = this.upgraded ? 50 : 60;
         if (AbstractDungeon.cardRandomRng.random(99) <= chance){
             if (!upgraded)
                 addToBot(new ObtainPotionAction(new PoisonPotion()));

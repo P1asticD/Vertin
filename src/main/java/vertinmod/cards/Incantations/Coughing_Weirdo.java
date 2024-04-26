@@ -29,7 +29,7 @@ public class Coughing_Weirdo extends Ver_CustomCard {
 
     public Coughing_Weirdo(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 5;
+        this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
         this.tags.add(Arcanist);
@@ -40,16 +40,13 @@ public class Coughing_Weirdo extends Ver_CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, this.magicNumber), this.magicNumber));
         int L_HP = p.maxHealth - p.currentHealth;
-        if (!upgraded)
-            addToBot(new HealAction(p, p, L_HP / 10));
-        else
-            addToBot(new HealAction(p, p, L_HP / 4));
+        addToBot(new HealAction(p, p, L_HP / 10));
     }
 
     public void upgrade(){
         if (!this.upgraded){
             upgradeName();
-            upgradeMagicNumber(7);
+            upgradeMagicNumber(2);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

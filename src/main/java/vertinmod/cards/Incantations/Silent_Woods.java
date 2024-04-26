@@ -49,7 +49,7 @@ public class Silent_Woods extends CustomCard {
                     stun = monster;
                     max_con = con;
                 }
-                addToTop(new ApplyPowerAction(m, p, new ConstrictedPower(m, p, con), con));
+                addToTop(new ApplyPowerAction(monster, p, new ConstrictedPower(monster, p, con), con));
             }
         }
         if (stun != null){

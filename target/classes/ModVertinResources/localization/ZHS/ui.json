@@ -3,5 +3,15 @@
     "TEXT": [
       "选择一名神秘学家增加激情。"
     ]
+  },
+  "SequenceAction": {
+    "TEXT": [
+      "调整手牌顺序。"
+    ]
+  },
+  "TokenCardField": {
+    "TEXT": [
+      "衍生牌"
+    ]
   }
 }

@@ -30,18 +30,18 @@ public class Soaring_Witch extends CustomCard{
 
     public Soaring_Witch(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(Ultimate);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        int tmp = p.currentHealth / 5;
+        int tmp = (p.currentHealth - 10) / 5;
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber * tmp), this.magicNumber * tmp));
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber * tmp), this.magicNumber * tmp));
         addToBot(new ApplyPowerAction(p, p, new FlightPower(p, 1), 1));
         addToBot(new ApplyPowerAction(p, p, new LilyaPower(p, p.currentHealth), p.currentHealth));
-        p.currentHealth = 1;
+        p.currentHealth = 10;
         p.healthBarUpdatedEvent();
     }
 

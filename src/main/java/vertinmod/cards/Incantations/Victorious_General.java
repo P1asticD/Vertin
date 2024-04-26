@@ -22,18 +22,18 @@ public class Victorious_General extends Ver_CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "ModVertinResources/img/cards/Victorious_General.png";
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = VERTIN_CARD;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
     public Victorious_General(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 10;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(Arcanist);
         this.tags.add(Centurion);
@@ -82,7 +82,7 @@ public class Victorious_General extends Ver_CustomCard {
         if (!upgraded){
             upgradeName();
             upgradeDamage(2);
-            upgradeMagicNumber(4);
+            upgradeMagicNumber(2);
         }
     }
 

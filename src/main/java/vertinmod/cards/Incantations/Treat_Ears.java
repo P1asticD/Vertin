@@ -31,7 +31,7 @@ public class Treat_Ears extends Ver_CustomCard {
 
     public Treat_Ears(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 8;
+        this.baseDamage = 6;
         this.damage = this.baseDamage;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
@@ -47,8 +47,8 @@ public class Treat_Ears extends Ver_CustomCard {
     public void upgrade(){
         if (!upgraded){
             upgradeName();
-            upgradeDamage(4);
-            upgradeMagicNumber(2);
+            upgradeDamage(6);
+            upgradeMagicNumber(1);
         }
     }
 

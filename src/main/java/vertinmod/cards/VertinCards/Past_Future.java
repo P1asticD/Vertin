@@ -27,7 +27,7 @@ public class Past_Future extends Ver_CustomCard {
 
     public Past_Future(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(Vertin);
     }
@@ -39,7 +39,7 @@ public class Past_Future extends Ver_CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(2);
+            upgradeMagicNumber(1);
         }
     }
 

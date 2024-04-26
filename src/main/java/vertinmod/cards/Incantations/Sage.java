@@ -34,7 +34,7 @@ public class Sage extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 7;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(Fool);
         this.tags.add(Arcanist);

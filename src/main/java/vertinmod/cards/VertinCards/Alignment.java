@@ -38,7 +38,7 @@ public class Alignment extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        ArrayList<AbstractCard> Arcanists = new ArrayList<>(Arrays.asList(new The_Fool(), new JohnTitor(), new Eagle(), new Pavia(), new Mondlicht(), new Poltergeist(), new BabyBlue(), new Dikke(), new Sonetto(), new Balloon(), new Necrologist(), new Tennant(), new Diggers(), new Ulu(), new Lilya(), new Knight(), new Sotheby(), new Regulus(), new Centurion(), new Voyager(), new NewBabel(), new BlackDwarf(), new Ezra(), new DruvisIII()));
+        ArrayList<AbstractCard> Arcanists = new ArrayList<>(Arrays.asList(new The_Fool(), new JohnTitor(), new Eagle(), new Pavia(), new Mondlicht(), new Poltergeist(), new BabyBlue(), new Dikke(), new Sonetto(), new Balloon(), new Necrologist(), new Tennant(), new Diggers(), new Ulu(), new Lilya(), new Knight(), new Sotheby(), new Regulus(), new Centurion(), new Voyager(), new NewBabel(), new BlackDwarf(), new Ezra(), new DruvisIII(), new Jessica()));
         ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
         for (int i = 0; i < Moxie.size(); i++){
             if (Moxie.get(i) >= 1){

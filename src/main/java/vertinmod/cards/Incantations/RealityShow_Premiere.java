@@ -32,7 +32,7 @@ public class RealityShow_Premiere extends CustomCard{
 
     public RealityShow_Premiere(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 20;
+        this.baseDamage = 10;
         this.damage = this.baseDamage;
         this.baseMagicNumber = 10;
         this.magicNumber = this.baseMagicNumber;

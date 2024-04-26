@@ -37,8 +37,7 @@ public class Whispers_of_Deceased_1 extends CustomCard{
         for (AbstractCard c : AbstractDungeon.player.discardPile.group){
             addToTop(new ExhaustSpecificCardAction(c, AbstractDungeon.player.discardPile));
         }
-        for (int i = 0; i < AbstractDungeon.player.potionSlots; i++)
-            addToBot(new ObtainPotionAction(new FairyPotion()));
+        addToBot(new ObtainPotionAction(new FairyPotion()));
     }
 
     public void upgrade(){

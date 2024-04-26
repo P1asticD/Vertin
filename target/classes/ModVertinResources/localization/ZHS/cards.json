@@ -59,7 +59,7 @@
   },
   "VertinMod:Dissonance": {
     "NAME": "不协和音",
-    "DESCRIPTION": "所有属于 vertinmod:维尔汀 的卡牌耗能变为0 。 NL 所有属于 vertinmod:维尔汀 的牌在打出时被 消耗 。",
+    "DESCRIPTION": "所有属于 vertinmod:维尔汀 的卡牌耗能变为0 。 NL 所有属于 vertinmod:维尔汀 的牌在打出时被 消耗 。 虚无 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b维尔汀 。"
     ]
@@ -160,6 +160,10 @@
     "NAME": "槲寄生",
     "DESCRIPTION": "获得1点 vertinmod:激情 。"
   },
+  "VertinMod:Jessica": {
+    "NAME": "洁西卡",
+    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+  },
   "VertinMod:Sage": {
     "NAME": "智者",
     "DESCRIPTION": "造成 !D! 点伤害。目标敌人在本回合失去 !M! 点 力量 。",
@@ -187,14 +191,14 @@
   },
   "VertinMod:True_Genius": {
     "NAME": "可是天才！",
-    "DESCRIPTION": "获得 !B! 点 格挡 。获得 [E] 。 在下一回合获得 [E] [E] 。",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在下一回合获得 [E] [E] 。",
     "EXTENDED_DESCRIPTION":[
       "该卡牌属于 #b约翰·提托 。"
     ]
   },
   "VertinMod:Bytes_65536": {
     "NAME": "65536比特",
-    "DESCRIPTION": "移除你的所有负面效果。移除目标的所有正面效果。 NL 获得 !B! 点 格挡 。在下一回合获得 !B! 点格挡。 NL 抹除 。"
+    "DESCRIPTION": "移除你的所有负面状态。移除目标的所有正面状态（特殊状态除外）。 NL 获得 !B! 点 格挡 。在下一回合获得 !B! 点格挡。 NL 抹除 。"
   },
   "VertinMod:Old_PocketWatch": {
     "NAME": "往日怀表",
@@ -205,7 +209,7 @@
   },
   "VertinMod:Finger_Lens": {
     "NAME": "指间镜片",
-    "DESCRIPTION": "去除一名敌人的所有 格挡 值。 NL 对所有敌人造成 !D! 点伤害。",
+    "DESCRIPTION": "去除一名敌人的所有 格挡 。 NL 对所有敌人造成 !D! 点伤害。",
     "EXTENDED_DESCRIPTION":[
       "该卡牌属于 #b小春雀儿 。"
     ]
@@ -301,14 +305,14 @@
   },
   "VertinMod:Justice": {
     "NAME": "正义",
-    "DESCRIPTION": "回复 !M! 生命。 NL 若自身生命值低于50%，额外回复5生命。 NL 消耗 。",
+    "DESCRIPTION": "获得 !M! 点 临时生命 。 NL 若自身生命值低于50%，回复5生命。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b帕米埃 。"
     ]
   },
   "VertinMod:Maverick_Judge": {
     "NAME": "审判",
-    "DESCRIPTION": "移除你身上的所有负面效果。 NL 造成 !D! 点生命流失。 NL 获得 !M! 层 缓冲 。 NL 抹除 。"
+    "DESCRIPTION": "移除你身上的所有负面状态。 NL 造成 !D! 点生命流失。 NL 获得 !M! 层 缓冲 。 NL 抹除 。"
   },
   "VertinMod:Commandment_V": {
     "NAME": "戒律·其五",
@@ -339,7 +343,7 @@
   "VertinMod:Coughing_Weirdo": {
     "NAME": "咳咳怪人",
     "DESCRIPTION": "获得 !M! 层 荆棘 。 NL 回复10%已损失生命值。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 荆棘 。 NL 回复25%已损失生命值。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 荆棘 。 NL 回复10%已损失生命值。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b气球派对 。"
     ]
@@ -388,7 +392,7 @@
   },
   "VertinMod:Whispers_of_Deceased_1": {
     "NAME": "逝者低语",
-    "DESCRIPTION": "消耗弃牌堆里的所有牌。 NL 在所有空药水栏位中获得瓶中精灵。 NL 抹除 。"
+    "DESCRIPTION": "消耗弃牌堆里的所有牌。 NL 获得一瓶瓶中精灵。 NL 抹除 。"
   },
   "VertinMod:Shiny_Diamond": {
     "NAME": "一颗闪钻",
@@ -613,26 +617,26 @@
   },
   "VertinMod:Saturn_Divination": {
     "NAME": "土星占卜",
-    "DESCRIPTION": "每当你获得 格挡 时，回复 !M! 点生命。",
+    "DESCRIPTION": "打出此牌后，你在这个回合每获得一次 格挡 ，回复 !M! 点生命。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b伽菈波那 。"
     ]
   },
   "VertinMod:Mars_Divination": {
     "NAME": "火星占卜",
-    "DESCRIPTION": "每当你造成未被 格挡 的伤害时，回复 !M! 点生命。",
+    "DESCRIPTION": "打出此牌后，你在这个回合每造成未被 格挡 的伤害时，回复 !M! 点生命。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b伽菈波那 。"
     ]
   },
   "VertinMod:Lunar_Divination": {
     "NAME": "盈月占卜",
-    "DESCRIPTION": "你每打出一张牌，回复 !M! 点生命。"
+    "DESCRIPTION": "打出此牌后，你在这个回合每打出一张牌，回复 !M! 点生命。"
   },
   "VertinMod:Body_Protection": {
     "NAME": "看护于躯壳",
     "DESCRIPTION": "给予所有敌人 !M! 层 易伤 。 NL 获得 [E] 。 NL 抽 !M! 张牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 易伤 。 NL 获得 [E] [E] 。 NL 抽 !M! 张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 易伤 。 NL 获得 [E] [E] [E] 。 NL 抽 !M! 张牌。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b爱兹拉 。"
     ]
@@ -668,15 +672,44 @@
     "NAME": "林间，静默将至",
     "DESCRIPTION": "将你的 vertinmod:柔韧 翻倍。 NL 将所有敌人的 vertinmod:缠绕 翻倍。 NL 击晕 vertinmod:缠绕 层数最高的敌人一回合。 NL 抹除 。"
   },
-  "VertinMod:Paper_Slip": {
+  "VertinMod:White_Blankie": {
+    "NAME": "白绒毯",
+    "DESCRIPTION": "若敌人没有 中毒 状态，给予 !M! 层 中毒 。 NL 否则给予 5 层 中毒 。",
+    "UPGRADE_DESCRIPTION": "若敌人没有 中毒 状态，给予 !M! 层 中毒 。 NL 否则给予 7 层 中毒 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b洁西卡 。"
+    ]
+  },
+  "VertinMod:Good_Friends": {
+    "NAME": "好朋友",
+    "DESCRIPTION": "将一名敌人的 中毒 层数变为其所拥有的负面状态数量倍。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将一名敌人的 中毒 层数变为其所拥有的负面状态数量+1倍。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "该卡牌属于 #b洁西卡 。"
+    ]
+  },
+  "VertinMod:Gaze_From_the_Forest": {
+    "NAME": "凝视来自深林之中",
+    "DESCRIPTION": "对所有敌人造成所有敌人总计 中毒 层数点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （造成 !D! 点伤害。）"
+    ]
+  },
+    "VertinMod:Paper_Slip": {
     "NAME": "一张纸条",
     "DESCRIPTION": "只有当敌人的数量为1时才可打出。 NL 将 *改编的校歌 加入牌库。 NL 将 *苦恼 加入牌库。 NL 虚无 。 NL 即逝 。",
-    "UPGRADE_DESCRIPTION": "只有当敌人的数量为1时才可打出。 NL 将 *改编的校歌 加入牌组。 NL 将 *苦恼 加入牌组。 NL 即逝 。"
+    "UPGRADE_DESCRIPTION": "只有当敌人的数量为1时才可打出。 NL 将 *改编的校歌 加入牌组。 NL 将 *苦恼 加入牌组。 NL 即逝 。",
+    "EXTENDED_DESCRIPTION": [
+        "当前敌人数量不是1！"
+    ]
   },
   "VertinMod:Adapted_Song": {
     "NAME": "改编的校歌",
     "DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 虚无 。 NL 即逝 。",
-    "UPGRADE_DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 即逝 。"
+    "UPGRADE_DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 即逝 。",
+    "EXTENDED_DESCRIPTION": [
+      "当前敌人数量少于3！"
+    ]
   },
   "VertinMod:Jail_Break": {
     "NAME": "越狱行动",

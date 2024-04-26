@@ -2,6 +2,7 @@ package vertinmod.powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -37,5 +38,9 @@ public class SaturnPower extends AbstractPower{
             flash();
             addToBot(new HealAction(owner, owner, amount));
         }
+    }
+
+    public void atEndOfTurn(boolean isPlayer) {
+        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "VertinMod:SaturnPower"));
     }
 }

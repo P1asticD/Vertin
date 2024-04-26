@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import vertinmod.cards.Incantations.Treat_Ears;
 import vertinmod.cards.VertinCards.Alignment;
 import vertinmod.cards.VertinCards.Defend;
 import vertinmod.cards.VertinCards.In_Suitcase;
@@ -80,7 +81,7 @@ public class Vertin extends CustomPlayer {
     // 初始卡组的ID，可直接写或引用变量
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for(int x = 0; x<5; x++) {
+        for(int x = 0; x<3; x++) {
             retVal.add(Strike.ID);
         }
         for(int x = 0; x<4; x++) {
@@ -88,6 +89,9 @@ public class Vertin extends CustomPlayer {
         }
         retVal.add(In_Suitcase.ID);
         retVal.add(Alignment.ID);
+        for(int x = 0; x<2; x++) {
+            retVal.add(Treat_Ears.ID);
+        }
         return retVal;
     }
 
@@ -103,8 +107,8 @@ public class Vertin extends CustomPlayer {
         return new CharSelectInfo(
                 characterStrings.NAMES[0], // 人物名字
                 characterStrings.TEXT[0], // 人物介绍
-                75, // 当前血量
-                75, // 最大血量
+                50, // 当前血量
+                50, // 最大血量
                 0, // 初始充能球栏位
                 99, // 初始携带金币
                 5, // 每回合抽牌数量
