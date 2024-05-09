@@ -39,7 +39,7 @@ public class Balloon_Party extends CustomCard{
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(AbstractDungeon.player.hasPower("Thorns")) {
-            this.baseDamage = 5 * AbstractDungeon.player.getPower("Thorns").amount;
+            this.baseDamage = 3 * AbstractDungeon.player.getPower("Thorns").amount;
             this.baseMagicNumber = AbstractDungeon.player.getPower("Thorns").amount;
             calculateCardDamage(m);
             for (AbstractMonster monster:AbstractDungeon.getMonsters().monsters) {
@@ -57,7 +57,7 @@ public class Balloon_Party extends CustomCard{
 
     public void applyPowers() {
         if(AbstractDungeon.player.hasPower("Thorns")) {
-            this.baseDamage = 5 * AbstractDungeon.player.getPower("Thorns").amount;
+            this.baseDamage = 3 * AbstractDungeon.player.getPower("Thorns").amount;
             this.baseMagicNumber = AbstractDungeon.player.getPower("Thorns").amount;
             super.applyPowers();
             this.rawDescription = CARD_STRINGS.DESCRIPTION;

@@ -246,6 +246,21 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addCard(new New_World());
         BaseMod.addCard(new Storm());
     }
+    @Override
+    public void receiveEditKeywords() {
+        Gson gson = new Gson();
+        String lang = "ENG";
+        if (language == GameLanguage.ZHS) {
+            lang = "ZHS";
+        }
+        String json = Gdx.files.internal("ModVertinResources/localization/" + lang + "/keywords.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = (Keyword[])gson.fromJson(json, Keyword[].class);
+        if (keywords != null) {
+            for (Keyword keyword : keywords)
+                BaseMod.addKeyword("vertinmod", keyword.NAMES[0], keyword.NAMES, keyword.DESCRIPTION);
+        }
+    }
+
     public void receiveEditStrings() {
         String lang;
         if (language == GameLanguage.ZHS) {
@@ -284,25 +299,6 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addRelicToCustomPool(new SPDM_Rules(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Scripture(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Pot(), VERTIN_CARD);
-    }
-
-    @Override
-    public void receiveEditKeywords() {
-        Gson gson = new Gson();
-        String lang;
-        if (language == GameLanguage.ZHS) {
-            lang = "ZHS";
-        } else {
-            lang = "ENG";
-        }
-        String json = Gdx.files.internal("ModVertinResources/localization/" + lang + "/keywords.json")
-                .readString(String.valueOf(StandardCharsets.UTF_8));
-        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
-        if (keywords != null) {
-            for (Keyword keyword : keywords) {
-                BaseMod.addKeyword("vertinmod", keyword.NAMES[0], keyword.NAMES, keyword.DESCRIPTION);
-            }
-        }
     }
 
 

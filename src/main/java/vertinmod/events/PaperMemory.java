@@ -22,7 +22,7 @@ public class PaperMemory extends AbstractImageEvent {
     private int screenNum = 0;
 
     public PaperMemory(){
-        super(NAME, DIALOG_1, "image/events/classroom.jpg");
+        super(NAME, DIALOG_1, "image/events/classroom.png");
         this.imageEventText.setDialogOption(OPTIONS[0], new Paper_Slip());
         this.imageEventText.setDialogOption(OPTIONS[1]);
     }

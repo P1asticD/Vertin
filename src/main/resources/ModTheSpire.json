@@ -2,8 +2,8 @@
   "modid": "VertinMod",
   "name": "VertinMod",
   "author_list": ["D++"],
-  "description": "重返未来1999维尔汀mod。",
-  "version": "0.0.2",
+  "description": "Reverse:1999 Vertin mod.",
+  "version": "0.0.3",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.3",
   "dependencies": ["basemod", "stslib"]

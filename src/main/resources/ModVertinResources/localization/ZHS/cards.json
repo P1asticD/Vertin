@@ -277,8 +277,8 @@
   },
   "VertinMod:Play_House": {
     "NAME": "过家家",
-    "DESCRIPTION": "本回合没有打出过牌时才可以打出。 NL 你和所有敌人都获得1层 无实体 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": " 保留 。 NL 本回合没有打出过牌时才可以打出。 NL 你和所有敌人都获得1层 无实体 。 NL 消耗 。",
+    "DESCRIPTION": "本回合没有打出过牌时才可以打出。 NL 你和所有敌人都获得 !M! 层 无实体 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 本回合没有打出过牌时才可以打出。 NL 你和所有敌人都获得 !M! 层 无实体 。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b婴儿蓝 。",
       "本回合已经打出过其他牌了。"
@@ -343,14 +343,13 @@
   "VertinMod:Coughing_Weirdo": {
     "NAME": "咳咳怪人",
     "DESCRIPTION": "获得 !M! 层 荆棘 。 NL 回复10%已损失生命值。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 荆棘 。 NL 回复10%已损失生命值。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b气球派对 。"
     ]
   },
   "VertinMod:Balloon_Party": {
     "NAME": "气球派对",
-    "DESCRIPTION": "对所有敌人造成5倍 荆棘 层数的伤害。 NL 回复 荆棘 层数的生命。 NL 抹除 。",
+    "DESCRIPTION": "对所有敌人造成3倍 荆棘 层数的伤害。 NL 回复 荆棘 层数的生命。 NL 抹除 。",
     "EXTENDED_DESCRIPTION": [
       " NL （造成 !D! 点伤害。回复 !M! 点生命。）"
     ]
@@ -463,7 +462,7 @@
   "VertinMod:Aerial_Maneuvers": {
     "NAME": "钟型摆动",
     "DESCRIPTION": " 保留 。 NL 获得 !B! 点 格挡 。 NL 敏捷 在该卡牌上发挥 !M! 倍效果。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": " 保留 。 NL 造成 !B! 点 格挡 。 NL 敏捷 在该卡牌上发挥 !M! 倍效果。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 获得 !B! 点 格挡 。 NL 敏捷 在该卡牌上发挥 !M! 倍效果。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b红弩箭 。"
     ]
@@ -486,7 +485,7 @@
   },
   "VertinMod:Soaring_Witch": {
     "NAME": "翱翔于天际的女巫",
-    "DESCRIPTION": "将生命值扣至只剩1点，每扣除5点生命值，获得 !M! 点 力量 与 敏捷 。 NL 获得1层 *飞行 。 NL 战斗结束时，将生命值变为打出该牌时的生命值。"
+    "DESCRIPTION": "将生命值扣至只剩10点，每扣除5点生命值，获得 !M! 点 力量 与 敏捷 。 NL 获得 !M! 层 *飞行 。 NL 战斗结束时，将生命值变为打出该牌时的生命值。"
   },
   "VertinMod:K_Justice": {
     "NAME": "公义",
@@ -505,7 +504,7 @@
   },
   "VertinMod:After_AD_778": {
     "NAME": "公元七七八年后",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 活力 将发挥五倍效果。 NL 斩杀 时，获得等同于溢出伤害的 活力 ，获得 [E] ，抽 !M! 张牌。 NL 抹除 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 活力 将发挥3倍效果。 NL 斩杀 时，获得等同于溢出伤害的 活力 ，抽 !M! 张牌。 NL 抹除 。"
   },
   "VertinMod:Triple_Dose": {
     "NAME": "三倍用量",
@@ -690,7 +689,7 @@
   },
   "VertinMod:Gaze_From_the_Forest": {
     "NAME": "凝视来自深林之中",
-    "DESCRIPTION": "对所有敌人造成所有敌人总计 中毒 层数点伤害。",
+    "DESCRIPTION": "对所有敌人造成所有敌人总计 中毒 层数点伤害。 NL 抹除 。",
     "EXTENDED_DESCRIPTION": [
       " NL （造成 !D! 点伤害。）"
     ]
@@ -714,15 +713,15 @@
   "VertinMod:Jail_Break": {
     "NAME": "越狱行动",
     "DESCRIPTION": "只有在首领战或精英战时才可打出。 NL 将 *新世界 加入牌组。 NL 将 *悔恨 加入牌组。 NL 虚无 。 NL 即逝 。",
-    "UPGRADE_DESCRIPTION": "只有当敌人的数量不少于3时才可打出。 NL 将 *越狱行动 加入牌组。 NL 将 *受伤 加入牌组。 NL 即逝 。"
+    "UPGRADE_DESCRIPTION": "只有在首领战或精英战时才可打出。 NL 将 *新世界 加入牌组。 NL 将 *悔恨 加入牌组。 NL 即逝 。"
   },
   "VertinMod:New_World": {
     "NAME": "新世界",
-    "DESCRIPTION": "战斗结束时，获得遗物 *圈环 。 NL 虚无 。 NL 即逝 。",
-    "UPGRADE_DESCRIPTION": "战斗结束时，获得遗物 *圈环 。 NL 即逝 。"
+    "DESCRIPTION": "战斗结束时，获得一件特殊的 *遗物 。 NL 虚无 。 NL 即逝 。",
+    "UPGRADE_DESCRIPTION": "战斗结束时，获得一件特殊的 *遗物 。 NL 即逝 。"
   },
   "VertinMod:Storm": {
     "NAME": "暴雨",
-    "DESCRIPTION": " 不能被打出 。 NL 不能从牌组中移除。 NL 抽到这张牌时，消耗手牌中所有已 升级 的牌，并获得其未 升级 的 同名卡。 NL 每 消耗 一张，失去一点 力量 和 敏捷 。 NL 虚无 。 NL （属于 vertinmod:维尔汀 的卡牌不受影响）。"
+    "DESCRIPTION": " 不能被打出 。 NL 不能从牌组中移除。 NL 抽到这张牌时，消耗手牌中所有已 升级 的牌，并获得其未 升级 的 同名卡。 NL 每 消耗 一张，失去一点 力量 和 敏捷 。 NL 虚无 。 NL （属于 vertinmod:维尔汀 的卡牌不受影响。）"
   }
 }

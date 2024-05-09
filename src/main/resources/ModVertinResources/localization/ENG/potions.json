@@ -1,0 +1,22 @@
+{
+  "VertinMod:TransformationPotion": {
+    "NAME": "Transformation Potion",
+    "DESCRIPTIONS": [
+      "Failed Product. Transform to a clothes tree."
+    ]
+  },
+  "VertinMod:SRegenPotion": {
+    "NAME": "Super Regen Potion",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yRegen."
+    ]
+  },
+  "VertinMod:SPoisonPotion": {
+    "NAME": "Super Poison Potion",
+    "DESCRIPTIONS": [
+      "Apply #b",
+      " #yPoison."
+    ]
+  }
+}

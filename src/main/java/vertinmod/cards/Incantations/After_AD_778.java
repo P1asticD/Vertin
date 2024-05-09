@@ -31,7 +31,7 @@ public class After_AD_778 extends CustomCard{
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 14;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.purgeOnUse = true;
         this.tags.add(Ultimate);
@@ -44,19 +44,19 @@ public class After_AD_778 extends CustomCard{
     public void applyPowers() {
         AbstractPower vigor = AbstractDungeon.player.getPower("Vigor");
         if (vigor != null)
-            vigor.amount *= 5;
+            vigor.amount *= this.magicNumber;
         super.applyPowers();
         if (vigor != null)
-            vigor.amount /= 5;
+            vigor.amount /= this.magicNumber;
     }
 
     public void calculateCardDamage(AbstractMonster mo) {
         AbstractPower vigor = AbstractDungeon.player.getPower("Vigor");
         if (vigor != null)
-            vigor.amount *= 5;
+            vigor.amount *= this.magicNumber;
         super.calculateCardDamage(mo);
         if (vigor != null)
-            vigor.amount /= 5;
+            vigor.amount /= this.magicNumber;
     }
 
     public void upgrade(){

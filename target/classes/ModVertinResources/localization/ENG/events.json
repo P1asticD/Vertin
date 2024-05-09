@@ -1,0 +1,35 @@
+{
+  "VertinMod:MushroomsReplacement":{
+    "NAME": "Mushrooms",
+    "DESCRIPTIONS": [
+      "You give in to the unnatural desire to eat. As you consume mushroom after mushroom, you feel yourself entering into a daze and pass out. As you awake, you feel very odd. NL You #gHeal #b25% of your HP, but you also get #rinfected.",
+      "#r@Ambushed!!@ NL Rodents infested by the mushrooms appear out of nowhere!",
+      "You enter a corridor full of #b~hypnotizing~ #b~colored~ #b~mushrooms.~ NL Due to your lack of specialization in mycology you are unable to identify the specimens. NL You want to escape, but feel oddly compelled to eat a #b~mushroom...~",
+      "There happens to be a mycology expert, he is willing to help you. NL After careful identification,he handed you a #gspecial #gmushroom. NL \"It may help you.\""
+    ],
+    "OPTIONS": [
+      "[Stomp] #rAnger #rthe #rMushrooms.",
+      "[Eat] #gHeal #g",
+      " #gHP. #rBecome #rCursed #r- #rParasite.",
+      "[Fight]",
+      "[Leave]",
+      "[Ask] #gObtain #ga #gspecial #gRelic.",
+      "[Locked] Requires: Cards belonging to #bEzra."
+    ]
+  },
+  "VertinMod:PaperMemory": {
+    "NAME": "Past",
+    "DESCRIPTIONS": [
+      "NL neatly arranged desks, a blackboard with formulas written on it...This looks like a #bclassroom. NL Everything here is out of place with the atmosphere inside the spire, but it brings you a sense of familiarity. NL You unconsciously walked to your former seat, found a #b~crumpled~ #b~slip~ on the desk. NL There is a line of small characters written on it #g\"Open #git\". NL This seems to evoke memories hidden deep within you.",
+      "You decide to face the past directly. NL It is your own handwriting: NL \"If U r also curious abt the world outside.-9 tonight under George the Oakb.\"",
+      " #rNever think about it anymore! NL You left the classroom as if you were running away.",
+      " You suddenly wake up. NL There is no classroom, only one exquisite shining shrine. NL You realize that everything was just an #rillusion created by the shrine. NL Then you found that you had been tightly holding a #bslip.",
+      " At the moment you left the classroom, you woke up. NL There is no classroom, only one exquisite grey shrine. NL You realize that everything was just an #rillusion created by the shrine."
+    ],
+    "OPTIONS": [
+      "[Open] #gObtain #gPaper #gSlip.",
+      "[Leave]",
+      "[Wake]"
+    ]
+  }
+}

@@ -1,0 +1,727 @@
+{
+  "VertinMod:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage。",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bVertin."
+    ]
+  },
+  "VertinMod:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block.",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bVertin."
+    ]
+  },
+  "VertinMod:In_Suitcase": {
+    "NAME": "In Suitcase",
+    "DESCRIPTION": "Retain. NL Gain 1 Intangible. NL Exhaust.",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bVertin."
+    ]
+  },
+  "VertinMod:Alignment": {
+    "NAME": "Alignment",
+    "DESCRIPTION": "Choose one vertinmod:Arcanists to gain 1 vertinmod:Moxie. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVertin.",
+      "No card of Arcanists is in deck."
+    ]
+  },
+  "VertinMod:Incantations_Strike": {
+    "NAME": "Incantations Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Each time vertinmod:Ascend in this combat, the damage increases by !M! .",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVertin."
+    ]
+  },
+  "VertinMod:Past_Future": {
+    "NAME": "Past Future",
+    "DESCRIPTION": "Whenever a card is Exhausted, NL gain !M! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVertin."
+    ]
+  },
+  "VertinMod:Grand_Orchestra": {
+    "NAME": "Grand Orchestra",
+    "DESCRIPTION": "Each time vertinmod:Ascend, gain !M! [E] , draw !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVertin."
+    ]
+  },
+  "VertinMod:Pigeon": {
+    "NAME": "Pigeon",
+    "DESCRIPTION": "Each time an vertinmod:Ultimate is played, gain !M! [E] .",
+    "UPGRADE_DESCRIPTION": "Each time an vertinmod:Ultimate is played, gain !M! [E] , draw !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVertin."
+    ]
+  },
+  "VertinMod:Dissonance": {
+    "NAME": "Dissonance",
+    "DESCRIPTION": "Cards belongs to vertinmod:Vertin cost 0. NL Whenever you play a card belonging to vertinmod:Vertin, Exhaust it. NL Ethereal.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVertin."
+    ]
+  },
+  "VertinMod:The_Fool": {
+    "NAME": "The_Fool",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:JohnTitor": {
+    "NAME": "JohnTitor",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Eagle": {
+    "NAME": "Eagle",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Pavia": {
+    "NAME": "Pavia",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Mondlicht": {
+    "NAME": "Mondlicht",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Poltergeist": {
+    "NAME": "Poltergeist",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:BabyBlue": {
+    "NAME": "BabyBlue",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Dikke": {
+    "NAME": "Dikke",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Sonetto": {
+    "NAME": "Sonetto",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Balloon": {
+    "NAME": "Balloon",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Necrologist": {
+    "NAME": "Necrologist",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Tennant": {
+    "NAME": "Tennant",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Diggers": {
+    "NAME": "Diggers",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Ulu": {
+    "NAME": "Ulu",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Lilya": {
+    "NAME": "Lilya",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Knight": {
+    "NAME": "Knight",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Sotheby": {
+    "NAME": "Sotheby",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Regulus": {
+    "NAME": "Regulus",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Centurion": {
+    "NAME": "Centurion",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Voyager": {
+    "NAME": "Voyager",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:NewBabel": {
+    "NAME": "NewBabel",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:BlackDwarf": {
+    "NAME": "BlackDwarf",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Ezra": {
+    "NAME": "Ezra",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:DruvisIII": {
+    "NAME": "DruvisIII",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Jessica": {
+    "NAME": "Jessica",
+    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+  },
+  "VertinMod:Sage": {
+    "NAME": "Sage",
+    "DESCRIPTION": "Deal !D! damage. Target loses !M! Strength this turn.",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bTheFool."
+    ]
+  },
+  "VertinMod:Fool": {
+    "NAME": "Fool",
+    "DESCRIPTION": "Whenever you are attacked, apply !M! Poison back.",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bTheFool."
+    ]
+  },
+  "VertinMod:Improvised_Show": {
+    "NAME": "Improvised Show",
+    "DESCRIPTION": "Apply !M! Poison to ALL enemies. If an enemy has at least 10 Poison, double its Poison instead. NL Purge."
+  },
+  "VertinMod:Not_Decoration": {
+    "NAME": "Not a Decoration!",
+    "DESCRIPTION": "Draw !M! cards.",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bJohn #bTitor."
+    ]
+  },
+  "VertinMod:True_Genius": {
+    "NAME": "A True Genius!",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain [E] [E] .",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bJohn #bTitor."
+    ]
+  },
+  "VertinMod:Bytes_65536": {
+    "NAME": "65,536 Bytes",
+    "DESCRIPTION": "Remove all of your debuffs. Remove all of target's Buffs(Except special Buffs). NL Gain !B! Block. Next turn, gain !B! Block. NL Purge."
+  },
+  "VertinMod:Old_PocketWatch": {
+    "NAME": "Old Pocket Watch",
+    "DESCRIPTION": "Deal !D! damage. NL If target has debuff, heal !M! HP.",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bEagle."
+    ]
+  },
+  "VertinMod:Finger_Lens": {
+    "NAME": "Finger Lens",
+    "DESCRIPTION": "Remove all Block from the enemy. NL Deal !D! damage to ALL enemies.",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bEagle."
+    ]
+  },
+  "VertinMod:Superficiality_And_Reality": {
+    "NAME": "Between Superficiality and Reality",
+    "DESCRIPTION": "This turn, your Attacks deal double damage. NL Purge."
+  },
+  "VertinMod:Dirty_Thing": {
+    "NAME": "Dirty Thing",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bPavia."
+    ]
+  },
+  "VertinMod:Poor_Sod": {
+    "NAME": "Poor Sod",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bPavia."
+    ]
+  },
+  "VertinMod:Noisy_Wolves": {
+    "NAME": "Noisy Wolves",
+    "DESCRIPTION": ""
+  },
+  "VertinMod:A_Silver_Bullet": {
+    "NAME": "A Silver Bullet",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bMondlicht."
+    ]
+  },
+  "VertinMod:An_Axe_Dance": {
+    "NAME": "An Axe Dance",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bMondlicht."
+    ]
+  },
+  "VertinMod:Hunting_Wolves": {
+    "NAME": "Hunting Wolves",
+    "DESCRIPTION": ""
+  },
+  "VertinMod:Prank": {
+    "NAME": "Prank",
+    "DESCRIPTION": "Deal !D! damage. NL Ethereal. NL If this card is Exhausted, gain 1 vertinmod:Moxie of Poltergeist.",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bPoltergeist."
+    ]
+  },
+  "VertinMod:Whisper": {
+    "NAME": "Whisper",
+    "DESCRIPTION": "Gain !B! Block. NL Ethereal. NL If this card is Exhausted, gain 1 vertinmod:Moxie of Poltergeist.",
+    "EXTENDED_DESCRIPTION":[
+      "This card belongs to #bPoltergeist."
+    ]
+  },
+  "VertinMod:Not_Gentle_Sun": {
+    "NAME": "The Sun Is Not Gentle",
+    "DESCRIPTION": "Gain 2 Intangible. NL Gain Regen equal to the number of cards in your Exhaust pile. NL Purge.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gain !M! Regen.)"
+    ]
+  },
+  "VertinMod:Play_House": {
+    "NAME": "Play House",
+    "DESCRIPTION": "Only can be played when no cards have been played this round. NL Everyone gain !M! Intangible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": " Retain. NL Only can be played when no cards have been played this round. NL Everyone gain !M! Intangible. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bBaby #bBlue.",
+      "Cards have been played this round."
+    ]
+  },
+  "VertinMod:Cough_Syrup": {
+    "NAME": "Cough Syrup",
+    "DESCRIPTION": "At the start of your turn, apply !M! Weak to ALL enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bBaby #bBlue."
+    ]
+  },
+  "VertinMod:Tea_Party": {
+    "NAME": "Tea Party",
+    "DESCRIPTION": "Deal !D! damage. If the enemy has Weak, Stun the target. NL Purge."
+  },
+  "VertinMod:Power_Power": {
+    "NAME": "Power",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Enemy loses !D! HP. NL Strength also affects this card.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bDikke."
+    ]
+  },
+  "VertinMod:Justice": {
+    "NAME": "Justice",
+    "DESCRIPTION": "Gain !M! Temp_HP 。 NL If your HP is below 50%, heal 5 HP. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bDikke."
+    ]
+  },
+  "VertinMod:Maverick_Judge": {
+    "NAME": "Maverick Judge",
+    "DESCRIPTION": "Remove all of your Debuffs. NL Enemy loses !D! HP. NL Gain !M! Buffer. NL Purge."
+  },
+  "VertinMod:Commandment_V": {
+    "NAME": "Commandment V",
+    "DESCRIPTION": "Deal !D! Damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Stun the target. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bSonetto."
+    ]
+  },
+  "VertinMod:Exhortations_IX": {
+    "NAME": "Exhortations IX",
+    "DESCRIPTION": "Gain !M! Strength and Dexterity.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bSonetto."
+    ]
+  },
+  "VertinMod:Unrestricted_Chant": {
+    "NAME": "Unrestricted Chant",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL If you have positive Strength and Dexterity. Repeat 'the lower value of Strength and Dexterity' times. NL Purge."
+  },
+  "VertinMod:Pinata": {
+    "NAME": "Pinata",
+    "DESCRIPTION": "Deal !D! damage. NL Thorn also affects this card.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bBalloon #bParty."
+    ]
+  },
+  "VertinMod:Coughing_Weirdo": {
+    "NAME": "Coughing Weirdo",
+    "DESCRIPTION": "Gain !M! Thorn. NL Heal HP equal to 10% Lost HP. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bBalloon #bParty."
+    ]
+  },
+  "VertinMod:Balloon_Party": {
+    "NAME": "Good Kids, Bad Adults",
+    "DESCRIPTION": "Deals 3 times of the number of Thorn damage to ALL enemies. NL Heal the number of Thorn HP. NL Purge.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deal !D! damage. Heal !M! HP.)"
+    ]
+  },
+  "VertinMod:Timely_Farewell": {
+    "NAME": "Timely Farewell",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bNecrologist."
+    ]
+  },
+  "VertinMod:Timely_Farewell_1": {
+    "NAME": "Timely Farewell",
+    "DESCRIPTION": "Discard any number of cards, then draw that many cards. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bNecrologist."
+    ]
+  },
+  "VertinMod:By_the_Coffin": {
+    "NAME": "By the Coffin",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bNecrologist."
+    ]
+  },
+  "VertinMod:By_the_Coffin_1": {
+    "NAME": "By the Coffin",
+    "DESCRIPTION": "Grave. Put !M! card from your discard pile into your hand, It costs 0 this turn. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bNecrologist."
+    ]
+  },
+  "VertinMod:Whispers_of_Deceased": {
+    "NAME": "Whispers of the Deceased",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      ""
+    ]
+  },
+  "VertinMod:Whispers_of_Deceased_1": {
+    "NAME": "Whispers of the Deceased",
+    "DESCRIPTION": "Exhaust all cards in discard pile. NL Obtain 1 Fairy in a Bottle. NL Purge."
+  },
+  "VertinMod:Shiny_Diamond": {
+    "NAME": "A Shiny Diamond",
+    "DESCRIPTION": "Deal damage equal to your Block.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bTennant.",
+      " NL (Deal !D! damage.)"
+    ]
+  },
+  "VertinMod:Galaxy_Bouquet": {
+    "NAME": "A Bouquet of Galaxy",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bTennant."
+    ]
+  },
+  "VertinMod:Beautiful_Lie": {
+    "NAME": "A Sincere Heart",
+    "DESCRIPTION": "Remove all of your Block. NL For every 10 blocks removed, deal !D! damage and gain 1 Buffer. NL Purge.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gain !M! Buffer.）"
+    ]
+  },
+  "VertinMod:LongLive_Peace": {
+    "NAME": "Long Live Peace",
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses Strength equal to unblocked damage dealt. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bDiggers."
+    ]
+  },
+  "VertinMod:Bubblism": {
+    "NAME": "Bubblism",
+    "DESCRIPTION": "Apply !M! Vulnerable. NL Enemy loses !M! Strength. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bDiggers."
+    ]
+  },
+  "VertinMod:Sweet_Dreams": {
+    "NAME": "Sweet Dreams for You",
+    "DESCRIPTION": "If enemy's Strength is positive, make it an equal negative value. NL Otherwise, enemy loses !M! Strength. NL Purge."
+  },
+  "VertinMod:Opening_Ceremony": {
+    "NAME": "Opening Ceremony",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bUlu."
+    ]
+  },
+  "VertinMod:Jumping_Heart": {
+    "NAME": "Jumping Heart",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bUlu."
+    ]
+  },
+  "VertinMod:Indestructible_Fire": {
+    "NAME": "Indestructible Fire",
+    "DESCRIPTION": ""
+  },
+  "VertinMod:Crosswind_Takeoff": {
+    "NAME": "Crosswind Takeoff",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Strength affects this card !M! times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": " Retain. NL Deal !D! damage. NL Strength affects this card !M! times. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bLilya."
+    ]
+  },
+  "VertinMod:Aerial_Maneuvers": {
+    "NAME": "Aerial Maneuvers",
+    "DESCRIPTION": "Retain. NL Gain !B! Block. NL Dexterity affects this card !M! times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain !D! Block. NL Dexterity affects this card !M! times. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bLilya."
+    ]
+  },
+  "VertinMod:Canned_Liquor": {
+    "NAME": "Canned Liquor",
+    "DESCRIPTION": "Gain !M! temporary Strength. NL Add a  *Crosswind *Takeoff into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !M! temporary Strength. NL Add a *Crosswind *Takeoff+ into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bLilya."
+    ]
+  },
+  "VertinMod:Key_of_Su01Be": {
+    "NAME": "Key of Su01Be",
+    "DESCRIPTION": "Gain !M! temporary Dexterity. NL Add a *Aerial *Maneuvers into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !M! temporary Dexterity. NL Add a *Aerial *Maneuvers+ into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bLilya."
+    ]
+  },
+  "VertinMod:Soaring_Witch": {
+    "NAME": "Soaring Witch",
+    "DESCRIPTION": "Reduce HP to 10. For every 5 lost HP, gain !M! Strength and Dexterity. NL Gain !M! *Flight. NL At the end of combat, make HP to the original HP."
+  },
+  "VertinMod:K_Justice": {
+    "NAME": "Justice",
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, gain [E] , draw !M! cards, then A Knight gain additional !M! vertinmod:Moxie.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If Fatal, gain [E] [E] , draw !M! cards, then A Knight gain additional !M! vertinmod:Moxie.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bA #bKnight."
+    ]
+  },
+  "VertinMod:Glory": {
+    "NAME": "Glory",
+    "DESCRIPTION": "At the start of each turn, Gain !M! Vigor.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bA #bKnight."
+    ]
+  },
+  "VertinMod:After_AD_778": {
+    "NAME": "After AD 778",
+    "DESCRIPTION": "Deal !D! damage. NL Vigor affects this card !M! times. NL If Fatal, Gain Vigor equal to overflow damage, then draw !M! cards. NL Purge."
+  },
+  "VertinMod:Triple_Dose": {
+    "NAME": "Triple Dose",
+    "DESCRIPTION": "",
+    "UPGRADE_DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bSotheby."
+    ]
+  },
+  "VertinMod:Triple_Dose_1": {
+    "NAME": "Triple the Dose!",
+    "DESCRIPTION": "Obtain a Poison Potion . NL Occasionally fail. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Obtain a Super Poison Potion . NL Occasionally fail. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bSotheby."
+    ]
+  },
+  "VertinMod:Concentrated_Essence": {
+    "NAME": "Concentrated Essence",
+    "DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bSotheby."
+    ]
+  },
+  "VertinMod:Concentrated_Essence_1": {
+    "NAME": "Concentrated Essence!",
+    "DESCRIPTION": "Obtain a Regen Potion. NL Occasionally fail. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Obtain a Super Regen Potion. NL Occasionally fail. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bSotheby."
+    ]
+  },
+  "VertinMod:Mix_All": {
+    "NAME": "Mix Them All Up!",
+    "DESCRIPTION": "Immediately handle all your Regen. NL Immediately handle all Poison on ALL enemies. NL Purge."
+  },
+  "VertinMod:Treat_Ears": {
+    "NAME": "Treat for the Ears",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bRegulus."
+    ]
+  },
+  "VertinMod:Challenge_Eyes": {
+    "NAME": "Challenge for the Eyes",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bRegulus."
+    ]
+  },
+  "VertinMod:Sleepless_Rave": {
+    "NAME": "Sleepless Rave",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain !M! vertinmod:RiotandRoll. NL Purge."
+  },
+  "VertinMod:Victorious_General": {
+    "NAME": "Victorious General",
+    "DESCRIPTION": "Deal !D! damage. NL Every vertinmod:Moxie *Centurion has, the basic damage increases by !M! .",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bCenturion."
+    ]
+  },
+  "VertinMod:Outdoor_Superstar": {
+    "NAME": "Outdoor Superstar",
+    "DESCRIPTION": "*Centurion gain vertinmod:Moxie for each enemy in combat. NL For each exceeded vertinmod:Moxie of *Centurion, gain [E] , draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "*Centurion gain vertinmod:Moxie for each enemy in combat. NL For each exceeded vertinmod:Moxie of *Centurion, gain [E] , draw !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bCenturion."
+    ]
+  },
+  "VertinMod:RealityShow_Premiere": {
+    "NAME": "Reality Show Premiere",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Weak to ALL enemies. NL Heal !M! HP. NL Purge."
+  },
+  "VertinMod:Refrain": {
+    "NAME": "Refrain",
+    "DESCRIPTION": "Stun ALL enemies whose intent isn't Attack. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVoyager."
+    ]
+  },
+  "VertinMod:Starlight_Sonata": {
+    "NAME": "Starlight Sonata",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply ALL enemies !M! Vulnerable.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVoyager."
+    ]
+  },
+  "VertinMod:Strings_Galaxy": {
+    "NAME": "Galaxy on the Strings",
+    "DESCRIPTION": "Deal !D! damage. If the enemy has Vulnerable, Stun the target. NL Purge."
+  },
+  "VertinMod:Old_Idea": {
+    "NAME": "Old Idea",
+    "DESCRIPTION": "Deal !D! damage. NL Dexterity also affects this card.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bMs.NewBabel."
+    ]
+  },
+  "VertinMod:New_Wave": {
+    "NAME": "New Wave",
+    "DESCRIPTION": "Gain !B! Block. NL Strength also affects this card.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bMs.NewBabel."
+    ]
+  },
+  "VertinMod:Future_Is_Near": {
+    "NAME": "The Future Is Near",
+    "DESCRIPTION": "Gain *Barricade . NL Gain !M! Artifact. NL Gain Thorn equal to the sum of Strength and Dexterity."
+  },
+  "VertinMod:Saturn_Divination": {
+    "NAME": "Saturn Divination",
+    "DESCRIPTION": "Whenever you gain Block this turn, heal !M! HP.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bKaalaa #bBaunaa."
+    ]
+  },
+  "VertinMod:Mars_Divination": {
+    "NAME": "Mars Divination",
+    "DESCRIPTION": "Whenever you deal unblocked damage with Attacks this turn, heal !M! HP.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bKaalaa #bBaunaa."
+    ]
+  },
+  "VertinMod:Lunar_Divination": {
+    "NAME": "Lunar_Divination",
+    "DESCRIPTION": "Whenever you play a card, heal !M! HP."
+  },
+  "VertinMod:Body_Protection": {
+    "NAME": "Protection to the Body",
+    "DESCRIPTION": "Apply ALL enemies !M! Vulnerable. NL Gain [E] . NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply ALL enemies !M! Vulnerable. NL Gain [E] [E] [E] . NL Draw !M! cards. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bEzra."
+    ]
+  },
+  "VertinMod:Spirit_Encourage": {
+    "NAME": "Stimulus to the Mind",
+    "DESCRIPTION": "Gain !B! Block. NL For every enemy with Vulnerable, draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Draw *1 cards. NL For every enemy with Vulnerable, draw !M! cards.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bEzra."
+    ]
+  },
+  "VertinMod:Comprehensive_Care": {
+    "NAME": "Compassion All-Round",
+    "DESCRIPTION": "All other vertinmod:Arcanists gain !M! vertinmod:Moxie. NL Draw cards until your hand is full. Purge."
+  },
+  "VertinMod:Wind_into_Woods": {
+    "NAME": "Wind into the Woods",
+    "DESCRIPTION": "Apply !M! vertinmod:Constricted.",
+    "UPGRADE_DESCRIPTION": "Apply !M! vertinmod:Constricted to ALL enemies.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bDruvisIII."
+    ]
+  },
+  "VertinMod:Early_Dawn": {
+    "NAME": "Early Dawn",
+    "DESCRIPTION": "Gain !M! vertinmod:Malleable. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bDruvisIII."
+    ]
+  },
+  "VertinMod:Silent_Woods": {
+    "NAME": "Silence in the Woods",
+    "DESCRIPTION": "Double your vertinmod:Malleable. NL Double all enemies' vertinmod:Constricted. NL Stun the enemy with the most vertinmod:Constricted. NL Purge."
+  },
+  "VertinMod:White_Blankie": {
+    "NAME": "White Blankie",
+    "DESCRIPTION": "If enemy has no Poison, apply !M! Poison. NL Otherwise apply *5 Poison.",
+    "UPGRADE_DESCRIPTION": "If enemy has no Poison, apply !M! Poison. NL Otherwise apply *7 Poison.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bJessica."
+    ]
+  },
+  "VertinMod:Good_Friends": {
+    "NAME": "Good Friends",
+    "DESCRIPTION": "Increase an enemy's Poison to times equal to the number of Debuff types. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Increase an enemy's Poison to times equal to (the number of Debuff types + 1). NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bJessica."
+    ]
+  },
+  "VertinMod:Gaze_From_the_Forest": {
+    "NAME": "Gaze From the Forest",
+    "DESCRIPTION": "Deal the damage equal to the total number of Poison to ALL enemies. NL Purge.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deal !D! damage to ALL enemies.）"
+    ]
+  },
+    "VertinMod:Paper_Slip": {
+    "NAME": "Paper Slip",
+    "DESCRIPTION": "Only can be played when the number of enemies is *1. NL Add *Adapted *Song to your deck. NL Add *Writhe to your deck. NL Ethereal. NL Fleeting.",
+    "UPGRADE_DESCRIPTION": "Only can be played when the number of enemies is *1. NL Add *Adapted *Song to your deck. NL Add *Writhe to your deck. NL Fleeting.",
+    "EXTENDED_DESCRIPTION": [
+        "The current number of enemies is not 1!"
+    ]
+  },
+  "VertinMod:Adapted_Song": {
+    "NAME": "Adapted Song",
+    "DESCRIPTION": "Only can be played when the number of enemies is no less than *3. NL Add *Jail *Break to your deck. NL Add *Injury to your deck. NL Ethereal. NL Fleeting.",
+    "UPGRADE_DESCRIPTION": "Only can be played when the number of enemies is no less than *3. NL Add *Jail *Break to your deck. NL Add *Injury to your deck. NL Fleeting.",
+    "EXTENDED_DESCRIPTION": [
+      "The current number of enemies is less than 3!"
+    ]
+  },
+  "VertinMod:Jail_Break": {
+    "NAME": "Jail Break",
+    "DESCRIPTION": "Only can be played in Boss and Elite combats. NL Add *New *World to your deck. NL Add *Regret to your deck. NL Ethereal. NL Fleeting.",
+    "UPGRADE_DESCRIPTION": "Only can be played in Boss and Elite combats. NL Add *New *World to your deck. NL Add *Regret to your deck. NL Fleeting."
+  },
+  "VertinMod:New_World": {
+    "NAME": "New World",
+    "DESCRIPTION": "At the end of combat, Obtain a special *relic. NL Ethereal. NL fleeting.",
+    "UPGRADE_DESCRIPTION": "At the end of combat, Obtain a special *relic. NL fleeting."
+  },
+  "VertinMod:Storm": {
+    "NAME": "Storm",
+    "DESCRIPTION": " Unplayable. NL Cannot be removed from your deck. NL When you draw this card, Exhaust all Upgraded cards in your hand, then add temporary copies of these cards to your hand. NL Lose *1 Strength and Dexterity for each card Exhausted. NL Ethereal. NL (Cards belongs to vertinmod:Vertin are not affected.)"
+  }
+}

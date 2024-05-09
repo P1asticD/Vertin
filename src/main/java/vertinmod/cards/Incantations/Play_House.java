@@ -30,6 +30,8 @@ public class Play_House extends Ver_CustomCard {
     public Play_House(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
         this.tags.add(Arcanist);
         this.tags.add(BabyBlue);
     }
@@ -48,10 +50,10 @@ public class Play_House extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new ApplyPowerAction(p, p, new IntangiblePower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new IntangiblePower(p, this.magicNumber), 1));
         for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
             if (!monster.isDead && !monster.isDying) {
-                addToBot(new ApplyPowerAction(monster, monster, new IntangiblePower(monster, 1), 1));
+                addToBot(new ApplyPowerAction(monster, monster, new IntangiblePower(monster, this.magicNumber), this.magicNumber));
             }
         }
     }

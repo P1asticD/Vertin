@@ -47,7 +47,6 @@ public class Coughing_Weirdo extends Ver_CustomCard {
         if (!this.upgraded){
             upgradeName();
             upgradeMagicNumber(2);
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

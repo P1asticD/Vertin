@@ -27,7 +27,7 @@ public class Lunar_Divination extends CustomCard{
 
     public Lunar_Divination(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(Ultimate);
     }

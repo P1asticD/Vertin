@@ -34,7 +34,7 @@ public class RealityShow_Premiere extends CustomCard{
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 10;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 10;
+        this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
         this.isMultiDamage = true;
         this.purgeOnUse = true;
@@ -44,7 +44,7 @@ public class RealityShow_Premiere extends CustomCard{
 
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
-        addToBot(new HealAction(p, p, 10));
+        addToBot(new HealAction(p, p, this.magicNumber));
         for(AbstractMonster mo: AbstractDungeon.getMonsters().monsters){
             addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false), this.magicNumber));
         }

@@ -1,0 +1,17 @@
+{
+  "AlignmentAction": {
+    "TEXT": [
+      "Choose a arcanist to gain moxie."
+    ]
+  },
+  "SequenceAction": {
+    "TEXT": [
+      "Adjust your hand sequence."
+    ]
+  },
+  "TokenCardField": {
+    "TEXT": [
+      "TokenCard"
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "VertinMod:The_Suitcase": {
+    "NAME": "The Suitcase",
+    "FLAVOR": "✦Neirü mildeen tiün bonan nokton∽∽!✦",
+    "DESCRIPTIONS": [
+      "You can no longer #ySmith at Rest Sites. You can #yvertinmod:Ascend now.",
+      " NL Whenever you add a card belonging to #bvertinmod:Arcanists to your deck, if it is an unupgraded card, obtain a same card to your deck.",
+      " NL At the end of combat, #yUpgrade a random card belonging to #bvertinmod:Vertin .",
+      " NL Once per turn, #yRight #yClick: draw #b1 card, then adjust your hand sequence.",
+      "Adjust your hand sequence.",
+      "Already used this round."
+    ]
+  },
+  "VertinMod:The_Spinning_Wheel": {
+    "NAME": "Spinning Wheel",
+    "FLAVOR": "Turn it, like always.",
+    "DESCRIPTIONS": [
+      "Each time you add a card belonging to #bvertinmod:Arcanists to your deck, record their #yvertinmod:Moxie. The upper limit is #b5 .",
+      " NL Every time you play a card, the #yvertinmod:Moxie of the corresponding #bvertinmod:Arcanist add #b1 . You can use #b5 #yMoxie to add #yUltimate to your hand.",
+      " NL #yRight #yClick: Open the #yUltimate selection interface.",
+      " NL Current #yMoxie of #yArcanists :",
+      "Choose 1 Ultimate to your hand.",
+      "Three Ultimates have been played in this combat.",
+      " NL #bTheFool : ",
+      " NL #bJohn #bTitor : ",
+      " NL #bEagle : ",
+      " NL #bPavia : ",
+      " NL #bMondlicht : ",
+      " NL #bPoltergeist : ",
+      " NL #bBaby #bBlue : ",
+      " NL #bDikke : ",
+      " NL #bSonetto : ",
+      " NL #bBalloon #bParty : ",
+      " NL #bNecrologist : ",
+      " NL #bTennant : ",
+      " NL #bDiggers : ",
+      " NL #bUlu : ",
+      " NL #bLilya : ",
+      " NL #bA #bKnight : ",
+      " NL #bSotheby : ",
+      " NL #bRegulus : ",
+      " NL #bCenturion : ",
+      " NL #bVoyager : ",
+      " NL #bMs.NewBabel : ",
+      " NL #bKaalaa #bBaunaa : ",
+      " NL #bEzra : ",
+      " NL #bDruvisIII : ",
+      " NL #bJessica : ",
+      "No Ultimate can be used."
+    ]
+  },
+  "VertinMod:Carrot": {
+    "NAME": "Carrot",
+    "FLAVOR": "Darley Clatter loves it.",
+    "DESCRIPTIONS": [
+      "Upon pickup, raise your Max HP by #b7, #yvertinmod:Arcanist who has the least #yvertinmod:Moxie gain #b3 #yMoxie."
+    ]
+  },
+  "VertinMod:Apple": {
+    "NAME": "APPLe",
+    "FLAVOR": "keep the doctor away.",
+    "DESCRIPTIONS": [
+      "Upon pickup, raise your Max HP by #b10. At the start of each combat, heal HP equal to the number of #yFood #yRelic you own."
+    ]
+  },
+  "VertinMod:Goggles": {
+    "NAME": "Goggles",
+    "FLAVOR": "It was an ordinary day, until now.",
+    "DESCRIPTIONS": [
+      "If you do not play any #yAttacks during your turn, all #yvertinmod:Arcanists gain #b1 #yvertinmod:Moxie."
+    ]
+  },
+  "VertinMod:Sparrow": {
+    "NAME": "“冬”",
+    "FLAVOR": "只是一只山雀。",
+    "DESCRIPTIONS": [
+      "当你的生命值高于 #b50% 时，额外获得 #b2 点 #y力量 。当你的生命值等于或低于 #b50% 时，额外获得 #b2 点 #y敏捷 。"
+    ]
+  },
+  "VertinMod:Sputnik": {
+    "NAME": "Sputnik",
+    "FLAVOR": "1958/01/04",
+    "DESCRIPTIONS": [
+      "Whenever you get #yThorns, gain the same amount of #yDexterity."
+    ]
+  },
+  "VertinMod:A_Pair_of_Bowknots": {
+    "NAME": "A Pair of Bowknots",
+    "FLAVOR": "Lisa and Louise is a good child.",
+    "DESCRIPTIONS": [
+      "Whenever you apply #yDebuff the enemy doesn't have, increase the amount applied by #b1. ( Except #yStun )"
+    ]
+  },
+  "VertinMod:Critters": {
+    "NAME": "Critters",
+    "FLAVOR": "Everyone should get one!",
+    "DESCRIPTIONS": [
+      "Whenever you would receive unblocked attack damage, if the damage is less than #yThorns, reduce it to #b1."
+    ]
+  },
+  "VertinMod:Phantom_Honey_Fungus": {
+    "NAME": "Phantom Honey Fungus",
+    "FLAVOR": "They're so interesting, diverse, and colorful.",
+    "DESCRIPTIONS": [
+      "You can no longer become #yVulnerable."
+    ]
+  },
+  "VertinMod:Ring": {
+    "NAME": "Ring",
+    "FLAVOR": "May the peace be with us.",
+    "DESCRIPTIONS": [
+      "Upon pickup, Upgrade ALL your cards, remove any cards from your deck. Obtain a unique #rCurse.",
+      " NL Each removed #yAttack gives you #b2 #yStrength;",
+      " NL Each removed #ySkill gives you #b2 #yDexterity;",
+      " NL Each removed #yPower card gives you a random Upgraded #yPower card to your hand at the start of each combat, it costs #b0 for that turn;",
+      " NL Each removed #yCurse gives you [E] at the start of your turn.",
+      " NL At the start of the combat, gain #b",
+      " #yStrength. #b",
+      " #yDexterity.",
+      " NL At the start of your turn, gain #b",
+      " [E] .",
+      " NL At the start of the combat, add #b",
+      " random Upgraded #yPower card to your hand, it costs #b0 for that turn.",
+      "Remove any cards."
+    ]
+  },
+  "VertinMod:Fractal_Geometry": {
+    "NAME": "Fractal Geometry",
+    "FLAVOR": "A feather naturally shed by an unknown bird.",
+    "DESCRIPTIONS": [
+      "Every time you play #b3 #yTokenCard , deal #b7 damage to ALL enemies."
+    ]
+  },
+  "VertinMod:SPDM_Rules": {
+    "NAME": "SPDM Rules",
+    "FLAVOR": "We are born to die.",
+    "DESCRIPTIONS": [
+      "Upon pickup, obtain additional copies of all Strike and Defend cards. Gain [E] at the start of your turn."
+    ]
+  },
+  "VertinMod:Scripture": {
+    "NAME": "Scripture",
+    "FLAVOR": "A recipe documenting how to cook French fries.(?)",
+    "DESCRIPTIONS": [
+      "The first time you apply #rDebuff to enemy, gain [E] . The first time you gain #yBuff, gain [E] ."
+    ]
+  },
+  "VertinMod:Pot": {
+    "NAME": "Pot",
+    "FLAVOR": "No! More! Wishes!",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b1 #yWeak and #yVulnerable to the enemy intended to deal the most damage."
+    ]
+  }
+}

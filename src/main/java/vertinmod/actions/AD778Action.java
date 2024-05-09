@@ -26,8 +26,7 @@ public class AD778Action extends AbstractGameAction {
             this.target.damage(this.info);
             if (((this.target).isDying || this.target.currentHealth <= 0) && !this.target.halfDead && !this.target.hasPower("Minion")) {
                 AbstractDungeon.player.addPower(new VigorPower(AbstractDungeon.player, va));
-                AbstractDungeon.player.gainEnergy(1);
-                addToBot(new DrawCardAction(AbstractDungeon.player, 1));
+                addToBot(new DrawCardAction(AbstractDungeon.player, this.amount));
             }
             if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())
                 AbstractDungeon.actionManager.clearPostCombatActions();

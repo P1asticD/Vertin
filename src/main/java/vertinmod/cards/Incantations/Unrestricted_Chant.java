@@ -28,7 +28,7 @@ public class Unrestricted_Chant extends CustomCard{
 
     public Unrestricted_Chant(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 14;
+        this.baseDamage = 7;
         this.damage = this.baseDamage;
         this.isMultiDamage = true;
         this.purgeOnUse = true;

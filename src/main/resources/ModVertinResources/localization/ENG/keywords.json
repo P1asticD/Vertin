@@ -1,0 +1,69 @@
+[
+  {
+    "PROPER_NAME": "Moxie",
+    "NAMES": [
+      "Moxie",
+      "moxie"
+    ],
+    "DESCRIPTION": "Whenever you play a card belonging to a #bArcanist, the #yMoxie of the #bArcanist increases by 1."
+  },
+  {
+    "PROPER_NAME": "Ascend",
+    "NAMES": [
+      "Ascend",
+      "ascend"
+    ],
+    "DESCRIPTION": "In each combat, whenever there are two adjacent unupgraded cards of #bArcanists with the same name in your hand, #rExhaust one and upgrade the other. NL #yMoxie of the #bArcanists increases by 1."
+  },
+  {
+    "PROPER_NAME": "Vertin",
+    "NAMES": [
+      "Vertin",
+      "vertin"
+    ],
+    "DESCRIPTION": "The timekeeper."
+  },
+  {
+    "PROPER_NAME":"Arcanists",
+    "NAMES": [
+      "Arcanists",
+      "Arcanist",
+      "arcanists",
+      "arcanist"
+    ],
+    "DESCRIPTION": "Characters."
+  },
+  {
+    "PROPER_NAME":"Ultimate",
+    "NAMES": [
+      "Ultimate",
+      "ultimate"
+    ],
+    "DESCRIPTION": "At most #r3 Ultimate can be played in each combat."
+  },
+  {
+    "PROPER_NAME":"RiotandRoll",
+    "NAMES": [
+      "Riot and Roll",
+      "RiotandRoll",
+      "riotandroll"
+    ],
+    "DESCRIPTION": "Immune to all damage until an attack card is played."
+  },
+  {
+    "PROPER_NAME": "Constricted",
+    "NAMES": [
+      "Constricted",
+      "constricted"
+    ],
+    "DESCRIPTION": "At the end of turn, take X damage."
+  },
+  {
+    "PROPER_NAME": "Malleable",
+    "NAMES": [
+      "Malleable",
+      "malleable"
+    ],
+    "DESCRIPTION": "Upon receiving attack damage, gains X #yBlock. #yBlock gain increases as is triggered. Resets to X at the start of your turn."
+  }
+]

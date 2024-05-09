@@ -42,7 +42,7 @@ public class SRegenPotion extends CustomPotion {
     }
 
     public int getPotency(int ascensionLevel) {
-        return 10;
+        return 7;
     }
 
     public AbstractPotion makeCopy() {
