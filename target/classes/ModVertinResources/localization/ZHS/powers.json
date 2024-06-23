@@ -82,7 +82,7 @@
   "VertinMod:PigeonPower": {
     "NAME": "白鸽",
     "DESCRIPTIONS": [
-      "每使用一张 #y至终仪式 ，获得 #b%d 点 [E] 。"
+      "本场战斗可获得的 #y至终仪式 上限增加 #b%d 。"
     ]
   },
   "VertinMod:PigeonPower1": {

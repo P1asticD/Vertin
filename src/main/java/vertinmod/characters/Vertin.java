@@ -82,17 +82,17 @@ public class Vertin extends CustomPlayer {
     // 初始卡组的ID，可直接写或引用变量
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for(int x = 0; x<5; x++) {
+        for(int x = 0; x<4; x++) {
             retVal.add(Strike.ID);
         }
-        for(int x = 0; x<5; x++) {
+        for(int x = 0; x<4; x++) {
             retVal.add(Defend.ID);
         }
         retVal.add(In_Suitcase.ID);
         //retVal.add(Alignment.ID);
-        /*for(int x = 0; x<2; x++) {
+        for(int x = 0; x<2; x++) {
             retVal.add(Treat_Ears.ID);
-        }*/
+        }
         return retVal;
     }
 

@@ -5,7 +5,7 @@
       "Moxie",
       "moxie"
     ],
-    "DESCRIPTION": "Whenever you play a card belonging to a #bArcanist, the #yMoxie of the #bArcanist increases by 1."
+    "DESCRIPTION": "Whenever you play an #bIncantations, the #yMoxie of the #bArcanist increases by 1."
   },
   {
     "PROPER_NAME": "Ascend",
@@ -13,7 +13,15 @@
       "Ascend",
       "ascend"
     ],
-    "DESCRIPTION": "In each combat, whenever there are two adjacent unupgraded cards of #bArcanists with the same name in your hand, #rExhaust one and upgrade the other. NL #yMoxie of the #bArcanists increases by 1."
+    "DESCRIPTION": "In each combat, whenever there are two adjacent unupgraded #bIncantations with the same name in your hand, #rExhaust one and upgrade the other. NL #yMoxie of the #bArcanists increases by 1."
+  },
+  {
+    "PROPER_NAME": "Incantations",
+    "NAMES": [
+      "Incantations",
+      "incantations"
+    ],
+    "DESCRIPTION": "Cards belongs to #bArcanists. Only can be upgraded by #yAscend."
   },
   {
     "PROPER_NAME": "Vertin",
@@ -31,7 +39,7 @@
       "arcanists",
       "arcanist"
     ],
-    "DESCRIPTION": "Characters."
+    "DESCRIPTION": "Characters that can use #yIncantations."
   },
   {
     "PROPER_NAME":"Ultimate",
@@ -39,7 +47,7 @@
       "Ultimate",
       "ultimate"
     ],
-    "DESCRIPTION": "At most #r3 Ultimate can be played in each combat."
+    "DESCRIPTION": "A powerful card that can only be obtained once per battle."
   },
   {
     "PROPER_NAME":"RiotandRoll",

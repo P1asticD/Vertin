@@ -82,7 +82,7 @@
   "VertinMod:PigeonPower": {
     "NAME": "Pigeon",
     "DESCRIPTIONS": [
-      "Each time an #yUltimate is played, gain #b%d [E] ."
+      "The limit of #yUltimate increases by #b#d ."
     ]
   },
   "VertinMod:PigeonPower1": {
