@@ -51,8 +51,7 @@
   },
   "VertinMod:Pigeon": {
     "NAME": "Pigeon",
-    "DESCRIPTION": "Each time an vertinmod:Ultimate is played, gain !M! [E] .",
-    "UPGRADE_DESCRIPTION": "Each time an vertinmod:Ultimate is played, gain !M! [E] , draw !M! cards.",
+    "DESCRIPTION": "In this battle, the limit of vertinmod:Ultimate increases by !M! .",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bVertin."
     ]
@@ -616,26 +615,28 @@
   },
   "VertinMod:Saturn_Divination": {
     "NAME": "Saturn Divination",
-    "DESCRIPTION": "Whenever you gain Block this turn, heal !M! HP.",
+    "DESCRIPTION": "Whenever you gain Block this turn, heal !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Whenever you gain Block this turn, heal !M! HP. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bKaalaa #bBaunaa."
     ]
   },
   "VertinMod:Mars_Divination": {
     "NAME": "Mars Divination",
-    "DESCRIPTION": "Whenever you deal unblocked damage with Attacks this turn, heal !M! HP.",
+    "DESCRIPTION": "Whenever you deal unblocked damage with Attacks this turn, heal !M! HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Whenever you deal unblocked damage with Attacks this turn, heal !M! HP. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bKaalaa #bBaunaa."
     ]
   },
   "VertinMod:Lunar_Divination": {
-    "NAME": "Lunar_Divination",
-    "DESCRIPTION": "Whenever you play a card, heal !M! HP."
+    "NAME": "Lunar Divination",
+    "DESCRIPTION": "Whenever you play a card, heal !M! HP. NL Purge."
   },
   "VertinMod:Body_Protection": {
     "NAME": "Protection to the Body",
     "DESCRIPTION": "Apply ALL enemies !M! Vulnerable. NL Gain [E] . NL Draw !M! cards. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Apply ALL enemies !M! Vulnerable. NL Gain [E] [E] [E] . NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply ALL enemies 1 Vulnerable !M! times. NL Gain [E] [E] [E] . NL Draw !M! cards. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bEzra."
     ]

@@ -21,15 +21,17 @@ public class Saturn_Divination extends Ver_CustomCard {
     private static final String IMG_PATH = "ModVertinResources/img/cards/Saturn_Divination.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final CardType TYPE = CardType.POWER;
+    private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = VERTIN_CARD;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public Saturn_Divination(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.exhaust = true;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Lunar_Divination();
         this.tags.add(Arcanist);
         this.tags.add(BlackDwarf);
     }
@@ -41,7 +43,9 @@ public class Saturn_Divination extends Ver_CustomCard {
     public void upgrade(){
         if (!upgraded){
             upgradeName();
-            upgradeMagicNumber(1);
+            this.retain = true;
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 

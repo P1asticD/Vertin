@@ -37,6 +37,7 @@ public class Starlight_Sonata extends Ver_CustomCard {
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.isMultiDamage = true;
+        this.cardsToPreview = new Strings_Galaxy();
         this.tags.add(Arcanist);
         this.tags.add(Voyager);
     }

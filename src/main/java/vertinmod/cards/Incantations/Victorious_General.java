@@ -35,6 +35,7 @@ public class Victorious_General extends Ver_CustomCard {
         this.damage = this.baseDamage;
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new RealityShow_Premiere();
         this.tags.add(Arcanist);
         this.tags.add(Centurion);
     }

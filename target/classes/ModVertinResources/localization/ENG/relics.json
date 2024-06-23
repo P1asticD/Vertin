@@ -1,26 +1,30 @@
 {
+  "VertinMod:First_Melody": {
+    "NAME": "First Melody",
+    "FLAVOR": "The beginning, the end, all possibilities in imagination.",
+    "DESCRIPTIONS": [
+      "Once per turn, #yRight #yClick: draw #b1 card, discard #b1 card, then adjust your hand sequence.",
+      "Already used this round."
+    ]
+  },
   "VertinMod:The_Suitcase": {
     "NAME": "The Suitcase",
     "FLAVOR": "✦Neirü mildeen tiün bonan nokton∽∽!✦",
     "DESCRIPTIONS": [
       "You can no longer #ySmith at Rest Sites. You can #yvertinmod:Ascend now.",
-      " NL Whenever you add a card belonging to #bvertinmod:Arcanists to your deck, if it is an unupgraded card, obtain a same card to your deck.",
-      " NL At the end of combat, #yUpgrade a random card belonging to #bvertinmod:Vertin .",
-      " NL Once per turn, #yRight #yClick: draw #b1 card, then adjust your hand sequence.",
-      "Adjust your hand sequence.",
-      "Already used this round."
+      " NL Whenever you add a card belonging to #bvertinmod:Arcanists to your deck, if it is an unupgraded card, obtain a same card to your deck."
     ]
   },
   "VertinMod:The_Spinning_Wheel": {
     "NAME": "Spinning Wheel",
     "FLAVOR": "Turn it, like always.",
     "DESCRIPTIONS": [
-      "Each time you add a card belonging to #bvertinmod:Arcanists to your deck, record their #yvertinmod:Moxie. The upper limit is #b5 .",
-      " NL Every time you play a card, the #yvertinmod:Moxie of the corresponding #bvertinmod:Arcanist add #b1 . You can use #b5 #yMoxie to add #yUltimate to your hand.",
+      "Each time you add an #bvertinmod:Incantations to your deck, record their #yvertinmod:Moxie. The upper limit is #b5 .",
+      " NL Every time you play an #bvertinmod:Incantations , the #yvertinmod:Moxie of the corresponding #bvertinmod:Arcanist add #b1 . You can use #b5 #yMoxie to add #yUltimate to your hand.",
       " NL #yRight #yClick: Open the #yUltimate selection interface.",
       " NL Current #yMoxie of #yArcanists :",
       "Choose 1 Ultimate to your hand.",
-      "Three Ultimates have been played in this combat.",
+      "Ultimates obtained have been reached limit in this combat.",
       " NL #bTheFool : ",
       " NL #bJohn #bTitor : ",
       " NL #bEagle : ",
@@ -150,6 +154,20 @@
     "FLAVOR": "No! More! Wishes!",
     "DESCRIPTIONS": [
       "At the start of your turn, apply #b1 #yWeak and #yVulnerable to the enemy intended to deal the most damage."
+    ]
+  },
+  "VertinMod:S192-9W": {
+    "NAME": "S192-9W",
+    "FLAVOR": "There will be no more peace in the long night.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, deal #b12 damage to enemies with at least #b2 DEBUFFs."
+    ]
+  },
+  "VertinMod:Golden_Wine": {
+    "NAME": "Golden Wine",
+    "FLAVOR": "An ordinary goblet, but filled with gold.",
+    "DESCRIPTIONS": [
+      "Whenever you gain #yGold, heal equal amount of HP, and lose #b1 Max HP. (No less than #b10 )"
     ]
   }
 }

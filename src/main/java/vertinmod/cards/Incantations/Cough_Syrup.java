@@ -30,6 +30,7 @@ public class Cough_Syrup extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Tea_Party();
         this.tags.add(Arcanist);
         this.tags.add(BabyBlue);
     }

@@ -30,7 +30,7 @@ public class Scripture extends CustomRelic implements OnApplyPowerRelic {
 
     public boolean onApplyPower(AbstractPower toApply, AbstractCreature target, AbstractCreature source) {
         if(!this.DebuffThisTurn) {
-            if (toApply.ID.equals("Strength") && target != AbstractDungeon.player && source == AbstractDungeon.player) {
+            if (toApply.ID.equals("Strength") && target != AbstractDungeon.player && source == AbstractDungeon.player && !target.hasPower("Artifact")) {
                 if (toApply.amount < 0) {
                     this.DebuffThisTurn = true;
                     flash();
@@ -38,7 +38,7 @@ public class Scripture extends CustomRelic implements OnApplyPowerRelic {
                     addToBot(new GainEnergyAction(1));
                 }
             }
-            else if(toApply.type.equals(AbstractPower.PowerType.DEBUFF) && target != AbstractDungeon.player && source == AbstractDungeon.player){
+            else if(toApply.type.equals(AbstractPower.PowerType.DEBUFF) && target != AbstractDungeon.player && source == AbstractDungeon.player && !target.hasPower("Artifact")){
                 this.DebuffThisTurn = true;
                 flash();
                 addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));

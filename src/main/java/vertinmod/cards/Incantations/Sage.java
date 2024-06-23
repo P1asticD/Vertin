@@ -36,6 +36,7 @@ public class Sage extends Ver_CustomCard {
         this.damage = this.baseDamage;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Improvised_Show();
         this.tags.add(Fool);
         this.tags.add(Arcanist);
     }

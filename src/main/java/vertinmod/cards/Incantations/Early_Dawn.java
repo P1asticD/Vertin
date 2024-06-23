@@ -31,6 +31,7 @@ public class Early_Dawn extends Ver_CustomCard {
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.cardsToPreview = new Silent_Woods();
         this.tags.add(Arcanist);
         this.tags.add(DruvisIII);
     }

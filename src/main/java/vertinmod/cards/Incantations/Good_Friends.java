@@ -29,6 +29,7 @@ public class Good_Friends extends Ver_CustomCard {
 
     public Good_Friends(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.cardsToPreview = new Gaze_From_the_Forest();
         this.tags.add(Arcanist);
         this.tags.add(Jessica);
     }

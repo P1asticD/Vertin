@@ -8,17 +8,10 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.ui.campfire.AbstractCampfireOption;
-import com.megacrit.cardcrawl.ui.campfire.SmithOption;
-import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import com.megacrit.cardcrawl.vfx.UpgradeShineEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
-import vertinmod.actions.SequenceAction;
 import vertinmod.helpers.ModHelper;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
 
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.CurrentScreen.HAND_SELECT;
 import static vertinmod.modcore.VertinMod.Arcanist;
@@ -26,7 +19,7 @@ import static vertinmod.modcore.VertinMod.Vertin;
 import static vertinmod.relics.The_Spinning_Wheel.Characters;
 import static vertinmod.relics.The_Spinning_Wheel.Moxie;
 
-public class The_Suitcase extends CustomRelic implements BetterClickableRelic<The_Suitcase>{
+public class The_Suitcase extends CustomRelic{
     public static final String ID = ModHelper.makePath("The_Suitcase");
     private static final String IMG_PATH = "ModVertinResources/img/relics/The_Suitcase.png";
     private static final RelicTier RELIC_TIER = RelicTier.STARTER;
@@ -35,28 +28,10 @@ public class The_Suitcase extends CustomRelic implements BetterClickableRelic<Th
 
     public The_Suitcase(){
         super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
-        this.counter = 0;
-        this.setDuration(2000).addRightClickActions(
-                () -> this.Prepared1()
-        );
-    }
-
-    public void atTurnStart(){
-        this.counter = 0;
     }
 
     public void atBattleStart(){
         Count_Ascend = 0;
-    }
-
-    public void Prepared1(){
-        if (this.counter == 0) {
-            this.counter = 1;
-            addToBot(new DrawCardAction(1));
-            addToBot(new SequenceAction(AbstractDungeon.player, 1));
-        }
-        else
-            AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, this.DESCRIPTIONS[5], true));
     }
 
     public void onRefreshHand(){
@@ -85,20 +60,21 @@ public class The_Suitcase extends CustomRelic implements BetterClickableRelic<Th
         }
     }
 
-    public boolean canUseCampfireOption(AbstractCampfireOption option) {
+    /*public boolean canUseCampfireOption(AbstractCampfireOption option) {
         if (option instanceof SmithOption && option.getClass().getName().equals(SmithOption.class.getName())) {
             ((SmithOption)option).updateUsability(false);
             return false;
         }
         return true;
     }
+    */
 
     public void onObtainCard(AbstractCard card){
-        if(card.hasTag(Arcanist) && !card.upgraded)
+        if(card.hasTag(Arcanist) && !card.upgraded && card.type != AbstractCard.CardType.POWER)
             AbstractDungeon.player.masterDeck.addToTop(card.makeStatEquivalentCopy());
     }
 
-    public void onVictory() {
+    /*public void onVictory() {
         Count_Ascend = 0;
         ArrayList<AbstractCard> upgradableCards = new ArrayList<>();
         for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
@@ -113,10 +89,10 @@ public class The_Suitcase extends CustomRelic implements BetterClickableRelic<Th
             AbstractDungeon.topLevelEffects.add(new ShowCardBrieflyEffect((upgradableCards.get(0)).makeStatEquivalentCopy(), Settings.WIDTH / 2.0F - AbstractCard.IMG_WIDTH / 2.0F - 20.0F * Settings.scale, Settings.HEIGHT / 2.0F));
             AbstractDungeon.topLevelEffects.add(new UpgradeShineEffect(Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
         }
-    }
+    }*/
 
     public String getUpdatedDescription() {
-        return this.DESCRIPTIONS[0] + this.DESCRIPTIONS[1] + this.DESCRIPTIONS[2] + this.DESCRIPTIONS[3];
+        return this.DESCRIPTIONS[0] + this.DESCRIPTIONS[1];
     }
 
     public AbstractRelic makeCopy() {

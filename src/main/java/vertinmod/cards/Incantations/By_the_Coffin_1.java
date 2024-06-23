@@ -32,6 +32,7 @@ public class By_the_Coffin_1 extends Ver_CustomCard {
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
         GraveField.grave.set(this, Boolean.valueOf(true));
+        this.cardsToPreview = new Whispers_of_Deceased_1();
         this.tags.add(Arcanist);
         this.tags.add(Necrologist);
     }

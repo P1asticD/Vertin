@@ -105,7 +105,10 @@ public class The_Spinning_Wheel extends CustomRelic implements BetterClickableRe
     }
 
     private void card() {
-        if (this.counter != 3) {
+        int Ult_Count = 1;
+        if (AbstractDungeon.player.hasPower("VertinMod:PigeonPower"))
+            Ult_Count += AbstractDungeon.player.getPower("VertinMod:PigeonPower").amount;
+        if (this.counter < Ult_Count) {
             this.counter++;
             if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT) {
                 pre = AbstractDungeon.screen;
@@ -159,6 +162,14 @@ public class The_Spinning_Wheel extends CustomRelic implements BetterClickableRe
             AbstractDungeon.getCurrRoom().phase = phase;
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
+    }
+
+    public void onVictory(){
+        for(int i = 0; i < Moxie.size(); i++) {
+            if (Moxie.get(i) >= 1)
+                Moxie.set(i, 1);
+        }
+        this.refreshDesc();
     }
 
     @Override

@@ -34,6 +34,7 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Lunar_Divinat
 D:\repos\java\VertinMod\src\main\java\vertinmod\patches\TokenCardField.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Knight.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Galaxy_Bouquet.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\relics\First_Melody.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Maverick_Judge.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\actions\SequenceAction.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Old_Idea.java
@@ -76,6 +77,7 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\deprecated\PigeonPower_1.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\deprecated\Timely_Farewell.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\temporary\Opening_Ceremony.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Sage.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\relics\S1929W.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Wind_into_Woods.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Sleepless_Rave.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\FoolPower.java
@@ -90,6 +92,7 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\White_Blankie
 D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Ring.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\VertinCards\Dissonance.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\GrandPower.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\events\ExpensiveDinner.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Sweet_Dreams.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\deprecated\Whispers_of_Deceased.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\DissonancePower.java
@@ -115,12 +118,12 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Saturn_Divina
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\temporary\Hunting_Wolves.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\patches\CardTitleRenderPatch.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Apple.java
-D:\repos\java\VertinMod\src\main\java\vertinmod\powers\PigeonPower1.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Strings_Galaxy.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\BlackDwarf.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Voyager.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Timely_Farewell_1.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Crosswind_Takeoff.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\deprecated\PigeonPower1.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\modcore\VertinMod.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\actions\MorphingAction.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\RealityShow_Premiere.java
@@ -129,6 +132,7 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Finger_Lens.j
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Old_PocketWatch.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\potions\SRegenPotion.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Superficiality_And_Reality.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Golden_Wine.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\K_Justice.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\powers\RockPower.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\DruvisIII.java

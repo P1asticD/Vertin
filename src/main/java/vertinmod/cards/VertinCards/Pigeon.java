@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import vertinmod.cards.Ver_CustomCard;
 import vertinmod.helpers.ModHelper;
 import vertinmod.powers.PigeonPower;
-import vertinmod.powers.PigeonPower1;
 
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
 import static vertinmod.modcore.VertinMod.Vertin;
@@ -33,16 +32,13 @@ public class Pigeon extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (!upgraded)
-            addToBot(new ApplyPowerAction(p, p, new PigeonPower(p, this.magicNumber)));
-        else
-            addToBot(new ApplyPowerAction(p, p, new PigeonPower1(p, this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new PigeonPower(p, this.magicNumber)));
     }
 
     public void upgrade(){
         if(!upgraded) {
             upgradeName();
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            upgradeBaseCost(1);
             initializeDescription();
         }
     }

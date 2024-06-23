@@ -19,6 +19,7 @@ import vertinmod.cards.Incantations.*;
 import vertinmod.cards.VertinCards.*;
 import vertinmod.cards.others.*;
 import vertinmod.characters.Vertin;
+import vertinmod.events.ExpensiveDinner;
 import vertinmod.events.MushroomsReplacement;
 import vertinmod.events.PaperMemory;
 import vertinmod.potions.SPoisonPotion;
@@ -284,6 +285,7 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
 
     @Override
     public void receiveEditRelics(){
+        BaseMod.addRelicToCustomPool(new First_Melody(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new The_Suitcase(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new The_Spinning_Wheel(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Carrot(), VERTIN_CARD);
@@ -299,6 +301,8 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addRelicToCustomPool(new SPDM_Rules(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Scripture(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Pot(), VERTIN_CARD);
+        BaseMod.addRelicToCustomPool(new S1929W(), VERTIN_CARD);
+        BaseMod.addRelicToCustomPool(new Golden_Wine(), VERTIN_CARD);
     }
 
 
@@ -312,5 +316,6 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
                 .eventType(EventUtils.EventType.FULL_REPLACE)
                 .create());
         BaseMod.addEvent("VertinMod:PaperMemory", PaperMemory.class, "TheCity");
+        BaseMod.addEvent("VertinMod:ExpensiveDinner", ExpensiveDinner.class, "TheCity");
     }
 }

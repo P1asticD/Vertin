@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import vertinmod.cards.Ver_CustomCard;
 import vertinmod.helpers.ModHelper;
+import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.MultiCardPreview;
 
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
 import static vertinmod.modcore.VertinMod.Arcanist;
@@ -32,7 +33,7 @@ public class Canned_Liquor extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
-        this.cardsToPreview = new Crosswind_Takeoff();
+        MultiCardPreview.add((AbstractCard)this, new Crosswind_Takeoff(), new Soaring_Witch());
         this.tags.add(Arcanist);
         this.tags.add(Lilya);
     }

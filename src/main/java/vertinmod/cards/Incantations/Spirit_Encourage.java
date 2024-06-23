@@ -33,6 +33,7 @@ public class Spirit_Encourage extends Ver_CustomCard {
         this.block = this.baseBlock;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Comprehensive_Care();
         this.tags.add(Arcanist);
         this.tags.add(Ezra);
     }

@@ -32,6 +32,7 @@ public class Galaxy_Bouquet extends Ver_CustomCard {
         this.block = this.baseBlock;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Beautiful_Lie();
         this.tags.add(Arcanist);
         this.tags.add(Tennant);
     }

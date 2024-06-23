@@ -31,6 +31,7 @@ public class Finger_Lens extends Ver_CustomCard{
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 8;
         this.damage = this.baseDamage;
+        this.cardsToPreview = new Superficiality_And_Reality();
         this.isMultiDamage = true;
         this.tags.add(Eagle);
         this.tags.add(Arcanist);

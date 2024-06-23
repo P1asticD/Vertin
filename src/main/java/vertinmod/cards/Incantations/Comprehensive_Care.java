@@ -37,6 +37,8 @@ public class Comprehensive_Care extends CustomCard{
 
     public void use(AbstractPlayer p, AbstractMonster m){
         for (int i = 0; i < Moxie.size(); i++){
+            if (i==22)
+                continue;
             if (Moxie.get(i) >= 1)
                 Moxie.set(i, Math.min(Moxie_Max, Moxie.get(i) + 1));
         }

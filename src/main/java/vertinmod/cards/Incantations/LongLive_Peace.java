@@ -35,6 +35,7 @@ public class LongLive_Peace extends Ver_CustomCard{
         this.baseDamage = 3;
         this.damage = this.baseDamage;
         this.exhaust = true;
+        this.cardsToPreview = new Sweet_Dreams();
         this.tags.add(Arcanist);
         this.tags.add(Diggers);
     }

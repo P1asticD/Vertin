@@ -31,6 +31,7 @@ public class Wind_into_Woods extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Silent_Woods();
         this.tags.add(Arcanist);
         this.tags.add(DruvisIII);
     }

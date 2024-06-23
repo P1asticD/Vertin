@@ -35,6 +35,7 @@ public class Treat_Ears extends Ver_CustomCard {
         this.damage = this.baseDamage;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Sleepless_Rave();
         this.tags.add(Arcanist);
         this.tags.add(Regulus);
     }

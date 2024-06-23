@@ -32,6 +32,7 @@ public class White_Blankie extends Ver_CustomCard {
         this.baseMagicNumber = 10;
         this.damage = this.baseDamage;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Gaze_From_the_Forest();
         this.tags.add(Arcanist);
         this.tags.add(Jessica);
     }

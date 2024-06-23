@@ -29,6 +29,7 @@ public class Timely_Farewell_1 extends Ver_CustomCard {
     public Timely_Farewell_1(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.cardsToPreview = new Whispers_of_Deceased_1();
         this.tags.add(Arcanist);
         this.tags.add(Necrologist);
     }

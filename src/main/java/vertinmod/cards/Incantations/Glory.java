@@ -30,6 +30,7 @@ public class Glory extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new After_AD_778();
         this.tags.add(Arcanist);
         this.tags.add(Knight);
     }

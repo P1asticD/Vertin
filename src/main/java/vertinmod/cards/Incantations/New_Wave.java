@@ -28,8 +28,9 @@ public class New_Wave extends Ver_CustomCard {
 
     public New_Wave(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 10;
+        this.baseBlock = 9;
         this.block = this.baseBlock;
+        this.cardsToPreview = new Future_Is_Near();
         this.tags.add(Arcanist);
         this.tags.add(NewBabel);
     }
@@ -37,9 +38,9 @@ public class New_Wave extends Ver_CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(AbstractDungeon.player.hasPower("Strength")) {
             if(!upgraded)
-                this.baseBlock = 10 + AbstractDungeon.player.getPower("Strength").amount;
+                this.baseBlock = 9 + AbstractDungeon.player.getPower("Strength").amount;
             else
-                this.baseBlock = 14 + AbstractDungeon.player.getPower("Strength").amount;
+                this.baseBlock = 12 + AbstractDungeon.player.getPower("Strength").amount;
             calculateCardDamage(m);
             addToBot(new GainBlockAction(p, this.block));
             this.rawDescription = CARD_STRINGS.DESCRIPTION;
@@ -52,9 +53,9 @@ public class New_Wave extends Ver_CustomCard {
     public void applyPowers() {
         if(AbstractDungeon.player.hasPower("Strength")) {
             if (!upgraded)
-                this.baseBlock = 10 + AbstractDungeon.player.getPower("Strength").amount;
+                this.baseBlock = 9 + AbstractDungeon.player.getPower("Strength").amount;
             else
-                this.baseBlock = 14 + AbstractDungeon.player.getPower("Strength").amount;
+                this.baseBlock = 12 + AbstractDungeon.player.getPower("Strength").amount;
             super.applyPowers();
             this.rawDescription = CARD_STRINGS.DESCRIPTION;
             initializeDescription();
@@ -75,7 +76,7 @@ public class New_Wave extends Ver_CustomCard {
     public void upgrade(){
         if (!this.upgraded){
             upgradeName();
-            upgradeBlock(4);
+            upgradeBlock(3);
         }
     }
 

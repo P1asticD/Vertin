@@ -32,6 +32,7 @@ public class Bubblism extends Ver_CustomCard {
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.cardsToPreview = new Sweet_Dreams();
         this.tags.add(Arcanist);
         this.tags.add(Diggers);
     }

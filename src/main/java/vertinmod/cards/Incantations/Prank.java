@@ -33,6 +33,7 @@ public class Prank extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 20;
         this.damage = this.baseDamage;
+        this.cardsToPreview = new Not_Gentle_Sun();
         this.tags.add(Arcanist);
         this.tags.add(Poltergeist);
         this.isEthereal = true;

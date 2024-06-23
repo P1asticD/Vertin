@@ -34,6 +34,7 @@ public class Body_Protection extends Ver_CustomCard{
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.cardsToPreview = new Comprehensive_Care();
         this.tags.add(Arcanist);
         this.tags.add(Ezra);
     }
@@ -42,7 +43,8 @@ public class Body_Protection extends Ver_CustomCard{
         addToBot(new GainEnergyAction(magicNumber));
         addToBot(new DrawCardAction(p, magicNumber));
         for (AbstractMonster mo: AbstractDungeon.getMonsters().monsters){
-            addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo, magicNumber, false), magicNumber));
+            for(int i = 0; i < magicNumber; i++)
+                addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo, 1, false), 1));
         }
     }
 

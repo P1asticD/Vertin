@@ -21,7 +21,7 @@ public class Mars_Divination extends Ver_CustomCard {
     private static final String IMG_PATH = "ModVertinResources/img/cards/Mars_Divination.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final CardType TYPE = CardType.POWER;
+    private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = VERTIN_CARD;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -30,6 +30,8 @@ public class Mars_Divination extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.exhaust = true;
+        this.cardsToPreview = new Lunar_Divination();
         this.tags.add(Arcanist);
         this.tags.add(BlackDwarf);
     }
@@ -41,7 +43,9 @@ public class Mars_Divination extends Ver_CustomCard {
     public void upgrade(){
         if (!upgraded){
             upgradeName();
-            upgradeMagicNumber(1);
+            this.selfRetain = true;
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 

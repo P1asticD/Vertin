@@ -32,6 +32,7 @@ public class True_Genius extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseBlock = 12;
         this.block = baseBlock;
+        this.cardsToPreview = new Bytes_65536();
         this.tags.add(JohnTitor);
         this.tags.add(Arcanist);
     }

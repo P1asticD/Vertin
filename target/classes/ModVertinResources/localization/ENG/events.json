@@ -20,9 +20,9 @@
   "VertinMod:PaperMemory": {
     "NAME": "Past",
     "DESCRIPTIONS": [
-      "NL neatly arranged desks, a blackboard with formulas written on it...This looks like a #bclassroom. NL Everything here is out of place with the atmosphere inside the spire, but it brings you a sense of familiarity. NL You unconsciously walked to your former seat, found a #b~crumpled~ #b~slip~ on the desk. NL There is a line of small characters written on it #g\"Open #git\". NL This seems to evoke memories hidden deep within you.",
+      "Neatly arranged desks, a blackboard with formulas written on it...This looks like a #bclassroom. NL Everything here is out of place with the atmosphere inside the spire, but it brings you a sense of familiarity. NL You unconsciously walked to your former seat, found a #b~crumpled~ #b~slip~ on the desk. NL There is a line of small characters written on it #g\"Open #git\". NL This seems to evoke memories hidden deep within you.",
       "You decide to face the past directly. NL It is your own handwriting: NL \"If U r also curious abt the world outside.-9 tonight under George the Oakb.\"",
-      " #rNever think about it anymore! NL You left the classroom as if you were running away.",
+      " #rNever #rthink #rabout #rit #ranymore! NL You left the classroom as if you were running away.",
       " You suddenly wake up. NL There is no classroom, only one exquisite shining shrine. NL You realize that everything was just an #rillusion created by the shrine. NL Then you found that you had been tightly holding a #bslip.",
       " At the moment you left the classroom, you woke up. NL There is no classroom, only one exquisite grey shrine. NL You realize that everything was just an #rillusion created by the shrine."
     ],
@@ -30,6 +30,23 @@
       "[Open] #gObtain #gPaper #gSlip.",
       "[Leave]",
       "[Wake]"
+    ]
+  },
+  "VertinMod:ExpensiveDinner": {
+    "NAME": "\"Expensive Dinner\"",
+    "DESCRIPTIONS": [
+      "The long table was covered with a snow-white tablecloth, and delicious delicacies were served on exquisite porcelain plates. It seemed like an upper-class dinner was being held here. NL Several people in gorgeous clothes, but whose faces could not be seen clearly, are enjoying delicious food. NL But you are surprised to find that these gorgeous dishes are not food at all, it is... #rgold! #rand #rmoney?! NL As if aware of your arrival, a man raised glass.",
+      "\"You mean we can’t even tell the difference between food and money?\" NL They angrily threw the things in their hands at you. NL You fled in embarrassment, but the #ygold they threw were scattered on the ground.",
+      "\"Just enjoy this dinner.\" NL He smiled contentedly, and continued to enjoy. NL You found that there were no more empty seats, so you had no choice but to walk out with glass.",
+      "Definitely something wrong here! NL You waved, looked at them warily and backed away. NL They don't care about your rejection and continue to enjoy the dinner."
+    ],
+    "OPTIONS": [
+      "[Remind] #rLose #r",
+      " #rHP, #ggain #g",
+      " #gGold.",
+      "[Accept] #gObatin #ga #gspecial #gRelic.",
+      "[Reject]",
+      "[Leave]"
     ]
   }
 }

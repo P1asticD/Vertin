@@ -32,6 +32,7 @@ public class Coughing_Weirdo extends Ver_CustomCard {
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.cardsToPreview = new Balloon_Party();
         this.tags.add(Arcanist);
         this.tags.add(Balloon);
         this.tags.add(CardTags.HEALING);

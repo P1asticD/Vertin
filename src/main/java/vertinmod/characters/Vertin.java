@@ -23,6 +23,7 @@ import vertinmod.cards.VertinCards.Defend;
 import vertinmod.cards.VertinCards.In_Suitcase;
 import vertinmod.cards.VertinCards.Strike;
 import vertinmod.modcore.VertinMod;
+import vertinmod.relics.First_Melody;
 import vertinmod.relics.The_Spinning_Wheel;
 import vertinmod.relics.The_Suitcase;
 
@@ -81,23 +82,24 @@ public class Vertin extends CustomPlayer {
     // 初始卡组的ID，可直接写或引用变量
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        for(int x = 0; x<3; x++) {
+        for(int x = 0; x<5; x++) {
             retVal.add(Strike.ID);
         }
-        for(int x = 0; x<4; x++) {
+        for(int x = 0; x<5; x++) {
             retVal.add(Defend.ID);
         }
         retVal.add(In_Suitcase.ID);
-        retVal.add(Alignment.ID);
-        for(int x = 0; x<2; x++) {
+        //retVal.add(Alignment.ID);
+        /*for(int x = 0; x<2; x++) {
             retVal.add(Treat_Ears.ID);
-        }
+        }*/
         return retVal;
     }
 
     // 初始遗物的ID
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
+        retVal.add(First_Melody.ID);
         retVal.add(The_Suitcase.ID);
         retVal.add(The_Spinning_Wheel.ID);
         return retVal;

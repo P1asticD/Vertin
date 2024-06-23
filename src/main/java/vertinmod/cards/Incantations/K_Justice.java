@@ -33,6 +33,7 @@ public class K_Justice extends Ver_CustomCard {
         this.damage = this.baseDamage;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new After_AD_778();
         this.tags.add(Arcanist);
         this.tags.add(Knight);
     }
@@ -47,6 +48,7 @@ public class K_Justice extends Ver_CustomCard {
             upgradeDamage(5);
             upgradeMagicNumber(1);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 

@@ -11,7 +11,7 @@ import vertinmod.helpers.ModHelper;
 public class Apple extends CustomRelic {
     public static final String ID = ModHelper.makePath("Apple");
     private static final String IMG_PATH = "ModVertinResources/img/relics/Apple.png";
-    private static final RelicTier RELIC_TIER = RelicTier.RARE;
+    private static final RelicTier RELIC_TIER = RelicTier.UNCOMMON;
     private static final LandingSound LANDING_SOUND = LandingSound.FLAT;
 
     public Apple() {

@@ -1,7 +1,9 @@
 vertinmod\cards\VertinCards\Alignment.class
 vertinmod\cards\Incantations\New_Wave.class
+vertinmod\relics\Golden_Wine.class
 vertinmod\actions\RemoveBuffsAction.class
 vertinmod\events\PaperMemory.class
+vertinmod\deprecated\PigeonPower1.class
 vertinmod\powers\CoughPower.class
 vertinmod\deprecated\PigeonPower_1.class
 vertinmod\deprecated\PigeonPower.class
@@ -14,6 +16,7 @@ vertinmod\patches\CardTitleRenderPatch.class
 vertinmod\cards\Incantations\Refrain.class
 vertinmod\cards\Incantations\Future_Is_Near.class
 vertinmod\cards\temporary\Noisy_Wolves.class
+vertinmod\relics\First_Melody.class
 vertinmod\relics\BetterClickableRelic$ClickableRelicUpdatePatch$Locator.class
 vertinmod\patches\TokenCardFieldPatch$MakeSameInstanceOf.class
 vertinmod\patches\CardTitleRenderPatch$DrawCardReplace.class
@@ -59,6 +62,7 @@ vertinmod\cards\Incantations\Finger_Lens.class
 vertinmod\cards\Arcanists\Balloon.class
 vertinmod\relics\Critters.class
 vertinmod\relics\BetterClickableRelic$ClickManager.class
+vertinmod\events\ExpensiveDinner$CurScreen.class
 vertinmod\cards\VertinCards\Grand_Orchestra.class
 vertinmod\cards\Arcanists\Ezra.class
 vertinmod\cards\others\Storm.class
@@ -81,10 +85,10 @@ vertinmod\powers\LilyaPower.class
 vertinmod\powers\PigeonPower.class
 vertinmod\patches\TokenCardFieldPatch$CreateDrawPile.class
 vertinmod\cards\Incantations\Bytes_65536.class
+vertinmod\relics\S1929W.class
 vertinmod\events\MushroomsReplacement.class
 vertinmod\cards\Incantations\Wind_into_Woods.class
 vertinmod\cards\Incantations\Maverick_Judge.class
-vertinmod\powers\PigeonPower1.class
 vertinmod\cards\Incantations\Challenge_Eyes.class
 vertinmod\cards\Incantations\Not_Decoration.class
 vertinmod\patches\TokenCardFieldPatch.class
@@ -103,6 +107,7 @@ vertinmod\cards\Incantations\Silent_Woods.class
 vertinmod\cards\Incantations\Good_Friends.class
 vertinmod\relics\Apple.class
 vertinmod\relics\BetterClickableRelic$ClickableRelicUpdatePatch.class
+vertinmod\events\ExpensiveDinner$1.class
 vertinmod\cards\Incantations\Lunar_Divination.class
 vertinmod\deprecated\Whispers_of_Deceased.class
 vertinmod\powers\GloryPower.class
@@ -125,6 +130,7 @@ vertinmod\cards\Arcanists\Eagle.class
 vertinmod\powers\SaturnPower.class
 vertinmod\cards\others\Paper_Slip.class
 vertinmod\relics\BetterClickableRelic.class
+vertinmod\events\ExpensiveDinner.class
 vertinmod\cards\temporary\Jumping_Heart.class
 vertinmod\cards\Incantations\Mars_Divination.class
 vertinmod\cards\Incantations\Beautiful_Lie.class

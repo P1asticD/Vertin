@@ -29,6 +29,7 @@ public class Refrain extends Ver_CustomCard {
     public Refrain(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.cardsToPreview = new Strings_Galaxy();
         this.tags.add(Arcanist);
         this.tags.add(Voyager);
     }

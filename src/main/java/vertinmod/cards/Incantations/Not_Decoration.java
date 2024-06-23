@@ -29,6 +29,7 @@ public class Not_Decoration extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Bytes_65536();
         this.tags.add(VertinMod.JohnTitor);
         this.tags.add(Arcanist);
     }

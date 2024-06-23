@@ -51,8 +51,7 @@
   },
   "VertinMod:Pigeon": {
     "NAME": "白鸽",
-    "DESCRIPTION": "每使用一张至终仪式，获得 !M! 点 [E] 。",
-    "UPGRADE_DESCRIPTION": "每使用一张至终仪式，获得 !M! 点 [E] ，抽 !M! 张牌。",
+    "DESCRIPTION": "本场战斗可获得的 vertinmod:至终仪式 上限增加 !M! 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b维尔汀 。"
     ]
@@ -517,7 +516,7 @@
   "VertinMod:Triple_Dose_1": {
     "NAME": "三倍用量",
     "DESCRIPTION": "获得一瓶 毒药水 。 NL 偶尔会失败。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得一瓶 强效毒药水 。偶尔会失败。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得一瓶 强效毒药水 。 NL 偶尔会失败。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b苏芙比 。"
     ]
@@ -532,7 +531,7 @@
   "VertinMod:Concentrated_Essence_1": {
     "NAME": "浓缩精华",
     "DESCRIPTION": "获得一瓶 再生药水 。 NL 偶尔会失败。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得一瓶 强效再生药水 。偶尔会失败。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得一瓶 强效再生药水 。 NL 偶尔会失败。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b苏芙比 。"
     ]
@@ -616,26 +615,28 @@
   },
   "VertinMod:Saturn_Divination": {
     "NAME": "土星占卜",
-    "DESCRIPTION": "打出此牌后，你在这个回合每获得一次 格挡 ，回复 !M! 点生命。",
+    "DESCRIPTION": "打出此牌后，你在这个回合每获得一次 格挡 ，回复 !M! 点生命。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 打出此牌后，你在这个回合每获得一次 格挡 ，回复 !M! 点生命。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b伽菈波那 。"
     ]
   },
   "VertinMod:Mars_Divination": {
     "NAME": "火星占卜",
-    "DESCRIPTION": "打出此牌后，你在这个回合每造成未被 格挡 的伤害时，回复 !M! 点生命。",
+    "DESCRIPTION": "打出此牌后，你在这个回合每造成未被 格挡 的伤害时，回复 !M! 点生命。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 打出此牌后，你在这个回合每造成未被 格挡 的伤害时，回复 !M! 点生命。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b伽菈波那 。"
     ]
   },
   "VertinMod:Lunar_Divination": {
     "NAME": "盈月占卜",
-    "DESCRIPTION": "打出此牌后，你在这个回合每打出一张牌，回复 !M! 点生命。"
+    "DESCRIPTION": "打出此牌后，你在这个回合每打出一张牌，回复 !M! 点生命。 NL 抹除 。"
   },
   "VertinMod:Body_Protection": {
     "NAME": "看护于躯壳",
     "DESCRIPTION": "给予所有敌人 !M! 层 易伤 。 NL 获得 [E] 。 NL 抽 !M! 张牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 易伤 。 NL 获得 [E] [E] [E] 。 NL 抽 !M! 张牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人1层 易伤 !M! 次。 NL 获得 [E] [E] [E] 。 NL 抽 !M! 张牌。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b爱兹拉 。"
     ]

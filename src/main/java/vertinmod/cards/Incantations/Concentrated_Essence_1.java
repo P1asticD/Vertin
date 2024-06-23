@@ -32,6 +32,7 @@ public class Concentrated_Essence_1 extends Ver_CustomCard {
     public Concentrated_Essence_1(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.cardsToPreview = new Mix_All();
         this.tags.add(Arcanist);
         this.tags.add(Sotheby);
         this.tags.add(CardTags.HEALING);

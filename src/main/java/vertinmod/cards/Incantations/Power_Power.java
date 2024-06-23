@@ -33,6 +33,7 @@ public class Power_Power extends Ver_CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 10;
         this.damage = this.baseDamage;
+        this.cardsToPreview = new Maverick_Judge();
         this.tags.add(Arcanist);
         this.tags.add(Dikke);
     }

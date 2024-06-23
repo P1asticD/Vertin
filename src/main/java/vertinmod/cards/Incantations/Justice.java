@@ -32,6 +32,7 @@ public class Justice extends Ver_CustomCard {
         this.baseMagicNumber = 8;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.cardsToPreview = new Maverick_Judge();
         this.tags.add(HEALING);
         this.tags.add(Arcanist);
         this.tags.add(Dikke);

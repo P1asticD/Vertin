@@ -30,6 +30,7 @@ public class Shiny_Diamond extends Ver_CustomCard {
     public Shiny_Diamond(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 0;
+        this.cardsToPreview = new Beautiful_Lie();
         this.tags.add(Arcanist);
         this.tags.add(Tennant);
     }

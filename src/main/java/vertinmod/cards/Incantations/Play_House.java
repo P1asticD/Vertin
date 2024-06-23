@@ -32,6 +32,7 @@ public class Play_House extends Ver_CustomCard {
         this.exhaust = true;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Tea_Party();
         this.tags.add(Arcanist);
         this.tags.add(BabyBlue);
     }
