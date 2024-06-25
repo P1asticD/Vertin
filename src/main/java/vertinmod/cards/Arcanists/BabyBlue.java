@@ -26,6 +26,8 @@ public class BabyBlue extends CustomCard {
 
     public BabyBlue(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
@@ -37,7 +39,12 @@ public class BabyBlue extends CustomCard {
             Moxie.set(6, Math.min(Moxie.get(6) + magicNumber, Moxie_Max));
     }
 
-    public void upgrade(){ }
+    public void upgrade(){
+        if (!this.upgraded) {
+            upgradeName();
+            upgradeMagicNumber(1);
+        }
+    }
 
     public AbstractCard makeCopy(){
         return new BabyBlue();

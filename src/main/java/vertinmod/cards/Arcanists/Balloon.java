@@ -26,6 +26,8 @@ public class Balloon extends CustomCard {
 
     public Balloon(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
@@ -34,10 +36,15 @@ public class Balloon extends CustomCard {
 
     public void onChoseThisOption(){
         if (Moxie.get(9) >= 1)
-            Moxie.set(9, Math.min(Moxie.get(9) + 1, Moxie_Max));
+            Moxie.set(9, Math.min(Moxie.get(9) + magicNumber, Moxie_Max));
     }
 
-    public void upgrade(){ }
+    public void upgrade(){
+        if(!upgraded){
+            upgradeName();
+            upgradeMagicNumber(1);
+        }
+    }
 
     public AbstractCard makeCopy(){
         return new Balloon();

@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import vertinmod.events.PaperMemory;
 import vertinmod.helpers.ModHelper;
 
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
@@ -26,6 +27,8 @@ public class JohnTitor extends CustomCard {
 
     public JohnTitor(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
@@ -34,10 +37,15 @@ public class JohnTitor extends CustomCard {
 
     public void onChoseThisOption(){
         if (Moxie.get(1) >= 1)
-            Moxie.set(1, Math.min(Moxie.get(1) + 1, Moxie_Max));
+            Moxie.set(1, Math.min(Moxie.get(1) + magicNumber, Moxie_Max));
     }
 
-    public void upgrade(){ }
+    public void upgrade(){
+        if(!upgraded){
+            upgradeName();
+            upgradeMagicNumber(1);
+        }
+    }
 
     public AbstractCard makeCopy(){
         return new JohnTitor();

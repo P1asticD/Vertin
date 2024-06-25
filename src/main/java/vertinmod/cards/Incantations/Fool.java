@@ -31,8 +31,8 @@ public class Fool extends Ver_CustomCard {
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new Improvised_Show();
-        this.tags.add(Fool);
         this.tags.add(Arcanist);
+        this.tags.add(Fool);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){

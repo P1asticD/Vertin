@@ -13,5 +13,16 @@
     "TEXT": [
       "TokenCard"
     ]
+  },
+  "VertinMod:SummonButton": {
+    "TEXT": [
+      "Summon",
+      "Choose one Arcanist to record Moxie."
+    ]
+  },
+  "VertinMod:SummonEffect": {
+    "TEXT": [
+      "Choose 1 card to record the corresponding Arcanist's Moxie."
+    ]
   }
 }

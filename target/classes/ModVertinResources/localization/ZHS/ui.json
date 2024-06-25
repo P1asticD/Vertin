@@ -13,5 +13,16 @@
     "TEXT": [
       "衍生牌"
     ]
+  },
+  "VertinMod:SummonButton": {
+    "TEXT": [
+      "征集",
+      "选择一名神秘学家，开始记录其激情。"
+    ]
+  },
+  "VertinMod:SummonEffect": {
+    "TEXT": [
+      "选择一张卡牌，开始记录其对应神秘学家的激情。"
+    ]
   }
 }

@@ -28,12 +28,14 @@ public class Canned_Liquor extends Ver_CustomCard {
     private static final CardColor COLOR = VERTIN_CARD;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
+    AbstractCard card1 = new Crosswind_Takeoff();
+    AbstractCard card2 = new Soaring_Witch();
 
     public Canned_Liquor(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
-        MultiCardPreview.add((AbstractCard)this, new Crosswind_Takeoff(), new Soaring_Witch());
+        MultiCardPreview.add(this, card1, card2);
         this.tags.add(Arcanist);
         this.tags.add(Lilya);
     }
@@ -41,14 +43,17 @@ public class Canned_Liquor extends Ver_CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
         addToBot(new ApplyPowerAction(p, p, new LoseStrengthPower(p, this.magicNumber), this.magicNumber));
-        addToBot(new MakeTempCardInHandAction(this.cardsToPreview.makeStatEquivalentCopy(), 1));
+        addToBot(new MakeTempCardInHandAction(card1.makeStatEquivalentCopy(), 1));
     }
 
     public void upgrade(){
         if (!this.upgraded) {
             upgradeName();
             upgradeMagicNumber(1);
-            this.cardsToPreview.upgrade();
+            MultiCardPreview.remove(this, card1);
+            MultiCardPreview.remove(this, card2);
+            card1.upgrade();
+            MultiCardPreview.add(this, card1, card2);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

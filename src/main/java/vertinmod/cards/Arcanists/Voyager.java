@@ -26,6 +26,8 @@ public class Voyager extends CustomCard {
 
     public Voyager(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
@@ -34,10 +36,15 @@ public class Voyager extends CustomCard {
 
     public void onChoseThisOption(){
         if (Moxie.get(19) >= 1)
-            Moxie.set(19, Math.min(Moxie.get(19) + 1, Moxie_Max));
+            Moxie.set(19, Math.min(Moxie.get(19) + magicNumber, Moxie_Max));
     }
 
-    public void upgrade(){ }
+    public void upgrade(){
+        if(!upgraded){
+            upgradeName();
+            upgradeMagicNumber(1);
+        }
+    }
 
     public AbstractCard makeCopy(){
         return new Voyager();

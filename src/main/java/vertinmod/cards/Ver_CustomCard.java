@@ -5,6 +5,9 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 
+import static vertinmod.modcore.VertinMod.Vertin;
+
+
 public abstract class Ver_CustomCard extends CustomCard {
     private final CardStrings cardStrings;
     public String FLAVOR_TEXT;
@@ -43,5 +46,9 @@ public abstract class Ver_CustomCard extends CustomCard {
                 this.FLAVOR_TEXT = "";
             }
         }
+    }
+
+    public boolean canUpgrade(){
+        return !this.upgraded && (this.hasTag(Vertin) || this.type == CardType.POWER);
     }
 }

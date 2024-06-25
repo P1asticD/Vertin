@@ -24,7 +24,7 @@ public class Alignment extends Ver_CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "ModVertinResources/img/cards/Alignment.png";
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = VERTIN_CARD;
@@ -34,6 +34,9 @@ public class Alignment extends Ver_CustomCard {
     public Alignment(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.selfRetain = true;
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
         this.tags.add(Vertin);
     }
 
@@ -45,6 +48,9 @@ public class Alignment extends Ver_CustomCard {
                 stanceChoices.add(Arcanists.get(i));
             }
         }
+        if (this.upgraded)
+            for (AbstractCard c : stanceChoices)
+                c.upgrade();
         if (stanceChoices.size() > 0) {
             addToBot(new ChooseOneAction(stanceChoices));
         }
@@ -54,7 +60,7 @@ public class Alignment extends Ver_CustomCard {
 
     public void upgrade() {
         if (!this.upgraded) {
-            upgradeBaseCost(0);
+            upgradeMagicNumber(1);
             upgradeName();
         }
     }

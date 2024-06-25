@@ -22,7 +22,7 @@
   },
   "VertinMod:Alignment": {
     "NAME": "Alignment",
-    "DESCRIPTION": "Choose one vertinmod:Arcanists to gain 1 vertinmod:Moxie. NL Exhaust.",
+    "DESCRIPTION": "Choose one vertinmod:Arcanists to gain !M! vertinmod:Moxie. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bVertin.",
       "No card of Arcanists is in deck."
@@ -65,103 +65,103 @@
   },
   "VertinMod:The_Fool": {
     "NAME": "The_Fool",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:JohnTitor": {
     "NAME": "JohnTitor",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Eagle": {
     "NAME": "Eagle",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Pavia": {
     "NAME": "Pavia",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Mondlicht": {
     "NAME": "Mondlicht",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Poltergeist": {
     "NAME": "Poltergeist",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:BabyBlue": {
     "NAME": "BabyBlue",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Dikke": {
     "NAME": "Dikke",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Sonetto": {
     "NAME": "Sonetto",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Balloon": {
     "NAME": "Balloon",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Necrologist": {
     "NAME": "Necrologist",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Tennant": {
     "NAME": "Tennant",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Diggers": {
     "NAME": "Diggers",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Ulu": {
     "NAME": "Ulu",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Lilya": {
     "NAME": "Lilya",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Knight": {
     "NAME": "Knight",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Sotheby": {
     "NAME": "Sotheby",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Regulus": {
     "NAME": "Regulus",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Centurion": {
     "NAME": "Centurion",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Voyager": {
     "NAME": "Voyager",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:NewBabel": {
     "NAME": "NewBabel",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:BlackDwarf": {
     "NAME": "BlackDwarf",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Ezra": {
     "NAME": "Ezra",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:DruvisIII": {
     "NAME": "DruvisIII",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Jessica": {
     "NAME": "Jessica",
-    "DESCRIPTION": "Gain 1 vertinmod:Moxie."
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
   "VertinMod:Sage": {
     "NAME": "Sage",

@@ -12,12 +12,14 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.rooms.AbstractRoom.RoomPhase;
+import com.megacrit.cardcrawl.ui.campfire.AbstractCampfireOption;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 import vertinmod.cards.Incantations.*;
 import vertinmod.cards.temporary.*;
 import vertinmod.helpers.ModHelper;
+import vertinmod.ui.button.CampfireSummonButton;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -76,7 +78,7 @@ public class The_Spinning_Wheel extends CustomRelic implements BetterClickableRe
         return new The_Spinning_Wheel();
     }
 
-    public void onObtainCard(AbstractCard c){
+    /*public void onObtainCard(AbstractCard c){
         for(int i = 0; i < Characters.size(); i++){
             if(c.hasTag((Characters.get(i)))){
                 if(Moxie.get(i) == 0){
@@ -86,7 +88,7 @@ public class The_Spinning_Wheel extends CustomRelic implements BetterClickableRe
                 break;
             }
         }
-    }
+    }*/
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
         for(int i = 0; i < Characters.size(); i++){
@@ -181,5 +183,25 @@ public class The_Spinning_Wheel extends CustomRelic implements BetterClickableRe
     public void onLoad(ArrayList<Integer> L){
         Moxie = L;
         this.refreshDesc();
+    }
+
+    public void addCampfireOption(ArrayList<AbstractCampfireOption> options) {
+        boolean hasArcanist = false;
+        for (AbstractCard c: AbstractDungeon.player.masterDeck.group){
+            if(c.hasTag(Arcanist)) {
+                int index_C = -1;
+                for(AbstractCard.CardTags t:c.tags){
+                    if(Characters.contains(t)){
+                        index_C = Characters.indexOf(t);
+                        break;
+                    }
+                }
+                if(Moxie.get(index_C) == 0) {
+                    hasArcanist = true;
+                    break;
+                }
+            }
+        }
+        options.add(new CampfireSummonButton(hasArcanist));
     }
 }

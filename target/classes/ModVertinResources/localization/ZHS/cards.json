@@ -22,7 +22,7 @@
   },
   "VertinMod:Alignment": {
     "NAME": "律的调校",
-    "DESCRIPTION": "使指定 vertinmod:神秘学家 获得1点 vertinmod:激情 。 NL 消耗 。",
+    "DESCRIPTION": "使指定 vertinmod:神秘学家 获得 !M! 点 vertinmod:激情 。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b维尔汀 。",
       "当前牌库里并没有任何神秘学家的牌。"
@@ -65,103 +65,103 @@
   },
   "VertinMod:The_Fool": {
     "NAME": "弄臣",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:JohnTitor": {
     "NAME": "约翰提托",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Eagle": {
     "NAME": "小春雀儿",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Pavia": {
     "NAME": "狼群",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Mondlicht": {
     "NAME": "红斗篷",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Poltergeist": {
     "NAME": "吵闹鬼",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:BabyBlue": {
     "NAME": "婴儿蓝",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Dikke": {
     "NAME": "帕米埃",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Sonetto": {
     "NAME": "十四行诗",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Balloon": {
     "NAME": "气球派对",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Necrologist": {
     "NAME": "讣告人",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Tennant": {
     "NAME": "坦南特",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Diggers": {
     "NAME": "挖掘艺术",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Ulu": {
     "NAME": "和平乌鲁",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Lilya": {
     "NAME": "红弩箭",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Knight": {
     "NAME": "未锈铠",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Sotheby": {
     "NAME": "苏芙比",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Regulus": {
     "NAME": "星锑",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Centurion": {
     "NAME": "百夫长",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Voyager": {
     "NAME": "远旅",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:NewBabel": {
     "NAME": "新巴别塔",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:BlackDwarf": {
     "NAME": "伽菈波那",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Ezra": {
     "NAME": "爱兹拉",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:DruvisIII": {
     "NAME": "槲寄生",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Jessica": {
     "NAME": "洁西卡",
-    "DESCRIPTION": "获得1点 vertinmod:激情 。"
+    "DESCRIPTION": "获得 !M! 点 vertinmod:激情 。"
   },
   "VertinMod:Sage": {
     "NAME": "智者",

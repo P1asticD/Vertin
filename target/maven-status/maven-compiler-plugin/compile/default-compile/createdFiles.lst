@@ -92,6 +92,7 @@ vertinmod\cards\Incantations\Maverick_Judge.class
 vertinmod\cards\Incantations\Challenge_Eyes.class
 vertinmod\cards\Incantations\Not_Decoration.class
 vertinmod\patches\TokenCardFieldPatch.class
+vertinmod\effect\CampfireSummonEffect.class
 vertinmod\cards\Incantations\Exhortations_IX.class
 vertinmod\relics\Sparrow.class
 vertinmod\cards\temporary\Poor_Sod.class
@@ -171,6 +172,7 @@ vertinmod\cards\VertinCards\Pigeon.class
 vertinmod\cards\Incantations\Sleepless_Rave.class
 vertinmod\cards\Incantations\True_Genius.class
 vertinmod\powers\LunarPower.class
+vertinmod\ui\button\CampfireSummonButton.class
 vertinmod\actions\MorphingAction.class
 vertinmod\powers\MarsPower.class
 vertinmod\cards\others\Adapted_Song.class

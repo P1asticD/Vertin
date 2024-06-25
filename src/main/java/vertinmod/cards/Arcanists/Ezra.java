@@ -26,6 +26,8 @@ public class Ezra extends CustomCard {
 
     public Ezra(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
@@ -34,10 +36,15 @@ public class Ezra extends CustomCard {
 
     public void onChoseThisOption(){
         if (Moxie.get(22) >= 1)
-            Moxie.set(22, Math.min(Moxie.get(22) + 1, Moxie_Max));
+            Moxie.set(22, Math.min(Moxie.get(22) + magicNumber, Moxie_Max));
     }
 
-    public void upgrade(){ }
+    public void upgrade(){
+        if(!upgraded){
+            upgradeName();
+            upgradeMagicNumber(1);
+        }
+    }
 
     public AbstractCard makeCopy(){
         return new Ezra();
