@@ -3,6 +3,7 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\relics\Critters.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Starlight_Sonata.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\relics\The_Spinning_Wheel.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Shiny_Diamond.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\ui\button\CampfireSummonButton.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Balloon.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\By_the_Coffin_1.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Mix_All.java
@@ -124,6 +125,7 @@ D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Arcanists\Voyager.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Timely_Farewell_1.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\Crosswind_Takeoff.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\deprecated\PigeonPower1.java
+D:\repos\java\VertinMod\src\main\java\vertinmod\effect\CampfireSummonEffect.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\modcore\VertinMod.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\actions\MorphingAction.java
 D:\repos\java\VertinMod\src\main\java\vertinmod\cards\Incantations\RealityShow_Premiere.java
