@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
 import vertinmod.cards.Ver_CustomCard;
 import vertinmod.helpers.ModHelper;
@@ -51,10 +52,10 @@ public class Play_House extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        addToBot(new ApplyPowerAction(p, p, new IntangiblePower(p, this.magicNumber), 1));
+        addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, this.magicNumber), 1));
         for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
             if (!monster.isDead && !monster.isDying) {
-                addToBot(new ApplyPowerAction(monster, monster, new IntangiblePower(monster, this.magicNumber), this.magicNumber));
+                addToBot(new ApplyPowerAction(monster, monster, new IntangiblePlayerPower(monster, this.magicNumber), this.magicNumber));
             }
         }
     }

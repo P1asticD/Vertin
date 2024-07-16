@@ -1,5 +1,6 @@
 package vertinmod.cards.Incantations;
 
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.unique.GamblingChipAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,18 +24,21 @@ public class Timely_Farewell_1 extends Ver_CustomCard {
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = VERTIN_CARD;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public Timely_Farewell_1(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.exhaust = true;
+        this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new Whispers_of_Deceased_1();
         this.tags.add(Arcanist);
         this.tags.add(Necrologist);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (upgraded)
+            addToTop(new DrawCardAction(magicNumber));
         if (!AbstractDungeon.player.hand.isEmpty())
             addToBot(new GamblingChipAction(AbstractDungeon.player, true));
     }
@@ -42,7 +46,8 @@ public class Timely_Farewell_1 extends Ver_CustomCard {
     public void upgrade(){
         if (!this.upgraded){
             upgradeName();
-            upgradeBaseCost(0);
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

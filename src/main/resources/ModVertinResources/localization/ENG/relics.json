@@ -3,6 +3,7 @@
     "NAME": "First Melody",
     "FLAVOR": "The beginning, the end, all possibilities in imagination.",
     "DESCRIPTIONS": [
+      "At the start of each combat, add an #yAlignment into your hand.",
       "Once per turn, #yRight #yClick: draw #b1 card, discard #b1 card, then adjust your hand sequence.",
       "Already used this round."
     ]
@@ -11,16 +12,16 @@
     "NAME": "The Suitcase",
     "FLAVOR": "✦Neirü mildeen tiün bonan nokton∽∽!✦",
     "DESCRIPTIONS": [
-      "You can no longer #ySmith at Rest Sites. You can #yvertinmod:Ascend now.",
-      " NL Whenever you add a card belonging to #bvertinmod:Arcanists to your deck, if it is an unupgraded card, obtain a same card to your deck."
+      "You can #yvertinmod:Ascend now.",
+      " NL Whenever you add a #bvertinmod:Incantation to your deck, if it has not been unupgraded and is not a Power card, obtain a same card to your deck."
     ]
   },
   "VertinMod:The_Spinning_Wheel": {
     "NAME": "Spinning Wheel",
     "FLAVOR": "Turn it, like always.",
     "DESCRIPTIONS": [
-      "Each time you add an #bvertinmod:Incantations to your deck, record their #yvertinmod:Moxie. The upper limit is #b5 .",
-      " NL Every time you play an #bvertinmod:Incantations , the #yvertinmod:Moxie of the corresponding #bvertinmod:Arcanist add #b1 . You can use #b5 #yMoxie to add #yUltimate to your hand.",
+      "Each time you choose #bSummon at Rest Sites, record the corresponding #yvertinmod:Moxie. The upper limit is #b5 .",
+      " NL Every time you play an #bvertinmod:Incantations , the #yvertinmod:Moxie of the corresponding Arcanist add #b1 . You can use #b5 #yMoxie to add #yUltimate to your hand.",
       " NL #yRight #yClick: Open the #yUltimate selection interface.",
       " NL Current #yMoxie of #yArcanists :",
       "Choose 1 Ultimate to your hand.",

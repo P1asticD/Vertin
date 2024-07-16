@@ -15,14 +15,15 @@
   },
   "VertinMod:In_Suitcase": {
     "NAME": "In Suitcase",
-    "DESCRIPTION": "Retain. NL Gain 1 Intangible. NL Exhaust.",
+    "DESCRIPTION": "Gain 1 Intangible. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain 1 Intangible. NL Exhaust.",
     "EXTENDED_DESCRIPTION":[
       "This card belongs to #bVertin."
     ]
   },
   "VertinMod:Alignment": {
     "NAME": "Alignment",
-    "DESCRIPTION": "Choose one vertinmod:Arcanists to gain !M! vertinmod:Moxie. NL Exhaust.",
+    "DESCRIPTION": "Retain. NL Choose one vertinmod:Arcanists to gain !M! vertinmod:Moxie. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bVertin.",
       "No card of Arcanists is in deck."
@@ -45,6 +46,7 @@
   "VertinMod:Grand_Orchestra": {
     "NAME": "Grand Orchestra",
     "DESCRIPTION": "Each time vertinmod:Ascend, gain !M! [E] , draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Each time vertinmod:Ascend, gain !M! [E] , draw !M! cards.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bVertin."
     ]
@@ -286,6 +288,7 @@
   "VertinMod:Cough_Syrup": {
     "NAME": "Cough Syrup",
     "DESCRIPTION": "At the start of your turn, apply !M! Weak to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, apply !M! Weak to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bBaby #bBlue."
     ]
@@ -315,8 +318,8 @@
   },
   "VertinMod:Commandment_V": {
     "NAME": "Commandment V",
-    "DESCRIPTION": "Deal !D! Damage.",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Stun the target. NL Exhaust.",
+    "DESCRIPTION": "Retain. NL Deal !D! Damage.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! Damage. NL If the enemy intends to attack, Stun the target. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bSonetto."
     ]
@@ -362,7 +365,8 @@
   },
   "VertinMod:Timely_Farewell_1": {
     "NAME": "Timely Farewell",
-    "DESCRIPTION": "Discard any number of cards, then draw that many cards. NL Exhaust.",
+    "DESCRIPTION": "Discard any number of cards, then draw that many cards.",
+    "UPGRADE_DESCRIPTION": "Draw !M! . NL Discard any number of cards, then draw that many cards.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bNecrologist."
     ]
@@ -484,7 +488,7 @@
   },
   "VertinMod:Soaring_Witch": {
     "NAME": "Soaring Witch",
-    "DESCRIPTION": "Reduce HP to 10. For every 5 lost HP, gain !M! Strength and Dexterity. NL Gain !M! *Flight. NL At the end of combat, make HP to the original HP."
+    "DESCRIPTION": "Reduce HP to 10. For every 5 lost HP, gain !M! Strength and Dexterity. NL Gain 99 *Flight. NL At the end of combat, make HP to the original HP."
   },
   "VertinMod:K_Justice": {
     "NAME": "Justice",
@@ -497,6 +501,7 @@
   "VertinMod:Glory": {
     "NAME": "Glory",
     "DESCRIPTION": "At the start of each turn, Gain !M! Vigor.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn, Gain !M! Vigor.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bA #bKnight."
     ]
@@ -515,8 +520,8 @@
   },
   "VertinMod:Triple_Dose_1": {
     "NAME": "Triple the Dose!",
-    "DESCRIPTION": "Obtain a Poison Potion . NL Occasionally fail. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Obtain a Super Poison Potion . NL Occasionally fail. NL Exhaust.",
+    "DESCRIPTION": "Obtain a Poison Potion . NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Obtain a Super Poison Potion . NL 10%: Instead, obtain a Poison Potion with a Failed Product. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bSotheby."
     ]
@@ -530,8 +535,8 @@
   },
   "VertinMod:Concentrated_Essence_1": {
     "NAME": "Concentrated Essence!",
-    "DESCRIPTION": "Obtain a Regen Potion. NL Occasionally fail. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Obtain a Super Regen Potion. NL Occasionally fail. NL Exhaust.",
+    "DESCRIPTION": "Obtain a Regen Potion. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Obtain a Super Regen Potion. NL 10%: Instead, obtain a Regen Potion with a Failed Product. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bSotheby."
     ]

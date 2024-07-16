@@ -39,15 +39,18 @@ public class Concentrated_Essence_1 extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        int chance = this.upgraded ? 50 : 60;
-        if (AbstractDungeon.cardRandomRng.random(99) <= chance){
-            if (!upgraded)
+        int chance = 10;
+        if (!upgraded)
+            addToBot(new ObtainPotionAction(new RegenPotion()));
+        else {
+            if (AbstractDungeon.cardRandomRng.random(99) <= chance) {
                 addToBot(new ObtainPotionAction(new RegenPotion()));
+                addToBot(new ObtainPotionAction(new TransformationPotion()));
+            }
             else
                 addToBot(new ObtainPotionAction(new SRegenPotion()));
         }
-        else
-            addToBot(new ObtainPotionAction(new TransformationPotion()));
+
     }
 
     public void upgrade() {

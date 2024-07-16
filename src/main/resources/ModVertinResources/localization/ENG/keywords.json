@@ -19,9 +19,11 @@
     "PROPER_NAME": "Incantations",
     "NAMES": [
       "Incantations",
-      "incantations"
+      "incantations",
+      "Incantation",
+      "incantation"
     ],
-    "DESCRIPTION": "Cards belongs to #bArcanists. Only can be upgraded by #yAscend."
+    "DESCRIPTION": "Cards belongs to #bArcanists. Only can be upgraded by #yAscend in combat unless it's a #bPower card."
   },
   {
     "PROPER_NAME": "Vertin",

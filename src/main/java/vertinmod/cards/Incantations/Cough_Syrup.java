@@ -42,7 +42,9 @@ public class Cough_Syrup extends Ver_CustomCard {
     public void upgrade(){
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeBaseCost(0);
+            this.isInnate = true;
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

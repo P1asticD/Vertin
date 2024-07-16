@@ -3,6 +3,7 @@
     "NAME": "最初的刻度",
     "FLAVOR": "它是开始，或是终结，是想象穷极的一切可能。",
     "DESCRIPTIONS": [
+      "在每场战斗开始时，将一张 #y律的调校 放入你的手牌。",
       "每回合一次，右键点击该遗物，抽 #b1 张牌，弃 #b1 张牌，随意调整手牌顺序。",
       "本回合已经使用过了。"
     ]
@@ -19,10 +20,10 @@
     "NAME": "纺车",
     "FLAVOR": "转动它，一如往昔。",
     "DESCRIPTIONS": [
-      "每次你往自己的牌组加入 #yvertinmod:神秘术 的卡牌时，开始记录该 #bvertinmod:神秘学家 的 #yvertinmod:激情 ，上限为5。",
-      " NL 每打出一张 #yvertinmod:神秘术 ，对应 #bvertinmod:神秘学家 的 #yvertinmod:激情 加一。可消耗 #b5 点 #bvertinmod:神秘学家 的 #yvertinmod:激情 将其 #yvertinmod:至终仪式 加入手牌。",
+      "每次你在休息处选择 #b征集 时，开始记录对应神秘学家的 #yvertinmod:激情 ，上限为5。",
+      " NL 每打出一张 #yvertinmod:神秘术 ，对应神秘学家的 #yvertinmod:激情 加一。可消耗 #b5 点 #yvertinmod:激情 将其 #yvertinmod:至终仪式 加入手牌。",
       " NL 右键点击该遗物可打开 #yvertinmod:至终仪式 选取界面。",
-      " NL 当前 #bvertinmod:神秘学家 的 #yvertinmod:激情 ：",
+      " NL 当前神秘学家的 #yvertinmod:激情 ：",
       "选择一张至终仪式加入手牌",
       "本场战斗获得的仪式已经达到上限了。",
       " NL #b弄臣 ：",
@@ -153,7 +154,7 @@
     "NAME": "陶罐",
     "FLAVOR": "不！要！再！来！许！愿！了！",
     "DESCRIPTIONS": [
-      "在你的每个回合开始时，给予当前意图造成最高伤害的敌人 #b1 层 #y虚弱 与 #y易伤 。"
+      "在你的每个回合结束时，给予当前意图造成最高伤害的敌人 #b1 层 #y虚弱 与 #b2 层 #y易伤 。"
     ]
   },
   "VertinMod:S192-9W": {

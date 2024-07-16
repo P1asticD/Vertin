@@ -28,7 +28,6 @@ public class In_Suitcase extends Ver_CustomCard {
     public In_Suitcase(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
-        this.selfRetain = true;
         this.tags.add(Vertin);
     }
 
@@ -39,7 +38,9 @@ public class In_Suitcase extends Ver_CustomCard {
     public void upgrade(){
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(1);
+            this.selfRetain = true;
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 

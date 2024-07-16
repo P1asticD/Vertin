@@ -38,6 +38,13 @@ public class SPDM_Rules extends CustomRelic {
         AbstractDungeon.player.energy.energyMaster--;
     }
 
+
+    public boolean canSpawn() {
+        if (AbstractDungeon.actNum > 1)
+            return false;
+        return true;
+    }
+
     public AbstractRelic makeCopy(){
         return new SPDM_Rules();
     }

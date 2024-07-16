@@ -34,6 +34,7 @@ public class Commandment_V extends Ver_CustomCard {
         this.baseDamage = 6;
         this.damage = this.baseDamage;
         this.cardsToPreview = new Unrestricted_Chant();
+        this.selfRetain = true;
         this.tags.add(Arcanist);
         this.tags.add(Sonetto);
     }
@@ -41,7 +42,8 @@ public class Commandment_V extends Ver_CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         if (this.upgraded){
             addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-            addToTop(new StunMonsterAction(m, p, 1));
+            if(m != null && m.getIntentBaseDmg() > 0)
+                addToTop(new StunMonsterAction(m, p, 1));
         }
         else
             addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));

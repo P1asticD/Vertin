@@ -42,8 +42,22 @@ public class Dissonance extends Ver_CustomCard {
             }
         }
         if (!powerExists) {
-            addToBot(new ApplyPowerAction(p, p, new DissonancePower(p)));
+            addToTop(new ApplyPowerAction(p, p, new DissonancePower(p)));
+        }
+        if(powerExists) {
             for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (c.hasTag(Vertin))
+                    c.modifyCostForCombat(-9);
+            }
+            for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
+                if (c.hasTag(Vertin))
+                    c.modifyCostForCombat(-9);
+            }
+            for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
+                if (c.hasTag(Vertin))
+                    c.modifyCostForCombat(-9);
+            }
+            for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
                 if (c.hasTag(Vertin))
                     c.modifyCostForCombat(-9);
             }

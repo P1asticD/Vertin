@@ -31,7 +31,7 @@ public class Prank extends Ver_CustomCard {
 
     public Prank(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 20;
+        this.baseDamage = 16;
         this.damage = this.baseDamage;
         this.cardsToPreview = new Not_Gentle_Sun();
         this.tags.add(Arcanist);

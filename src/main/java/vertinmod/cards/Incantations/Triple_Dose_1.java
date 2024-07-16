@@ -37,16 +37,18 @@ public class Triple_Dose_1 extends Ver_CustomCard {
         this.tags.add(Sotheby);
     }
 
-    public void use(AbstractPlayer p, AbstractMonster m){
-        int chance = this.upgraded ? 50 : 60;
-        if (AbstractDungeon.cardRandomRng.random(99) <= chance){
-            if (!upgraded)
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        int chance = 10;
+        if (!upgraded)
+            addToBot(new ObtainPotionAction(new PoisonPotion()));
+        else {
+            if (AbstractDungeon.cardRandomRng.random(99) <= chance) {
                 addToBot(new ObtainPotionAction(new PoisonPotion()));
+                addToBot(new ObtainPotionAction(new TransformationPotion()));
+            }
             else
                 addToBot(new ObtainPotionAction(new SPoisonPotion()));
         }
-        else
-            addToBot(new ObtainPotionAction(new TransformationPotion()));
     }
 
     public void upgrade() {

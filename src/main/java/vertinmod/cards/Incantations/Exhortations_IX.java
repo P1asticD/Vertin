@@ -43,9 +43,8 @@ public class Exhortations_IX extends Ver_CustomCard {
 
     public void upgrade(){
         if (!this.upgraded){
-            upgradeBaseCost(2);
             upgradeName();
-            upgradeMagicNumber(2);
+            upgradeMagicNumber(1);
         }
     }
 

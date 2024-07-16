@@ -300,7 +300,7 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addRelicToCustomPool(new Fractal_Geometry(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new SPDM_Rules(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Scripture(), VERTIN_CARD);
-        BaseMod.addRelicToCustomPool(new Pot(), VERTIN_CARD);
+//        BaseMod.addRelicToCustomPool(new Pot(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new S1929W(), VERTIN_CARD);
         BaseMod.addRelicToCustomPool(new Golden_Wine(), VERTIN_CARD);
     }

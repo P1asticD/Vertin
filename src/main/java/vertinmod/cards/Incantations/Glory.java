@@ -28,7 +28,7 @@ public class Glory extends Ver_CustomCard {
 
     public Glory(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new After_AD_778();
         this.tags.add(Arcanist);
@@ -42,7 +42,9 @@ public class Glory extends Ver_CustomCard {
     public void upgrade(){
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeMagicNumber(2);
+            this.isInnate = true;
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

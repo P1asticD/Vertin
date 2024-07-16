@@ -15,14 +15,15 @@
   },
   "VertinMod:In_Suitcase": {
     "NAME": "箱中",
-    "DESCRIPTION": " 保留 。 NL 获得1层 无实体 。 NL 消耗 。",
+    "DESCRIPTION": "获得1层 无实体 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 获得1层 无实体 。 NL 消耗 。",
     "EXTENDED_DESCRIPTION":[
       "该卡牌属于 #b维尔汀 。"
     ]
   },
   "VertinMod:Alignment": {
     "NAME": "律的调校",
-    "DESCRIPTION": "使指定 vertinmod:神秘学家 获得 !M! 点 vertinmod:激情 。 NL 消耗 。",
+    "DESCRIPTION": " 保留 。 NL 使指定 vertinmod:神秘学家 获得 !M! 点 vertinmod:激情 。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b维尔汀 。",
       "当前牌库里并没有任何神秘学家的牌。"
@@ -45,6 +46,7 @@
   "VertinMod:Grand_Orchestra": {
     "NAME": "伟大乐队",
     "DESCRIPTION": "每进行一次 vertinmod:合成升阶 ，获得 !M! 点 [E] ，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每进行一次 vertinmod:合成升阶 ，获得 !M! 点 [E] ，抽 !M! 张牌。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b维尔汀 。"
     ]
@@ -286,6 +288,7 @@
   "VertinMod:Cough_Syrup": {
     "NAME": "咳咳剂",
     "DESCRIPTION": "每回合开始时，给予所有敌人 !M! 层 虚弱 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每回合开始时，给予所有敌人 !M! 层 虚弱 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b婴儿蓝 。"
     ]
@@ -315,8 +318,8 @@
   },
   "VertinMod:Commandment_V": {
     "NAME": "戒律·其五",
-    "DESCRIPTION": "造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 击晕 目标敌人一回合。 NL 消耗 。",
+    "DESCRIPTION": " 保留 。 NL 造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": " 保留 。 NL 造成 !D! 点伤害。 NL 若敌人的意图为攻击， 击晕 一回合。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b十四行诗 。"
     ]
@@ -362,7 +365,8 @@
   },
   "VertinMod:Timely_Farewell_1": {
     "NAME": "及时道别",
-    "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。 NL 消耗 。",
+    "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌。 NL 丢弃任意张牌，然后抽相同数量的牌。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b讣告人 。"
     ]
@@ -484,7 +488,7 @@
   },
   "VertinMod:Soaring_Witch": {
     "NAME": "翱翔于天际的女巫",
-    "DESCRIPTION": "将生命值扣至只剩10点，每扣除5点生命值，获得 !M! 点 力量 与 敏捷 。 NL 获得 !M! 层 *飞行 。 NL 战斗结束时，将生命值变为打出该牌时的生命值。"
+    "DESCRIPTION": "将生命值扣至只剩10点，每扣除5点生命值，获得 !M! 点 力量 与 敏捷 。 NL 获得99层 *飞行 。 NL 战斗结束时，将生命值变为打出该牌时的生命值。"
   },
   "VertinMod:K_Justice": {
     "NAME": "公义",
@@ -497,6 +501,7 @@
   "VertinMod:Glory": {
     "NAME": "荣耀",
     "DESCRIPTION": "每回合开始时，获得 !M! 点 活力 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 每回合开始时，获得 !M! 点 活力 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b未锈铠 。"
     ]
@@ -515,8 +520,8 @@
   },
   "VertinMod:Triple_Dose_1": {
     "NAME": "三倍用量",
-    "DESCRIPTION": "获得一瓶 毒药水 。 NL 偶尔会失败。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得一瓶 强效毒药水 。 NL 偶尔会失败。 NL 消耗 。",
+    "DESCRIPTION": "获得一瓶 毒药水 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得一瓶 强效毒药水 。 NL 10%：改为获得一瓶 毒药水 与一瓶失败品。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b苏芙比 。"
     ]
@@ -530,8 +535,8 @@
   },
   "VertinMod:Concentrated_Essence_1": {
     "NAME": "浓缩精华",
-    "DESCRIPTION": "获得一瓶 再生药水 。 NL 偶尔会失败。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得一瓶 强效再生药水 。 NL 偶尔会失败。 NL 消耗 。",
+    "DESCRIPTION": "获得一瓶 再生药水 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得一瓶 强效再生药水 。 NL 10%：改为获得一瓶 再生药水 与一瓶失败品。 NL 消耗 。",
     "EXTENDED_DESCRIPTION": [
       "该卡牌属于 #b苏芙比 。"
     ]

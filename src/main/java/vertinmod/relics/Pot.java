@@ -26,17 +26,20 @@ public class Pot extends CustomRelic {
         return this.DESCRIPTIONS[0];
     }
 
-    public void atTurnStart(){
+    public void onPlayerEndTurn(){
         flash();
         MAX_Dmg = 0;
         targetMonster = AbstractDungeon.getCurrRoom().monsters.monsters.get(0);
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters){
-            if(mo.getIntentBaseDmg() >= MAX_Dmg){
-                MAX_Dmg = mo.getIntentBaseDmg();
-                targetMonster = mo;
+            if(!mo.isDead && mo.getIntentBaseDmg() > 0){
+                int nowDmg = mo.getIntentBaseDmg();
+                if(nowDmg > MAX_Dmg) {
+                    targetMonster = mo;
+                    MAX_Dmg = nowDmg;
+                }
             }
         }
-        addToBot(new ApplyPowerAction(targetMonster, AbstractDungeon.player, new VulnerablePower(targetMonster, 1, false), 1, true));
+        addToBot(new ApplyPowerAction(targetMonster, AbstractDungeon.player, new VulnerablePower(targetMonster, 2, false), 2, true));
         addToBot(new ApplyPowerAction(targetMonster, AbstractDungeon.player, new WeakPower(targetMonster, 1, false), 1, true));
     }
 

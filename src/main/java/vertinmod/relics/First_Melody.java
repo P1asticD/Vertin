@@ -3,18 +3,18 @@ package vertinmod.relics;
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
+import vertinmod.cards.VertinCards.Alignment;
 import vertinmod.helpers.ModHelper;
 
 public class First_Melody extends CustomRelic implements BetterClickableRelic<First_Melody>{
     public static final String ID = ModHelper.makePath("First_Melody");
     private static final String IMG_PATH = "ModVertinResources/img/relics/The_Spinning_Wheel.png";
-    public static AbstractRoom.RoomPhase phase;
-    private static AbstractDungeon.CurrentScreen pre;
     private static final RelicTier RELIC_TIER = RelicTier.STARTER;
     private static final LandingSound LANDING_SOUND = LandingSound.CLINK;
 
@@ -30,17 +30,22 @@ public class First_Melody extends CustomRelic implements BetterClickableRelic<Fi
         this.counter = 0;
     }
 
+    public void atBattleStart(){
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        addToBot(new MakeTempCardInHandAction(new Alignment(), 1, false));
+    }
+
     public void Prepared1() {
         if (this.counter == 0) {
             this.counter = 1;
             addToBot(new DrawCardAction(1));
             addToBot(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, 1, false));
         } else
-            AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, this.DESCRIPTIONS[1], true));
+            AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, 3.0F, this.DESCRIPTIONS[2], true));
     }
 
     public String getUpdatedDescription() {
-        return this.DESCRIPTIONS[0];
+        return this.DESCRIPTIONS[0] + this.DESCRIPTIONS[1];
     }
 
     public AbstractRelic makeCopy() {

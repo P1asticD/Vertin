@@ -32,7 +32,7 @@ public class S1929W extends CustomRelic {
             if (num_DEBUFF >= 2) {
                 f = true;
                 addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-                addToBot(new DamageAction(mo, new DamageInfo(AbstractDungeon.player, 12, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
+                addToBot(new DamageAction(mo, new DamageInfo(AbstractDungeon.player, 12, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
             }
         }
         if (f)
