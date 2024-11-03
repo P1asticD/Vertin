@@ -1,9 +1,9 @@
 {
   "modid": "VertinMod",
   "name": "VertinMod",
-  "author_list": ["D++"],
+  "author_list": ["P1asticD"],
   "description": "Reverse:1999 Vertin mod.",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.3",
   "dependencies": ["basemod", "stslib"]

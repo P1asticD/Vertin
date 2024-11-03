@@ -12,6 +12,7 @@ import vertinmod.modcore.VertinMod;
 
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
 import static vertinmod.modcore.VertinMod.Arcanist;
+import static vertinmod.relics.The_Suitcase.Count_Ascend;
 
 public class Not_Decoration extends Ver_CustomCard {
     public static final String ID = ModHelper.makePath(Not_Decoration.class.getSimpleName());
@@ -24,10 +25,9 @@ public class Not_Decoration extends Ver_CustomCard {
     private static final CardColor COLOR = VERTIN_CARD;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.NONE;
-
     public Not_Decoration(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 0;
         this.magicNumber = this.baseMagicNumber;
         this.cardsToPreview = new Bytes_65536();
         this.tags.add(VertinMod.JohnTitor);
@@ -35,13 +35,46 @@ public class Not_Decoration extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
+        if(this.upgraded)
+            this.baseMagicNumber = 3;
+        else
+            this.baseMagicNumber = 1;
+        this.baseMagicNumber += Count_Ascend;
+        this.magicNumber = this.baseMagicNumber;
         addToBot(new DrawCardAction(p, this.magicNumber));
+    }
+
+    public void applyPowers() {
+        super.applyPowers();
+        if(this.upgraded)
+            this.baseMagicNumber = 3;
+        else
+            this.baseMagicNumber = 1;
+        this.baseMagicNumber += Count_Ascend;
+        this.magicNumber = this.baseMagicNumber;
+        if (this.baseMagicNumber > 0) {
+            this.rawDescription = CARD_STRINGS.DESCRIPTION + CARD_STRINGS.EXTENDED_DESCRIPTION[1];
+            initializeDescription();
+        }
+    }
+
+    public void onMoveToDiscard() {
+        this.rawDescription = CARD_STRINGS.DESCRIPTION;
+        initializeDescription();
+    }
+
+    public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
+        if (this.baseMagicNumber > 0)
+            this.rawDescription = CARD_STRINGS.DESCRIPTION + CARD_STRINGS.EXTENDED_DESCRIPTION[1];
+        initializeDescription();
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 

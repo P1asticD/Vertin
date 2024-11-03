@@ -2,7 +2,6 @@ package vertinmod.cards.Incantations;
 
 import basemod.abstracts.CustomCard;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.common.StunMonsterAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,8 +9,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.ConstrictedPower;
 import com.megacrit.cardcrawl.powers.MalleablePower;
+import com.megacrit.cardcrawl.powers.ThornsPower;
 import vertinmod.helpers.ModHelper;
 
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
@@ -38,22 +37,9 @@ public class Silent_Woods extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         if (p.hasPower("Malleable")){
             int mal = p.getPower("Malleable").amount;
-            addToTop(new ApplyPowerAction(p, p, new MalleablePower(p, mal), mal));
-        }
-        AbstractMonster stun = null;
-        int max_con = 0;
-        for (AbstractMonster monster: AbstractDungeon.getMonsters().monsters){
-            if (monster.hasPower("Constricted")){
-                int con = monster.getPower("Constricted").amount;
-                if(con > max_con){
-                    stun = monster;
-                    max_con = con;
-                }
-                addToTop(new ApplyPowerAction(monster, p, new ConstrictedPower(monster, p, con), con));
-            }
-        }
-        if (stun != null){
-            addToBot(new StunMonsterAction(stun, p, 1));
+            addToBot(new ApplyPowerAction(p, p, new MalleablePower(p, mal), mal));
+            mal = p.getPower("Malleable").amount;
+            addToBot(new ApplyPowerAction(p, p, new ThornsPower(p, 2*mal),2*mal));
         }
     }
 

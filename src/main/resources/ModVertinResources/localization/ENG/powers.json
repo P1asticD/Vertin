@@ -110,5 +110,19 @@
     "DESCRIPTIONS": [
       "At the end of combat, obtain a special relic."
     ]
+  },
+  "VertinMod:BalloonPower": {
+    "NAME": "BalloonParty",
+    "DESCRIPTIONS": [
+      "At the end of your turn, turn your #yStrength to #yThorn. NL At the start of your turn, turn your #yThorn to #yStrength."
+    ]
+  },
+  "VertinMod:NihilismPower": {
+    "NAME": "Nihilism",
+    "DESCRIPTIONS": [
+      "#yRetain your hand this turn. In next turn, copy specific cards into hand. These copies are Ethereal.",
+      "#yRetain your hand for #b",
+      " turns. In next turn, copy specific cards into hand. These copies are Ethereal."
+    ]
   }
 }

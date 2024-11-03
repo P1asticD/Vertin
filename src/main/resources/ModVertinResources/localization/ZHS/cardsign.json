@@ -1,0 +1,290 @@
+{
+  "VertinMod:Strike": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:Defend": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:In_Suitcase": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:Alignment": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:Incantations_Strike": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:Incantations_Defend": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:Past_Future": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:Grand_Orchestra": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:Pigeon": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:Dissonance": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:ProperPlanning": {
+    "SIGN": "维尔汀"
+  },
+  "VertinMod:Sage": {
+    "SIGN": "弄臣"
+  },
+  "VertinMod:Fool": {
+    "SIGN": "弄臣"
+  },
+  "VertinMod:Improvised_Show": {
+    "SIGN": "弄臣"
+  },
+  "VertinMod:Not_Decoration": {
+    "SIGN": "约翰·提托"
+  },
+  "VertinMod:True_Genius": {
+    "SIGN": "约翰·提托"
+  },
+  "VertinMod:Bytes_65536": {
+    "SIGN": "约翰·提托"
+  },
+  "VertinMod:Old_PocketWatch": {
+    "SIGN": "小春雀儿"
+  },
+  "VertinMod:Finger_Lens": {
+    "SIGN": "小春雀儿"
+  },
+  "VertinMod:Superficiality_And_Reality": {
+    "SIGN": "小春雀儿"
+  },
+  "VertinMod:Prank": {
+    "SIGN": "吵闹鬼"
+  },
+  "VertinMod:Whisper": {
+    "SIGN": "吵闹鬼"
+  },
+  "VertinMod:Not_Gentle_Sun": {
+    "SIGN": "吵闹鬼"
+  },
+  "VertinMod:Play_House": {
+    "SIGN": "婴儿蓝"
+  },
+  "VertinMod:Cough_Syrup": {
+    "SIGN": "婴儿蓝"
+  },
+  "VertinMod:Tea_Party": {
+    "SIGN": "婴儿蓝"
+  },
+  "VertinMod:Power_Power": {
+    "SIGN": "帕米埃"
+  },
+  "VertinMod:Justice": {
+    "SIGN": "帕米埃"
+  },
+  "VertinMod:Maverick_Judge": {
+    "SIGN": "帕米埃"
+  },
+  "VertinMod:Commandment_V": {
+    "SIGN": "十四行诗"
+  },
+  "VertinMod:Exhortations_IX": {
+    "SIGN": "十四行诗"
+  },
+  "VertinMod:Unrestricted_Chant": {
+    "SIGN": "十四行诗"
+  },
+  "VertinMod:Pinata": {
+    "SIGN": "气球派对"
+  },
+  "VertinMod:Coughing_Weirdo": {
+    "SIGN": "气球派对"
+  },
+  "VertinMod:Balloon_Party": {
+    "SIGN": "气球派对"
+  },
+  "VertinMod:Timely_Farewell": {
+    "SIGN": "讣告人"
+  },
+  "VertinMod:Timely_Farewell_1": {
+    "SIGN": "讣告人"
+  },
+  "VertinMod:By_the_Coffin": {
+    "SIGN": "讣告人"
+  },
+  "VertinMod:By_the_Coffin_1": {
+    "SIGN": "讣告人"
+  },
+  "VertinMod:Whispers_of_Deceased": {
+    "SIGN": "讣告人"
+  },
+  "VertinMod:Whispers_of_Deceased_1": {
+    "SIGN": "讣告人"
+  },
+  "VertinMod:Shiny_Diamond": {
+    "SIGN": "坦南特"
+  },
+  "VertinMod:Galaxy_Bouquet": {
+    "SIGN": "坦南特"
+  },
+  "VertinMod:Beautiful_Lie": {
+    "SIGN": "坦南特"
+  },
+  "VertinMod:LongLive_Peace": {
+    "SIGN": "挖掘艺术"
+  },
+  "VertinMod:Bubblism": {
+    "SIGN": "挖掘艺术"
+  },
+  "VertinMod:Sweet_Dreams": {
+    "SIGN": "挖掘艺术"
+  },
+  "VertinMod:Crosswind_Takeoff": {
+    "SIGN": "红弩箭"
+  },
+  "VertinMod:Aerial_Maneuvers": {
+    "SIGN": "红弩箭"
+  },
+  "VertinMod:Canned_Liquor": {
+    "SIGN": "红弩箭"
+  },
+  "VertinMod:Key_of_Su01Be": {
+    "SIGN": "红弩箭"
+  },
+  "VertinMod:Soaring_Witch": {
+    "SIGN": "红弩箭"
+  },
+  "VertinMod:K_Justice": {
+    "SIGN": "未锈铠"
+  },
+  "VertinMod:Glory": {
+    "SIGN": "未锈铠"
+  },
+  "VertinMod:After_AD_778": {
+    "SIGN": "未锈铠"
+  },
+  "VertinMod:Triple_Dose": {
+    "SIGN": "苏芙比"
+  },
+  "VertinMod:Triple_Dose_1": {
+    "SIGN": "苏芙比"
+  },
+  "VertinMod:Concentrated_Essence": {
+    "SIGN": "苏芙比"
+  },
+  "VertinMod:Concentrated_Essence_1": {
+    "SIGN": "苏芙比"
+  },
+  "VertinMod:Mix_All": {
+    "SIGN": "苏芙比"
+  },
+  "VertinMod:Treat_Ears": {
+    "SIGN": "星锑"
+  },
+  "VertinMod:Challenge_Eyes": {
+    "SIGN": "星锑"
+  },
+  "VertinMod:Sleepless_Rave": {
+    "SIGN": "星锑"
+  },
+  "VertinMod:Victorious_General": {
+    "SIGN": "百夫长"
+  },
+  "VertinMod:Outdoor_Superstar": {
+    "SIGN": "百夫长"
+  },
+  "VertinMod:RealityShow_Premiere": {
+    "SIGN": "百夫长"
+  },
+  "VertinMod:Refrain": {
+    "SIGN": "远旅"
+  },
+  "VertinMod:Starlight_Sonata": {
+    "SIGN": "远旅"
+  },
+  "VertinMod:Strings_Galaxy": {
+    "SIGN": "远旅"
+  },
+  "VertinMod:Old_Idea": {
+    "SIGN": "新巴别塔"
+  },
+  "VertinMod:New_Wave": {
+    "SIGN": "新巴别塔"
+  },
+  "VertinMod:Future_Is_Near": {
+    "SIGN": "新巴别塔"
+  },
+  "VertinMod:Saturn_Divination": {
+    "SIGN": "伽菈波那"
+  },
+  "VertinMod:Mars_Divination": {
+    "SIGN": "伽菈波那"
+  },
+  "VertinMod:Lunar_Divination": {
+    "SIGN": "伽菈波那"
+  },
+  "VertinMod:Body_Protection": {
+    "SIGN": "爱兹拉"
+  },
+  "VertinMod:Spirit_Encourage": {
+    "SIGN": "爱兹拉"
+  },
+  "VertinMod:Comprehensive_Care": {
+    "SIGN": "爱兹拉"
+  },
+  "VertinMod:Wind_into_Woods": {
+    "SIGN": "槲寄生"
+  },
+  "VertinMod:Early_Dawn": {
+    "SIGN": "槲寄生"
+  },
+  "VertinMod:Silent_Woods": {
+    "SIGN": "槲寄生"
+  },
+  "VertinMod:White_Blankie": {
+    "SIGN": "洁西卡"
+  },
+  "VertinMod:Good_Friends": {
+    "SIGN": "洁西卡"
+  },
+  "VertinMod:Gaze_From_the_Forest": {
+    "SIGN": "洁西卡"
+  },
+  "VertinMod:Hey_Punji": {
+    "SIGN": "坎吉拉"
+  },
+  "VertinMod:Oh_Divination": {
+    "SIGN": "坎吉拉"
+  },
+  "VertinMod:Song_of_Wandering": {
+    "SIGN": "坎吉拉"
+  },
+  "VertinMod:Silent_Takedown": {
+    "SIGN": "梅兰妮"
+  },
+  "VertinMod:Clockwork_Rats": {
+    "SIGN": "梅兰妮"
+  },
+  "VertinMod:Ridiculous_Testimony": {
+    "SIGN": "梅兰妮"
+  },
+  "VertinMod:Nihilism_Abuse": {
+    "SIGN": "皮克勒斯"
+  },
+  "VertinMod:Topic_Clarify": {
+    "SIGN": "皮克勒斯"
+  },
+  "VertinMod:Thus_Spoke_Pickles": {
+    "SIGN": "皮克勒斯"
+  },
+  "VertinMod:Restless_Souls": {
+    "SIGN": "环状水星"
+  },
+  "VertinMod:Self_Focusing": {
+    "SIGN": "环状水星"
+  },
+  "VertinMod:Morning_Star_for_the_Night": {
+    "SIGN": "环状水星"
+  }
+}

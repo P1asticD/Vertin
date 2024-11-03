@@ -1,17 +1,23 @@
 package vertinmod.cards.Incantations;
 
+import com.evacipated.cardcrawl.mod.stslib.actions.common.DamageCallbackAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.InstantKillAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.HemokinesisEffect;
 import vertinmod.cards.Ver_CustomCard;
 import vertinmod.helpers.ModHelper;
+
+import java.util.function.Consumer;
 
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
 import static vertinmod.modcore.VertinMod.Arcanist;
@@ -26,34 +32,38 @@ public class Power_Power extends Ver_CustomCard {
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = VERTIN_CARD;
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
     public Power_Power(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 10;
+        this.baseDamage = 6;
         this.damage = this.baseDamage;
+        this.exhaust = true;
         this.cardsToPreview = new Maverick_Judge();
         this.tags.add(Arcanist);
         this.tags.add(Dikke);
     }
-
-    public void use(AbstractPlayer p, AbstractMonster m){
-        if (!this.upgraded){
-            addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        }
-        else{
-            addToBot(new VFXAction(new HemokinesisEffect(p.hb.cX, p.hb.cY, m.hb.cX, m.hb.cY), 0.5F));
-            addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+    public static Consumer<Integer> getDamageCallback(AbstractMonster monster) {
+        return amount -> {
+            if (amount.intValue() > 0 && !monster.isDeadOrEscaped() && !monster.halfDead && monster.hasPower("Minion"))
+                AbstractDungeon.actionManager.addToTop((AbstractGameAction)new InstantKillAction((AbstractCreature)monster));
+        };
+    }
+    public void use(AbstractPlayer p, AbstractMonster m) {
+        calculateCardDamage(null);
+        for (AbstractMonster monster : (AbstractDungeon.getMonsters()).monsters) {
+            if (!monster.isDeadOrEscaped() && !monster.halfDead) {
+                int dmg = this.multiDamage[(AbstractDungeon.getMonsters()).monsters.indexOf(monster)];
+                addToBot((AbstractGameAction)new DamageCallbackAction((AbstractCreature)monster, new DamageInfo((AbstractCreature)p, dmg, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE, getDamageCallback(monster)));
+            }
         }
     }
 
     public void upgrade(){
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(5);
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-            initializeDescription();
+            upgradeDamage(6);
         }
     }
 

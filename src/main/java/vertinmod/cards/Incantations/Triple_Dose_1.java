@@ -38,7 +38,7 @@ public class Triple_Dose_1 extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int chance = 10;
+        /*int chance = 10;
         if (!upgraded)
             addToBot(new ObtainPotionAction(new PoisonPotion()));
         else {
@@ -48,7 +48,11 @@ public class Triple_Dose_1 extends Ver_CustomCard {
             }
             else
                 addToBot(new ObtainPotionAction(new SPoisonPotion()));
-        }
+        }*/
+        if (!upgraded)
+            addToBot(new ObtainPotionAction(new PoisonPotion()));
+        else
+            addToBot(new ObtainPotionAction(new SPoisonPotion()));
     }
 
     public void upgrade() {

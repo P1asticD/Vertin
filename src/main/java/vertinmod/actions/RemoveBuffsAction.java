@@ -23,5 +23,6 @@ public class RemoveBuffsAction extends AbstractGameAction {
                     addToTop(new RemoveSpecificPowerAction(this.c, this.c, p.ID));
         }
         this.isDone = true;
+
     }
 }

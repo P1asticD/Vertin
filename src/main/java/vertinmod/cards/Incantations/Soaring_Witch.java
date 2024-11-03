@@ -36,7 +36,7 @@ public class Soaring_Witch extends CustomCard{
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        int tmp = (p.currentHealth - 10) / 5;
+        int tmp = (p.currentHealth - 10) / 10;
         addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber * tmp), this.magicNumber * tmp));
         addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber * tmp), this.magicNumber * tmp));
         addToBot(new ApplyPowerAction(p, p, new FlightPower(p, 99), 99));

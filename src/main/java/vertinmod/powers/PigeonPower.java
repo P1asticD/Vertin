@@ -36,9 +36,4 @@ public class PigeonPower extends AbstractPower {
     public void updateDescription(){
         this.description = String.format(DESCRIPTIONS[0], this.amount);
     }
-
-    public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.hasTag(Ultimate))
-            AbstractDungeon.player.gainEnergy(amount);
-    }
 }

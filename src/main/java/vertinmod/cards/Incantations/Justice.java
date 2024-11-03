@@ -29,7 +29,7 @@ public class Justice extends Ver_CustomCard {
 
     public Justice(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 8;
+        this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
         this.cardsToPreview = new Maverick_Judge();
@@ -48,7 +48,7 @@ public class Justice extends Ver_CustomCard {
         if (!this.upgraded) {
             upgradeBaseCost(0);
             upgradeName();
-            upgradeMagicNumber(5);
+            upgradeMagicNumber(4);
         }
     }
 

@@ -4,7 +4,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -43,24 +42,6 @@ public class Dissonance extends Ver_CustomCard {
         }
         if (!powerExists) {
             addToTop(new ApplyPowerAction(p, p, new DissonancePower(p)));
-        }
-        if(powerExists) {
-            for (AbstractCard c : AbstractDungeon.player.hand.group) {
-                if (c.hasTag(Vertin))
-                    c.modifyCostForCombat(-9);
-            }
-            for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
-                if (c.hasTag(Vertin))
-                    c.modifyCostForCombat(-9);
-            }
-            for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
-                if (c.hasTag(Vertin))
-                    c.modifyCostForCombat(-9);
-            }
-            for (AbstractCard c : AbstractDungeon.player.exhaustPile.group) {
-                if (c.hasTag(Vertin))
-                    c.modifyCostForCombat(-9);
-            }
         }
     }
 

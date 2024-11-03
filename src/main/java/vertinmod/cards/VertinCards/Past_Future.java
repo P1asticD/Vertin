@@ -27,7 +27,7 @@ public class Past_Future extends Ver_CustomCard {
 
     public Past_Future(){
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(Vertin);
     }

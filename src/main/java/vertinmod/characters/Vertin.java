@@ -1,8 +1,12 @@
 package vertinmod.characters;
 
+import basemod.animations.AbstractAnimation;
+import basemod.animations.SpriterAnimation;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,21 +15,24 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import vertinmod.cards.Incantations.Treat_Ears;
-import vertinmod.cards.VertinCards.Alignment;
 import vertinmod.cards.VertinCards.Defend;
 import vertinmod.cards.VertinCards.In_Suitcase;
 import vertinmod.cards.VertinCards.Strike;
 import vertinmod.modcore.VertinMod;
+import vertinmod.panel.MoxiePanel;
 import vertinmod.relics.First_Melody;
 import vertinmod.relics.The_Spinning_Wheel;
 import vertinmod.relics.The_Suitcase;
+import vertinmod.ui.SkinSelectScreen;
 
 import java.util.ArrayList;
 
@@ -33,6 +40,15 @@ import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
 import static vertinmod.characters.Vertin.Enums.VERTIN;
 
 public class Vertin extends CustomPlayer {
+    SpriterAnimation vertin;
+
+    public static String SELES_STAND = null;
+
+    public static String filepath = "ModVertinResources/img/char/character1.scml";
+
+    public static boolean spacePressed = false;
+
+    public static String[] skinAnimation;
     // 火堆的人物立绘（行动前）
     private static final String MY_CHARACTER_SHOULDER_1 = "ModVertinResources/img/char/shoulder1.png";
     // 火堆的人物立绘（行动后）
@@ -58,25 +74,32 @@ public class Vertin extends CustomPlayer {
     // 人物的本地化文本，如卡牌的本地化文本一样，如何书写见下
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("VertinMod:Vertin");
 
-    public Vertin(String name) {
-        super(name, VERTIN, ORB_TEXTURES,"ModVertinResources/img/UI/orb/vfx.png", LAYER_SPEED, null, null);
+    private MoxiePanel M_panel;
 
+    public Vertin(String name) {
+        super(name, VERTIN, ORB_TEXTURES,"ModVertinResources/img/UI/orb/vfx.png", LAYER_SPEED, (AbstractAnimation)new SpriterAnimation(filepath));
 
         // 人物对话气泡的大小，如果游戏中尺寸不对在这里修改（libgdx的坐标轴左下为原点）
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
         this.dialogY = (this.drawY + 150.0F * Settings.scale);
-
-
+        this.vertin = new SpriterAnimation(filepath);
         // 初始化你的人物，如果你的人物只有一张图，那么第一个参数填写你人物图片的路径。
         this.initializeClass(
-                "ModVertinResources/img/char/character.png", // 人物图片
+                (String)null,
                 MY_CHARACTER_SHOULDER_2, MY_CHARACTER_SHOULDER_1,
                 CORPSE_IMAGE, // 人物死亡图像
                 this.getLoadout(),
                 0.0F, 0.0F,
-                200.0F, 220.0F, // 人物碰撞箱大小，越大的人物模型这个越大
+                200.0F, 200.0F, // 人物碰撞箱大小，越大的人物模型这个越大
                 new EnergyManager(3) // 初始每回合的能量
         );
+        refreshSkin();
+        this.M_panel = new MoxiePanel(this.hb.x, this.hb.y + 100.0F * Settings.scale, -480.0F * Settings.scale, 200.0F * Settings.scale, null, true);
+        this.M_panel.show();
+    }
+
+    public void refreshSkin() {
+        this.animation = (AbstractAnimation)new SpriterAnimation(skinAnimation[SkinSelectScreen.Inst.index]);
     }
 
     // 初始卡组的ID，可直接写或引用变量
@@ -233,5 +256,30 @@ public class Vertin extends CustomPlayer {
 
         @SpireEnum(name = "VERTIN")
         public static CardLibrary.LibraryType EXAMPLE_LIBRARY;
+
+        @SpireEnum
+        public static PlayerClass TOKEN;
+
+        @SpireEnum(name = "TOKEN")
+        public static AbstractCard.CardColor TOKEN_CARD;
+
+        @SpireEnum(name = "TOKEN")
+        public static CardLibrary.LibraryType TOKEN_LIBRARY;
+    }
+
+    public void update() {
+        super.update();
+        if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT)
+            this.M_panel.update();
+    }
+
+    public void render(SpriteBatch sb) {
+        super.render(sb);
+        if ((AbstractDungeon.getCurrRoom()).phase == AbstractRoom.RoomPhase.COMBAT)
+            this.M_panel.render(sb);
+    }
+
+    static {
+        skinAnimation = new String[] {"ModVertinResources/img/char/character1.scml", "ModVertinResources/img/char/character.scml", "ModVertinResources/img/char/clothes_tree.scml"  };
     }
 }

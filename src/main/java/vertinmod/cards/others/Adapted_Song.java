@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import vertinmod.cards.Ver_CustomCard;
 import vertinmod.helpers.ModHelper;
 
-import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
+import static vertinmod.characters.Vertin.Enums.TOKEN_CARD;
 
 public class Adapted_Song extends Ver_CustomCard {
     public static final String ID = ModHelper.makePath(Adapted_Song.class.getSimpleName());
@@ -22,7 +22,7 @@ public class Adapted_Song extends Ver_CustomCard {
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
-    private static final CardColor COLOR = VERTIN_CARD;
+    private static final CardColor COLOR = TOKEN_CARD;
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.NONE;
 

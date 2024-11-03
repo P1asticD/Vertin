@@ -31,9 +31,18 @@
   },
   "VertinMod:Incantations_Strike": {
     "NAME": "Incantations Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Each time vertinmod:Ascend in this combat, the damage increases by !M! .",
+    "DESCRIPTION": "Each time vertinmod:Ascend in this combat, Deal !D! Damage.",
     "EXTENDED_DESCRIPTION": [
-      "This card belongs to #bVertin."
+      "This card belongs to #bVertin.",
+      "( !M! Times.)"
+    ]
+  },
+  "VertinMod:Incantations_Defend": {
+    "NAME": "Incantations Defend",
+    "DESCRIPTION": "Each time vertinmod:Ascend in this combat, Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVertin.",
+      "( !M! Times.)"
     ]
   },
   "VertinMod:Past_Future": {
@@ -61,6 +70,13 @@
   "VertinMod:Dissonance": {
     "NAME": "Dissonance",
     "DESCRIPTION": "Cards belongs to vertinmod:Vertin cost 0. NL Whenever you play a card belonging to vertinmod:Vertin, Exhaust it. NL Ethereal.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bVertin."
+    ]
+  },
+  "VertinMod:ProperPlanning": {
+    "NAME": "Proper Plan",
+    "DESCRIPTION": "At the end of your turn, Retain up to !M! card.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bVertin."
     ]
@@ -165,6 +181,22 @@
     "NAME": "Jessica",
     "DESCRIPTION": "Gain !M! vertinmod:Moxie."
   },
+  "VertinMod:Kanjira": {
+    "NAME": "Kanjira",
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
+  },
+  "VertinMod:Melania": {
+    "NAME": "Melania",
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
+  },
+  "VertinMod:Pickles": {
+    "NAME": "Pickles",
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
+  },
+  "VertinMod:Mercuria": {
+    "NAME": "Mercuria",
+    "DESCRIPTION": "Gain !M! vertinmod:Moxie."
+  },
   "VertinMod:Sage": {
     "NAME": "Sage",
     "DESCRIPTION": "Deal !D! damage. Target loses !M! Strength this turn.",
@@ -185,9 +217,11 @@
   },
   "VertinMod:Not_Decoration": {
     "NAME": "Not a Decoration!",
-    "DESCRIPTION": "Draw !M! cards.",
+    "DESCRIPTION": "Draw 1 card. NL Each time vertinmod:Ascend in this combat, draw an additional card. ",
+    "UPGRADE_DESCRIPTION": "Draw 3 card. NL Each time vertinmod:Ascend in this combat, draw an additional card. ",
     "EXTENDED_DESCRIPTION":[
-      "This card belongs to #bJohn #bTitor."
+      "This card belongs to #bJohn #bTitor.",
+      "(Draw !M! cards.)"
     ]
   },
   "VertinMod:True_Genius": {
@@ -299,8 +333,7 @@
   },
   "VertinMod:Power_Power": {
     "NAME": "Power",
-    "DESCRIPTION": "Deal !D! damage.",
-    "UPGRADE_DESCRIPTION": "Enemy loses !D! HP. NL Strength also affects this card.",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL If it causes unblocked damage to a minion enemy, eliminate it. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bDikke."
     ]
@@ -351,10 +384,7 @@
   },
   "VertinMod:Balloon_Party": {
     "NAME": "Good Kids, Bad Adults",
-    "DESCRIPTION": "Deals 3 times of the number of Thorn damage to ALL enemies. NL Heal the number of Thorn HP. NL Purge.",
-    "EXTENDED_DESCRIPTION": [
-      " NL (Deal !D! damage. Heal !M! HP.)"
-    ]
+    "DESCRIPTION": "At the end of your turn, turn your Strength to Thorn. NL At the start of your turn, turn your Thorn to Strength."
   },
   "VertinMod:Timely_Farewell": {
     "NAME": "Timely Farewell",
@@ -406,7 +436,7 @@
   },
   "VertinMod:Galaxy_Bouquet": {
     "NAME": "A Bouquet of Galaxy",
-    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards.",
+    "DESCRIPTION": "Scry !M!. NL For each card you discarded, Gain !B! Block.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bTennant."
     ]
@@ -488,7 +518,7 @@
   },
   "VertinMod:Soaring_Witch": {
     "NAME": "Soaring Witch",
-    "DESCRIPTION": "Reduce HP to 10. For every 5 lost HP, gain !M! Strength and Dexterity. NL Gain 99 *Flight. NL At the end of combat, make HP to the original HP."
+    "DESCRIPTION": "Reduce HP to 10. For every 10 lost HP, gain !M! Strength and Dexterity. NL Gain 99 *Flight. NL At the end of combat, make HP to the original HP."
   },
   "VertinMod:K_Justice": {
     "NAME": "Justice",
@@ -521,7 +551,7 @@
   "VertinMod:Triple_Dose_1": {
     "NAME": "Triple the Dose!",
     "DESCRIPTION": "Obtain a Poison Potion . NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Obtain a Super Poison Potion . NL 10%: Instead, obtain a Poison Potion with a Failed Product. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Obtain a Super Poison Potion . NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bSotheby."
     ]
@@ -536,7 +566,7 @@
   "VertinMod:Concentrated_Essence_1": {
     "NAME": "Concentrated Essence!",
     "DESCRIPTION": "Obtain a Regen Potion. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Obtain a Super Regen Potion. NL 10%: Instead, obtain a Regen Potion with a Failed Product. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Obtain a Super Regen Potion. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bSotheby."
     ]
@@ -554,7 +584,7 @@
   },
   "VertinMod:Challenge_Eyes": {
     "NAME": "Challenge for the Eyes",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies.",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain Vigor equal to unblocked damage .",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bRegulus."
     ]
@@ -656,26 +686,26 @@
   },
   "VertinMod:Comprehensive_Care": {
     "NAME": "Compassion All-Round",
-    "DESCRIPTION": "All other vertinmod:Arcanists gain !M! vertinmod:Moxie. NL Draw cards until your hand is full. Purge."
+    "DESCRIPTION": "Draw cards until your hand is full. NL Upgrade all cards in your hand for the rest of combat. NL Purge."
   },
   "VertinMod:Wind_into_Woods": {
     "NAME": "Wind into the Woods",
-    "DESCRIPTION": "Apply !M! vertinmod:Constricted.",
-    "UPGRADE_DESCRIPTION": "Apply !M! vertinmod:Constricted to ALL enemies.",
+    "DESCRIPTION": "Only can be played when you have BUFF. NL Deal !D! damage.",
     "EXTENDED_DESCRIPTION": [
-      "This card belongs to #bDruvisIII."
+      "This card belongs to #bDruvisIII.",
+      "You have no BUFF."
     ]
   },
   "VertinMod:Early_Dawn": {
     "NAME": "Early Dawn",
-    "DESCRIPTION": "Gain !M! vertinmod:Malleable. NL Exhaust.",
+    "DESCRIPTION": "Gain !M! vertinmod:Malleable. NL Block is not removed at the start of your next turn. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       "This card belongs to #bDruvisIII."
     ]
   },
   "VertinMod:Silent_Woods": {
     "NAME": "Silence in the Woods",
-    "DESCRIPTION": "Double your vertinmod:Malleable. NL Double all enemies' vertinmod:Constricted. NL Stun the enemy with the most vertinmod:Constricted. NL Purge."
+    "DESCRIPTION": "Double your vertinmod:Malleable. NL Then gain Thorns equals to double Malleable. NL Purge."
   },
   "VertinMod:White_Blankie": {
     "NAME": "White Blankie",
@@ -699,6 +729,81 @@
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage to ALL enemies.）"
     ]
+  },
+  "VertinMod:Hey_Punji": {
+    "NAME": "Hey, Punji",
+    "DESCRIPTION": "Scry !M! . NL Each card you Discard, Apply 1 Poison. NL If all cards are Discard in Scry, apply !M! Poison additionally.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bKanjira."
+    ]
+  },
+  "VertinMod:Oh_Divination": {
+    "NAME": "Oh, divination",
+    "DESCRIPTION": "Scry !M! . NL Each card you Discard make you gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bKanjira."
+    ]
+  },
+  "VertinMod:Song_of_Wandering": {
+    "NAME": "Song of Wandering",
+    "DESCRIPTION": "Shuffle your discard pile into your draw pile. NL Scry your draw pile. NL Draw !M!. NL Purge."
+  },
+  "VertinMod:Silent_Takedown": {
+    "NAME": "Silent Takedown",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Draw !M! . NL Melania gain additional !M! vertinmod:Moxie .",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bMelania."
+    ]
+  },
+  "VertinMod:Clockwork_Rats": {
+    "NAME": "Clockwork Rats",
+    "DESCRIPTION": "Retain. NL When two unupgraded 'Clockwork Rats' are in hand, vertinmod:Ascend. NL (No need to be adjacent.)",
+    "UPGRADE_DESCRIPTION": "Retain. NL Draw !M!. NL After use, add 2 copies of this unupgraded card into your discard pile. NL Purge.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bMelania."
+    ]
+  },
+  "VertinMod:Ridiculous_Testimony": {
+    "NAME": "Ridiculous Eyewitness Testimony",
+    "DESCRIPTION": "Obtaining this Ult does not take up the number of Spinning Wheel. NL Deal !D! damage !M! times. NL Each time this card is obtained in this combat, both damage and times are increased by 1. NL Purge."
+  },
+  "VertinMod:Nihilism_Abuse": {
+    "NAME": "Nihilism Abuse",
+    "DESCRIPTION": "Retain your vertinmod:Incantations in hand this turn. NL At the start of your next turn, add copies of these unupgraded cards in your hand. NL These copies are Ethereal. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bPickles."
+    ]
+  },
+  "VertinMod:Topic_Clarify": {
+    "NAME": "Topic Clarify",
+    "DESCRIPTION": "Apply !M! Weak to ALL. NL Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bPickles."
+    ]
+  },
+  "VertinMod:Thus_Spoke_Pickles": {
+    "NAME": "Thus Spoke Pickles",
+    "DESCRIPTION": "Remove your Weak, Remove ALL enemies' Block. NL Gain Vigor equals to the removed Block. NL If your Weak is successfully removed, apply equal Vulnerable to ALL enemies, double the Vigor you gain this time. NL Purge."
+  },
+  "VertinMod:Restless_Souls": {
+    "NAME": "Restless Souls",
+    "DESCRIPTION": "Deal !D! damage. NL Each other unupgraded card in hand reduces damage by !M!.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bMercuria."
+    ]
+  },
+  "VertinMod:Self_Focusing": {
+    "NAME": "Self Focusing",
+    "DESCRIPTION": "Retain.Unplayable. NL At the end of your turn, upgrade and retain the left !M! card.",
+    "UPGRADE_DESCRIPTION": "Retain. NL At the end of your turn, upgrade and retain the left and right !M! card. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "This card belongs to #bMercuria."
+    ]
+  },
+  "VertinMod:Morning_Star_for_the_Night": {
+    "NAME": "Morning Star",
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, card rewards for this battle will be upgraded. NL Purge."
   },
     "VertinMod:Paper_Slip": {
     "NAME": "Paper Slip",

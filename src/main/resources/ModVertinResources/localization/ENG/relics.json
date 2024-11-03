@@ -13,7 +13,44 @@
     "FLAVOR": "✦Neirü mildeen tiün bonan nokton∽∽!✦",
     "DESCRIPTIONS": [
       "You can #yvertinmod:Ascend now.",
-      " NL Whenever you add a #bvertinmod:Incantation to your deck, if it has not been unupgraded and is not a Power card, obtain a same card to your deck."
+      " NL Whenever you add a #bvertinmod:Incantation to your deck, if it has not been unupgraded and is not a Power card, obtain a same card to your deck.",
+      " NL #yRight #yClick #yin #yCombat: Open tutorial again."
+    ]
+  },
+  "VertinMod:The_Moxie_Panel": {
+    "NAME": "Moxie Panel",
+    "FLAVOR": "Normally, you shouldn't be able to see this description",
+    "DESCRIPTIONS": [
+      "Moxie :",
+      "TheFool: ",
+      "John Titor: ",
+      "Eagle: ",
+      "Pavia: ",
+      "Mondlicht: ",
+      "Poltergeist: ",
+      "Baby Blue: ",
+      "Dikke: ",
+      "Sonetto: ",
+      "Balloon Party: ",
+      "Necrologist: ",
+      "Tennant: ",
+      "Diggers: ",
+      "Ulu: ",
+      "Lilya: ",
+      "A Knight: ",
+      "Sotheby: ",
+      "Regulus: ",
+      "Centurion: ",
+      "Voyager: ",
+      "Ms.NewBabel: ",
+      "Kaalaa Baunaa: ",
+      "Ezra: ",
+      "DruvisIII: ",
+      "Jessica: ",
+      "Kanjira:",
+      "Melania:",
+      "Pickles:",
+      "Mercuria:"
     ]
   },
   "VertinMod:The_Spinning_Wheel": {
@@ -21,7 +58,7 @@
     "FLAVOR": "Turn it, like always.",
     "DESCRIPTIONS": [
       "Each time you choose #bSummon at Rest Sites, record the corresponding #yvertinmod:Moxie. The upper limit is #b5 .",
-      " NL Every time you play an #bvertinmod:Incantations , the #yvertinmod:Moxie of the corresponding Arcanist add #b1 . You can use #b5 #yMoxie to add #yUltimate to your hand.",
+      " NL You can use #b5 #yMoxie to add #yUltimate to your hand.",
       " NL #yRight #yClick: Open the #yUltimate selection interface.",
       " NL Current #yMoxie of #yArcanists :",
       "Choose 1 Ultimate to your hand.",
@@ -51,6 +88,10 @@
       " NL #bEzra : ",
       " NL #bDruvisIII : ",
       " NL #bJessica : ",
+      " NL #bKanjira :",
+      " NL #bMelania :",
+      " NL #bPickles :",
+      " NL #bMercuria :",
       "No Ultimate can be used."
     ]
   },

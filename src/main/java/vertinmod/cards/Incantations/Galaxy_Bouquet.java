@@ -1,14 +1,19 @@
 package vertinmod.cards.Incantations;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import vertinmod.actions.FilteredDrawCardAction;
 import vertinmod.cards.Ver_CustomCard;
 import vertinmod.helpers.ModHelper;
+import vertinmod.patches.ScryActionPatch;
 
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
 import static vertinmod.modcore.VertinMod.Arcanist;
@@ -38,16 +43,19 @@ public class Galaxy_Bouquet extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, p, this.block));
-        addToBot(new DrawCardAction(p, this.magicNumber));
+        addToBot((AbstractGameAction)new GainBlockAction((AbstractCreature)p, this.block));
+        addToBot((AbstractGameAction)new FilteredDrawCardAction(this.magicNumber, this::filter, false, null));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
             upgradeBlock(4);
-            upgradeMagicNumber(1);
         }
+    }
+
+    private boolean filter(AbstractCard card) {
+        return (card.costForTurn == 0);
     }
 
     public AbstractCard makeCopy(){

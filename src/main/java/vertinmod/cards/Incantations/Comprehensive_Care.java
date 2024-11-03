@@ -2,12 +2,15 @@ package vertinmod.cards.Incantations;
 
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.unique.ArmamentsAction;
 import com.megacrit.cardcrawl.actions.unique.ExpertiseAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import vertinmod.actions.UpgradeAllAction;
+import vertinmod.cards.Ver_CustomCard;
 import vertinmod.helpers.ModHelper;
 
 import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
@@ -36,13 +39,8 @@ public class Comprehensive_Care extends CustomCard{
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        for (int i = 0; i < Moxie.size(); i++){
-            if (i==22)
-                continue;
-            if (Moxie.get(i) >= 1)
-                Moxie.set(i, Math.min(Moxie_Max, Moxie.get(i) + 1));
-        }
         addToBot(new ExpertiseAction(p, 10));
+        addToBot(new UpgradeAllAction());
     }
 
     public void upgrade(){

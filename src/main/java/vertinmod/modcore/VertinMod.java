@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -22,16 +23,19 @@ import vertinmod.characters.Vertin;
 import vertinmod.events.ExpensiveDinner;
 import vertinmod.events.MushroomsReplacement;
 import vertinmod.events.PaperMemory;
+import vertinmod.helpers.ModHelper;
+import vertinmod.patches.CardSignPatch;
 import vertinmod.potions.SPoisonPotion;
 import vertinmod.potions.SRegenPotion;
 import vertinmod.potions.TransformationPotion;
 import vertinmod.relics.*;
+import vertinmod.strings.VertinCardSignStrings;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Map;
 
 import static com.megacrit.cardcrawl.core.Settings.language;
-import static vertinmod.characters.Vertin.Enums.VERTIN;
-import static vertinmod.characters.Vertin.Enums.VERTIN_CARD;
+import static vertinmod.characters.Vertin.Enums.*;
 
 @SpireInitializer
 public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber, PostInitializeSubscriber {
@@ -91,10 +95,18 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
     public static AbstractCard.CardTags Vertin;
     @SpireEnum
     public static AbstractCard.CardTags Jessica;
-
+    @SpireEnum
+    public static AbstractCard.CardTags Kanjira;
+    @SpireEnum
+    public static AbstractCard.CardTags Melania;
+    @SpireEnum
+    public static AbstractCard.CardTags Pickles;
+    @SpireEnum
+    public static AbstractCard.CardTags Mercuria;
     public VertinMod() {
         BaseMod.subscribe(this);
         BaseMod.addColor(VERTIN_CARD, VERTIN_COLOR, VERTIN_COLOR, VERTIN_COLOR, VERTIN_COLOR, VERTIN_COLOR, VERTIN_COLOR, VERTIN_COLOR,BG_ATTACK_512,BG_SKILL_512,BG_POWER_512,ENERGY_ORB,BG_ATTACK_1024,BG_SKILL_1024,BG_POWER_1024,BIG_ORB,SMALL_ORB);
+        BaseMod.addColor(TOKEN_CARD, TOKEN_COLOR, TOKEN_COLOR, TOKEN_COLOR, TOKEN_COLOR, TOKEN_COLOR, TOKEN_COLOR, TOKEN_COLOR,BG_ATTACK_512,BG_SKILL_512,BG_POWER_512,ENERGY_ORB,BG_ATTACK_1024,BG_SKILL_1024,BG_POWER_1024,BIG_ORB,SMALL_ORB);
     }
     // 人物选择界面按钮的图片
     private static final String MY_CHARACTER_BUTTON = "ModVertinResources/img/char/Character_Button.png";
@@ -118,10 +130,14 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
     private static final String BIG_ORB = "ModVertinResources/img/char/card_orb.png";
     // 小尺寸的能量图标（战斗中，牌堆预览）
     private static final String ENERGY_ORB = "ModVertinResources/img/char/cost_orb.png";
+
     public static final Color VERTIN_COLOR = new Color(192.0F / 255.0F, 192.0F / 255.0F, 192.0F / 255.0F, 1.0F);
+
+    public static final Color TOKEN_COLOR = new Color(0.0F / 255.0F, 0.0F / 255.0F, 0.0F / 255.0F, 1.0F);
 
     public static void initialize() {
         new VertinMod();
+        ModHelper.loadConfig();
     }
 
     @Override
@@ -150,16 +166,21 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addCard(new Ezra());
         BaseMod.addCard(new DruvisIII());
         BaseMod.addCard(new Jessica());
+        BaseMod.addCard(new Kanjira());
+        BaseMod.addCard(new Melania());
+        BaseMod.addCard(new Pickles());
 
         BaseMod.addCard(new Strike());
         BaseMod.addCard(new Defend());
         BaseMod.addCard(new In_Suitcase());
         BaseMod.addCard(new Alignment());
         BaseMod.addCard(new Incantations_Strike());
+        BaseMod.addCard(new Incantations_Defend());
         BaseMod.addCard(new Past_Future());
         BaseMod.addCard(new Grand_Orchestra());
         BaseMod.addCard(new Pigeon());
         BaseMod.addCard(new Dissonance());
+        BaseMod.addCard(new ProperPlanning());
 
         BaseMod.addCard(new Sage());
         BaseMod.addCard(new Fool());
@@ -240,6 +261,18 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.addCard(new White_Blankie());
         BaseMod.addCard(new Good_Friends());
         BaseMod.addCard(new Gaze_From_the_Forest());
+        BaseMod.addCard(new Hey_Punji());
+        BaseMod.addCard(new Oh_Divination());
+        BaseMod.addCard(new Song_of_Wandering());
+        BaseMod.addCard(new Silent_Takedown());
+        BaseMod.addCard(new Clockwork_Rats());
+        BaseMod.addCard(new Ridiculous_Testimony());
+        BaseMod.addCard(new Nihilism_Abuse());
+        BaseMod.addCard(new Topic_Clarify());
+        BaseMod.addCard(new Thus_Spoke_Pickles());
+        BaseMod.addCard(new Restless_Souls());
+        BaseMod.addCard(new Self_Focusing());
+        BaseMod.addCard(new Morning_Star_for_the_Night());
 
         BaseMod.addCard(new Paper_Slip());
         BaseMod.addCard(new Adapted_Song());
@@ -276,6 +309,12 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
         BaseMod.loadCustomStringsFile(PotionStrings.class, "ModVertinResources/localization/" + lang + "/potions.json");
         BaseMod.loadCustomStringsFile(EventStrings.class, "ModVertinResources/localization/" + lang + "/events.json");
         BaseMod.loadCustomStringsFile(UIStrings.class, "ModVertinResources/localization/" + lang +"/ui.json");
+        BaseMod.loadCustomStringsFile(TutorialStrings.class, "ModVertinResources/localization/" + lang +"/tutorial.json");
+        String CS = "ModVertinResources/localization/" + lang + "/cardsign.json";
+        VertinCardSignStrings.init((new Gson()).fromJson(
+                Gdx.files.internal(CS)
+                        .readString(String.valueOf(StandardCharsets.UTF_8)),
+                (new TypeToken<Map<String, VertinCardSignStrings>>() {}).getType()));
     }
 
     @Override
@@ -307,7 +346,7 @@ public class VertinMod implements EditCardsSubscriber, EditStringsSubscriber, Ed
 
 
     public void receivePostInitialize(){
-        BaseMod.addPotion(TransformationPotion.class, null, null, null, "VertinMod:TransformationPotion", AbstractPlayer.PlayerClass.DEFECT);
+        //BaseMod.addPotion(TransformationPotion.class, null, null, null, "VertinMod:TransformationPotion", AbstractPlayer.PlayerClass.DEFECT);
         BaseMod.addPotion(SRegenPotion.class, null, null, null, "VertinMod:SRegenPotion", AbstractPlayer.PlayerClass.DEFECT);
         BaseMod.addPotion(SPoisonPotion.class, null, null, null, "VertinMod:SPoisonPotion", AbstractPlayer.PlayerClass.DEFECT);
 

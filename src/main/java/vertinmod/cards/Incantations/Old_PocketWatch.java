@@ -59,7 +59,7 @@ public class Old_PocketWatch extends Ver_CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(8);
-            this.upgradeMagicNumber(3);
+            this.upgradeMagicNumber(1);
         }
     }
 

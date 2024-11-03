@@ -39,7 +39,7 @@ public class Concentrated_Essence_1 extends Ver_CustomCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m){
-        int chance = 10;
+        /*int chance = 10;
         if (!upgraded)
             addToBot(new ObtainPotionAction(new RegenPotion()));
         else {
@@ -49,8 +49,11 @@ public class Concentrated_Essence_1 extends Ver_CustomCard {
             }
             else
                 addToBot(new ObtainPotionAction(new SRegenPotion()));
-        }
-
+        }*/
+        if (!upgraded)
+            addToBot(new ObtainPotionAction(new RegenPotion()));
+        else
+            addToBot(new ObtainPotionAction(new SRegenPotion()));
     }
 
     public void upgrade() {

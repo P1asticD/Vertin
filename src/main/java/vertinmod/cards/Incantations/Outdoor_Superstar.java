@@ -41,19 +41,20 @@ public class Outdoor_Superstar extends Ver_CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m){
         int count = 0;
         int moxie = Moxie.get(18);
-        for (AbstractMonster m2 : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if (!m2.isDeadOrEscaped()) {
-                count++;
+        if (moxie != 0) {
+            for (AbstractMonster m2 : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+                if (!m2.isDeadOrEscaped()) {
+                    count++;
+                }
             }
-        }
-        if (moxie + count + 1 <= Moxie_Max){
-            Moxie.set(18, moxie + count);
-        }
-        else{
-            Moxie.set(18, Moxie_Max);
-            int ex = moxie + count - Moxie_Max;
-            p.gainEnergy(ex);
-            addToBot(new DrawCardAction(p, ex));
+            if (moxie + count + 1 <= Moxie_Max) {
+                Moxie.set(18, moxie + count);
+            } else {
+                Moxie.set(18, Moxie_Max);
+                int ex = moxie + count - Moxie_Max;
+                p.gainEnergy(ex);
+                addToBot(new DrawCardAction(p, ex));
+            }
         }
     }
 

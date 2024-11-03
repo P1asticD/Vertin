@@ -10,11 +10,12 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import vertinmod.cards.VertinCards.Alignment;
+
 import vertinmod.helpers.ModHelper;
 
 public class First_Melody extends CustomRelic implements BetterClickableRelic<First_Melody>{
     public static final String ID = ModHelper.makePath("First_Melody");
-    private static final String IMG_PATH = "ModVertinResources/img/relics/The_Spinning_Wheel.png";
+    private static final String IMG_PATH = "ModVertinResources/img/relics/First_Melody.png";
     private static final RelicTier RELIC_TIER = RelicTier.STARTER;
     private static final LandingSound LANDING_SOUND = LandingSound.CLINK;
 
