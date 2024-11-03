@@ -1,0 +1,290 @@
+{
+  "VertinMod:Strike": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:Defend": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:In_Suitcase": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:Alignment": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:Incantations_Strike": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:Incantations_Defend": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:Past_Future": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:Grand_Orchestra": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:Pigeon": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:Dissonance": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:ProperPlanning": {
+    "SIGN": "Vertin"
+  },
+  "VertinMod:Sage": {
+    "SIGN": "The_Fool"
+  },
+  "VertinMod:Fool": {
+    "SIGN": "The_Fool"
+  },
+  "VertinMod:Improvised_Show": {
+    "SIGN": "The_Fool"
+  },
+  "VertinMod:Not_Decoration": {
+    "SIGN": "JohnTitor"
+  },
+  "VertinMod:True_Genius": {
+    "SIGN": "JohnTitor"
+  },
+  "VertinMod:Bytes_65536": {
+    "SIGN": "JohnTitor"
+  },
+  "VertinMod:Old_PocketWatch": {
+    "SIGN": "Eagle"
+  },
+  "VertinMod:Finger_Lens": {
+    "SIGN": "Eagle"
+  },
+  "VertinMod:Superficiality_And_Reality": {
+    "SIGN": "Eagle"
+  },
+  "VertinMod:Prank": {
+    "SIGN": "Poltergeist"
+  },
+  "VertinMod:Whisper": {
+    "SIGN": "Poltergeist"
+  },
+  "VertinMod:Not_Gentle_Sun": {
+    "SIGN": "Poltergeist"
+  },
+  "VertinMod:Play_House": {
+    "SIGN": "BabyBlue"
+  },
+  "VertinMod:Cough_Syrup": {
+    "SIGN": "BabyBlue"
+  },
+  "VertinMod:Tea_Party": {
+    "SIGN": "BabyBlue"
+  },
+  "VertinMod:Power_Power": {
+    "SIGN": "Pavia"
+  },
+  "VertinMod:Justice": {
+    "SIGN": "Pavia"
+  },
+  "VertinMod:Maverick_Judge": {
+    "SIGN": "Pavia"
+  },
+  "VertinMod:Commandment_V": {
+    "SIGN": "Sonetto"
+  },
+  "VertinMod:Exhortations_IX": {
+    "SIGN": "Sonetto"
+  },
+  "VertinMod:Unrestricted_Chant": {
+    "SIGN": "Sonetto"
+  },
+  "VertinMod:Pinata": {
+    "SIGN": "BalloonParty"
+  },
+  "VertinMod:Coughing_Weirdo": {
+    "SIGN": "BalloonParty"
+  },
+  "VertinMod:Balloon_Party": {
+    "SIGN": "BalloonParty"
+  },
+  "VertinMod:Timely_Farewell": {
+    "SIGN": "Necrologist"
+  },
+  "VertinMod:Timely_Farewell_1": {
+    "SIGN": "Necrologist"
+  },
+  "VertinMod:By_the_Coffin": {
+    "SIGN": "Necrologist"
+  },
+  "VertinMod:By_the_Coffin_1": {
+    "SIGN": "Necrologist"
+  },
+  "VertinMod:Whispers_of_Deceased": {
+    "SIGN": "Necrologist"
+  },
+  "VertinMod:Whispers_of_Deceased_1": {
+    "SIGN": "Necrologist"
+  },
+  "VertinMod:Shiny_Diamond": {
+    "SIGN": "Tennant"
+  },
+  "VertinMod:Galaxy_Bouquet": {
+    "SIGN": "Tennant"
+  },
+  "VertinMod:Beautiful_Lie": {
+    "SIGN": "Tennant"
+  },
+  "VertinMod:LongLive_Peace": {
+    "SIGN": "Diggers"
+  },
+  "VertinMod:Bubblism": {
+    "SIGN": "Diggers"
+  },
+  "VertinMod:Sweet_Dreams": {
+    "SIGN": "Diggers"
+  },
+  "VertinMod:Crosswind_Takeoff": {
+    "SIGN": "Lilya"
+  },
+  "VertinMod:Aerial_Maneuvers": {
+    "SIGN": "Lilya"
+  },
+  "VertinMod:Canned_Liquor": {
+    "SIGN": "Lilya"
+  },
+  "VertinMod:Key_of_Su01Be": {
+    "SIGN": "Lilya"
+  },
+  "VertinMod:Soaring_Witch": {
+    "SIGN": "Lilya"
+  },
+  "VertinMod:K_Justice": {
+    "SIGN": "Knight"
+  },
+  "VertinMod:Glory": {
+    "SIGN": "Knight"
+  },
+  "VertinMod:After_AD_778": {
+    "SIGN": "Knight"
+  },
+  "VertinMod:Triple_Dose": {
+    "SIGN": "Sotheby"
+  },
+  "VertinMod:Triple_Dose_1": {
+    "SIGN": "Sotheby"
+  },
+  "VertinMod:Concentrated_Essence": {
+    "SIGN": "Sotheby"
+  },
+  "VertinMod:Concentrated_Essence_1": {
+    "SIGN": "Sotheby"
+  },
+  "VertinMod:Mix_All": {
+    "SIGN": "Sotheby"
+  },
+  "VertinMod:Treat_Ears": {
+    "SIGN": "Regulus"
+  },
+  "VertinMod:Challenge_Eyes": {
+    "SIGN": "Regulus"
+  },
+  "VertinMod:Sleepless_Rave": {
+    "SIGN": "Regulus"
+  },
+  "VertinMod:Victorious_General": {
+    "SIGN": "Centurion"
+  },
+  "VertinMod:Outdoor_Superstar": {
+    "SIGN": "Centurion"
+  },
+  "VertinMod:RealityShow_Premiere": {
+    "SIGN": "Centurion"
+  },
+  "VertinMod:Refrain": {
+    "SIGN": "Voyager"
+  },
+  "VertinMod:Starlight_Sonata": {
+    "SIGN": "Voyager"
+  },
+  "VertinMod:Strings_Galaxy": {
+    "SIGN": "Voyager"
+  },
+  "VertinMod:Old_Idea": {
+    "SIGN": "NewBabel"
+  },
+  "VertinMod:New_Wave": {
+    "SIGN": "NewBabel"
+  },
+  "VertinMod:Future_Is_Near": {
+    "SIGN": "NewBabel"
+  },
+  "VertinMod:Saturn_Divination": {
+    "SIGN": "BlackDwarf"
+  },
+  "VertinMod:Mars_Divination": {
+    "SIGN": "BlackDwarf"
+  },
+  "VertinMod:Lunar_Divination": {
+    "SIGN": "BlackDwarf"
+  },
+  "VertinMod:Body_Protection": {
+    "SIGN": "Ezra"
+  },
+  "VertinMod:Spirit_Encourage": {
+    "SIGN": "Ezra"
+  },
+  "VertinMod:Comprehensive_Care": {
+    "SIGN": "Ezra"
+  },
+  "VertinMod:Wind_into_Woods": {
+    "SIGN": "DruvisIII"
+  },
+  "VertinMod:Early_Dawn": {
+    "SIGN": "DruvisIII"
+  },
+  "VertinMod:Silent_Woods": {
+    "SIGN": "DruvisIII"
+  },
+  "VertinMod:White_Blankie": {
+    "SIGN": "Jessica"
+  },
+  "VertinMod:Good_Friends": {
+    "SIGN": "Jessica"
+  },
+  "VertinMod:Gaze_From_the_Forest": {
+    "SIGN": "Jessica"
+  },
+  "VertinMod:Hey_Punji": {
+    "SIGN": "Kanjira"
+  },
+  "VertinMod:Oh_Divination": {
+    "SIGN": "Kanjira"
+  },
+  "VertinMod:Song_of_Wandering": {
+    "SIGN": "Kanjira"
+  },
+  "VertinMod:Silent_Takedown": {
+    "SIGN": "Melania"
+  },
+  "VertinMod:Clockwork_Rats": {
+    "SIGN": "Melania"
+  },
+  "VertinMod:Ridiculous_Testimony": {
+    "SIGN": "Melania"
+  },
+  "VertinMod:Nihilism_Abuse": {
+    "SIGN": "Pickles"
+  },
+  "VertinMod:Topic_Clarify": {
+    "SIGN": "Pickles"
+  },
+  "VertinMod:Thus_Spoke_Pickles": {
+    "SIGN": "Pickles"
+  },
+  "VertinMod:Restless_Souls": {
+    "SIGN": "Mercuria"
+  },
+  "VertinMod:Self_Focusing": {
+    "SIGN": "Mercuria"
+  },
+  "VertinMod:Morning_Star_for_the_Night": {
+    "SIGN": "Mercuria"
+  }
+}

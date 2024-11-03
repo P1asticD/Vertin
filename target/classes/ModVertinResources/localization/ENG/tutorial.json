@@ -1,0 +1,14 @@
+{
+  "VertinMod:Raw": {
+    "TEXT": [
+      "Vertin, the timekeeper of St.Pavlov Foundation. She has lots of #yArcanists friends who can use #bIncantations. NL In Spire, #bIncantations manifests as a kind of special card.",
+      "You can check the owner of the card in the card flavor. NL #rAttack and Skill (excluding Power) belonging to #yArcanists are considered as #bIncantations .",
+      " #bIncantations #rcannot #rbe #rupgraded outside of Combat, only can be upgraded temporarily according to #yAscend in Combat. NL #yAscend: When two same Incantations appear in the #badjacent #bposition in your hand, #rExhaust one, #yUpgrade the other.",
+      "The other feature of #bIncantations is: Whenever you add #rUnupgraded #rIncantation in your deck(contains Transform), a same #bIncantation will be added in your deck. NL If the added #bIncantation is upgraded, no second card will be added.",
+      "Now, #bMoxie . #bMoxie is recorded in the start relic: #gSpinning #gWheel. NL When you play one #bIncantation, the #bMoxie of corresponding #yArcanist add 1. NL After each Combat, all #bMoxie clear.",
+      "If you have an #yArcanis's Incantations, you can choose to #ySummon in campfire. NL After #ySummon, the #gSpinning #gWheel will start to record the chosen #yArcanists's #bMoxie .",
+      "When #bMoxie meets the conditions, #gRight #gClick #gSpinning #gWheel : Choose one #bUltimate to add to your hand. NL You can get #r1 #bUltimate each Combat.",
+      "That's all, if you want to watch this tutorial again, you can #gRight #gClick #gThe #gSuitcase. NL If you encounter any problems, please provide feedback within the Steam community. NL NL Have a great time!"
+    ]
+  }
+}
